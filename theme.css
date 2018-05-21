@@ -1,0 +1,281 @@
+hidden.menu {
+    display: none;
+}
+
+.mainmenu.menu .toc.item {
+    display: none;
+}
+
+.masthead {
+    height: 400px;
+}
+
+#headerMaster {
+    background-image: url('images/headerBg.png');
+}
+
+#menuSegment {
+    padding: 0;
+    border-bottom: 2px solid #f9500d;
+}
+
+#logoItem {
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+#logo {
+    min-height: 54px;
+    min-width: 270px;
+}
+
+#title {
+    font-family:'Source Sans Pro',sans-serif;
+    font-weight:700;
+    font-size:6em;
+    margin-bottom:0px;
+}
+
+#titleSubText {
+    font-family:'Lato';
+    font-weight:500;
+    margin-top:0px;
+}
+
+.ui.inverted.header.subTitle {
+    font-family:'Source Sans Pro',sans-serif;
+    font-size:3.4em;
+}
+
+.ui.inverted.header .sub.header.feature {
+    text-align: justify;
+}
+
+.ui.top.attached.header.example {
+    border-radius: 0;
+    padding: 1px 0 0 6px;
+    background: #2b2b2b linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    font-size: 1.0rem;
+}
+
+.ui.header.subTitle {
+    font-family:'Source Sans Pro',sans-serif;
+    font-size:4.4em;
+}
+
+.ui.header.featureBoxTitle {
+    font-family:'Source Sans Pro',sans-serif;
+    font-size:2.2em;
+    line-height:1.0em;
+    margin-bottom: 0px;
+}
+
+.featureBoxText {
+    font-family:'Lato';
+    font-size:1.2em;
+    line-height:1.4em;
+}
+
+ul {
+    margin-top: 0px;
+}
+
+.featureBox {
+    box-shadow: 8px 8px 0px 0 rgba(86, 86, 86, 0.15);
+    background-color: #2f2f2f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ui.gray.inverted.secondary.vertical.segment.supportBox {
+    background-image: url('images/headerBg.png');
+    background-blend-mode: multiply;
+    background-color: #a2a2a2;
+}
+
+.ui.button.features {
+    margin-top:8px;
+}
+
+.ui.divider.features {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.myFooter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+b {
+    color: #efa168;
+}
+
+.contents {
+    padding-bottom: 150px;
+    height: 100%;
+}
+
+body.pushable > .pusher {
+    background: #1b1c1d;
+}
+
+body ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0px;
+}
+
+body ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 0px;
+}
+
+body ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 0px;
+}
+
+.ui.selection.dropdown.exampleDrop {
+    background: #333333;
+    border-radius: initial;
+    padding: 5px 5px 5px 5px;
+    min-height: initial;
+    width: 50%;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.28571429em;
+}
+
+.exampleHeader {
+    width: 50%;
+    color: white;
+    background-color: #333333;
+    padding: 4px 0px 0 5px;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.28571429em;
+}
+
+.ui.dropdown.exampleDrop:not(.button) > .default.text {
+    color: white;
+}
+
+.ui.selection.dropdown.exampleDrop .menu {
+    border-color: #333333;
+}
+
+.ui.selection.active.dropdown.exampleDrop {
+    border-color: #333333;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.28571429em;
+}
+
+.ui.selection.active.dropdown.exampleDrop .menu {
+    border-color: #333333;
+    overflow-y: hidden;
+}
+
+.ui.selection.dropdown.exampleDrop .menu > .item {
+    border-top: 1px solid #555555;
+    background-color: #333333;
+    color: white;
+    padding: 5px 5px 5px 5px !important;
+}
+
+.ui.selection.dropdown.exampleDrop .menu > .item:hover {
+    border-top: 1px solid #555555;
+    background-color: #555555;
+    color: white;
+    padding: 5px 5px 5px 5px !important;
+}
+
+.ui.selection.dropdown.exampleDrop {
+    color: white;
+}
+
+.ui.selection.dropdown.exampleDrop:focus {
+   border-color: #333333;
+}
+
+.ui.selection.visible.dropdown.exampleDrop > .text:not(.default){
+    color: white;
+}
+
+.ui.dropdown.exampleDrop > .dropdown.icon {
+    top: 0.3rem;
+}
+
+.ui.modal {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.ui.inverted.basic.segment.releaseNotes {
+    background-color: #3d3d3d;
+}
+
+ .ui.accordion > .title {
+    background-color: rgb(43, 43, 43);
+}
+
+.ui.fluid.raised.card {
+    -webkit-box-shadow: 0px 0px 0px 1px #4e4e4e, 0px 2px 0px 0px #1B1C1D, 0px 1px 3px 0px #a9a9a9;
+    box-shadow: 0px 0px 0px 1px #4e4e4e, 0px 2px 0px 0px #1B1C1D, 0px 1px 3px 0px #a9a9a9;
+}
+
+.ui.fluid.raised.card > .content {
+    background-color: #333333;
+}
+
+.ui.fluid.raised.card > .content > .header {
+    color: white;
+}
+
+.ui.fluid.raised.card > .content > .description {
+    color: white;
+}
+
+.ui.fluid.raised.card > .ui.bottom.attached.button {
+    color: white;
+    background-color: #424242;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+
+    .inverted.mainmenu.menu .item,
+    .inverted.mainmenu.menu .right.item,
+    .inverted.mainmenu.menu .menu {
+        display: none;
+    }
+
+    .mainmenu.menu .toc.item {
+        display: block;
+    }
+}
+
+@media (max-width: 750px)
+{
+    .contents {
+        padding-bottom: 450px;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 950px)
+{
+    .contents {
+        padding-bottom: 260px;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1200px)
+{
+    .contents {
+        padding-bottom: 250px;
+    }
+}

@@ -9,8 +9,767 @@
 
         <!-- Site Properties -->
         <title>bs::framework</title>
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Raleway">
+        <link rel="stylesheet" href="prism.css"/>
+
+        <!-- Scripts -->
+        <script src="jquery/jquery.js"></script>
+        <script src="semantic/dist/semantic.js"></script>
+        <script src="prism.js"></script>
+
+        <script>
+            $(document).ready(function()
+                              {
+                $('#openReleases').click(function()
+                                         {
+                    $('#releasesModal').modal('show');
+                });
+
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item');
+
+                $('.ui.sticky').sticky();
+
+                $('.menu .item').tab();
+
+                var menu = $('#iterable_menu');
+                $("div[id] , :header[id]").each(function (index)
+                                                {
+                    if($(this).attr('id') == 'iterable_menu')
+                        return true;
+
+                    menu.append('<a class="item" href="#'+$(this).attr('id')+'">'+$(this).attr('id')+'</a>');
+                });
+
+                if (navigator.appVersion.toUpperCase().indexOf("MAC") != -1)
+                {
+                    $('#downloadWin').hide();
+                    $('#downloadMac').show();
+                }
+
+                if (navigator.appVersion.toUpperCase().indexOf("LINUX") != -1)
+                {
+                    $('#downloadWin').hide();
+                    $('#downloadLinux').show();
+                }
+
+                $('#dropdownExamplesMain').dropdown(
+                    {
+                        onChange: function(val)
+                        {
+                            var margin = parseInt($("#exampleMain" + val).css('marginTop'));
+                            $("#scrollerExamplesMain").scrollTop($("#exampleMain" + val).position().top - $("#exampleMain0").position().top + margin);
+                        }
+                    });
+
+                $('#dropdownExamplesRendering').dropdown(
+                    {
+                        onChange: function(val)
+                        {
+                            var margin = parseInt($("#exampleRendering" + val).css('marginTop'));
+                            $("#scrollerExamplesRendering").scrollTop($("#exampleRendering" + val).position().top - $("#exampleRendering0").position().top + margin);
+                        }
+                    });
+
+                function loadImage (el) {
+                    el.attr('src', el.data('src'));
+                }
+
+                $('.showModal1').on('click', function() {
+                    loadImage($('#imgModalImg1'));
+                    $('#imgModal1').modal('show');
+                });
+
+                $('.showModal2').on('click', function() {
+                    loadImage($('#imgModalImg2'));
+                    $('#imgModal2').modal('show');
+                });
+
+                $('.showModal3').on('click', function() {
+                    loadImage($('#imgModalImg3'));
+                    $('#imgModal3').modal('show');
+                });
+
+                $('.showModal4').on('click', function() {
+                    loadImage($('#imgModalImg4'));
+                    $('#imgModal4').modal('show');
+                });
+
+                $('.showModal5').on('click', function() {
+                    loadImage($('#imgModalImg5'));
+                    $('#imgModal5').modal('show');
+                });
+
+                $('.showModal6').on('click', function() {
+                    loadImage($('#imgModalImg6'));
+                    $('#imgModal6').modal('show');
+                });
+            });
+        </script>
     </head>
     <body>
-        Empty page
+        <!-- Page Contents -->
+        <div class="pusher">
+            <!--Primary menu-->
+            <div class="ui inverted vertical center aligned segment" id="menuSegment">
+                <div class="ui container">
+                    <div class="ui inverted mainmenu menu">
+                        <a class="toc item"><i class="sidebar icon"></i></a>
+                        <a href="https://www.bsframework.io"><div class="borderless item" id="logoItem"><img class="ui image" id="logo" src="images/logoHeader.png"></div></a>
+                        <div class="right menu">
+                            <a class="active borderless item" href="index.html">Home</a>
+                            <a class="item" href="download.html">Download</a>
+                            <a class="item" href="https://discourse.bsframework.io">Community</a>
+                            <a class="item" href="docs/index.html">Documentation</a>
+                            <a class="item" href="https://github.com/gamefoundry/bsf"><i class="github icon"></i>GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sidebar menu-->
+            <div class="ui vertical inverted sidebar menu">
+                <div class="ui container">
+                    <a href="https://www.bsframework.io"><div class="item" id="logoItem"><img class="ui image" src="images/logo.png"></div></a>
+                    <a class="active item" href="index.html">Home</a>
+                    <a class="item" href="download.html">Download</a>
+                    <a class="item" href="https://discourse.bsframework.io">Community</a>
+                    <a class="item" href="docs/index.html">Documentation</a>
+                    <a class="item" href="https://github.com/gamefoundry/bsf">GitHub</a>
+                </div>
+            </div>
+
+            <!--Image modals-->
+            <div class="ui basic modal" id="imgModal1">
+                <i class="close icon"></i>
+                <div class="header">
+                    View image
+                </div>
+                <div class="image content">
+                    <div class="ui centered image">
+                        <img src="images/modalPlaceholder.png" data-src="images/1.png" alt="" id="imgModalImg1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui basic modal" id="imgModal2">
+                <i class="close icon"></i>
+                <div class="header">
+                    View image
+                </div>
+                <div class="image content">
+                    <div class="ui centered image">
+                        <img src="images/modalPlaceholder.png" data-src="images/2.png" alt="" id="imgModalImg2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui basic modal" id="imgModal3">
+                <i class="close icon"></i>
+                <div class="header">
+                    View image
+                </div>
+                <div class="image content">
+                    <div class="ui centered image">
+                        <img src="images/modalPlaceholder.png" data-src="images/3.gif" alt="" id="imgModalImg3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui basic modal" id="imgModal4">
+                <i class="close icon"></i>
+                <div class="header">
+                    View image
+                </div>
+                <div class="image content">
+                    <div class="ui centered image">
+                        <img src="images/modalPlaceholder.png" data-src="images/4.gif" alt="" id="imgModalImg4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui basic modal" id="imgModal5">
+                <i class="close icon"></i>
+                <div class="header">
+                    View image
+                </div>
+                <div class="image content">
+                    <div class="ui centered image">
+                        <img src="images/modalPlaceholder.png" data-src="images/5.png" alt="" id="imgModalImg5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui basic modal" id="imgModal6">
+                <i class="close icon"></i>
+                <div class="header">
+                    View image
+                </div>
+                <div class="image content">
+                    <div class="ui centered image">
+                        <img src="images/modalPlaceholder.png" data-src="images/6.png" alt="" id="imgModalImg6">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="ui inverted vertical center aligned segment" id="headerMaster">
+                    <div class="ui container">
+                        <div class="masthead ui middle aligned one column centered grid">
+                            <div class="row">
+                                <div class="column">
+                                    <h1 class="ui inverted header" id="title">bs::framework</h1>
+                                    <h2 id="titleSubText">Next-generation C++ game development framework focused on modern technologies, quality design and high performance
+                                    </h2>
+                                    <p>
+                                        <a id="downloadWin" class="ui orange big button" href="http://nightly.bsframework.io/releases/bsf_v1.0.0b_win64.zip"><i class="download icon"></i>Get latest (Windows x64, v1.0 BETA)</a>
+                                        <a id="downloadMac" style="display: none" class="ui orange big button" href="http://nightly.bsframework.io/releases/bsf_v1.0.0b_osx.tar.gz"><i class="download icon"></i>Get latest (macOS, v1.0 BETA)</a>
+                                        <a id="downloadLinux" style="display: none" class="ui orange big button" href="http://nightly.bsframework.io/releases/bsf_v1.0.0b_linux.tar.gz"><i class="download icon"></i>Get latest (Ubuntu, v1.0 BETA)</a>
+                                    </p>
+                                    <span><a id="openReleases" href="download.html">See all releases</a> | <a href="https://github.com/gamefoundry/bsf">View source on GitHub</a> | <a href="docs/index.html">Full documentation</a></span>
+                                    <p style="margin-top: 10px"><iframe src="https://ghbtns.com/github-btn.html?user=gamefoundry&repo=bsf&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui gray inverted secondary vertical segment supportBox">
+                    <div class="ui container">
+                        <div class="ui stackable internally celled grid">
+                            <div class="nine wide column">
+                                <h3 class="ui inverted sub header" style="font-size: 1.3em">Support the project</h3>
+                                <div style="font-size: 1.3em; padding-bottom: 0.2em">This is a free &amp; open-source project.</div>
+                                <div style="font-size: 1.3em">Consider donating so we can keep adding awesome new features.</div>
+                            </div>
+                            <div class="seven wide column">
+                                <div class="ui horizontal list">
+                                    <div class="item"><a href="https://www.patreon.com/bsf"><img class="ui image" src="images/become_a_patron_button.png"></a></div>
+                                    <div class="item"><a href="https://www.paypal.me/MarkoPintera/10" target="_blank"><img class="ui image" src="images/paypalDonate.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui inverted basic attached segment" style="border-top: none;">
+                    <!-- style="border-radius: 2rem;margin-top: 1rem;border:none;box-shadow:0px 1px 20px 0 rgba(34, 36, 38, 0.15);padding:1em 3em" -->
+                    <div class="ui container">
+                        <h2 class="ui inverted header subTitle" style="border-bottom: 1px solid #555555">
+                            Highlights
+                        </h2>
+
+                        <div class="ui vertical stripe segment">
+                            <div class="ui middle aligned stackable grid container">
+                                <div class="row">
+                                    <div class="eight wide column">
+                                        <h2 class="ui inverted header">
+                                            <div class="content">
+                                                One neat package
+                                                <div class="sub header feature">bs::f provides everything you need for development of graphical applications, ranging from <b>audio</b>, <b>animation</b>, <b>GUI</b>, <b>input</b>, <b>physics</b>, <b>rendering</b> to <b>scripting</b> systems. It also comes with built-in support for <b>over 30 image, mesh and audio formats</b>, as well as a wide range of utility systems, from an extensive math library, run-time type information, CPU/GPU profiling, SIMD instruction API and a lot more. Cross-platform on <b>Windows</b>, <b>Linux</b> and <b>macOS</b>.</div>
+                                            </div>
+                                        </h2>
+                                        <h2 class="ui inverted header">
+                                            <div class="content">
+                                                Clean C++14 API
+                                                <div class="sub header feature">All of the framework's functionality is provided through a neatly designed, <b>modern C++14 API</b>. It is simple to understand and use, while offering a lot of advanced options for those that require them. Every non-trivial method is documented in an <b>extensive API reference</b>. <b>Over a hundred manuals</b> are provided guiding you through all major systems from start to finish, with extensive amount of code snippets, as well as fully functional examples.</div>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <div class="eight wide column">
+                                        <div style="display: flex"><div class="exampleHeader">Code snippets (High level API)</div>
+                                            <div id="dropdownExamplesMain" class="ui selection dropdown exampleDrop">
+                                                <input type="hidden" name="Examples">
+                                                <i class="dropdown icon"></i>
+                                                <div class="default text">Jump to...</div>
+                                                <div class="menu">
+                                                    <div class="item" data-value="0">Asset import</div>
+                                                    <div class="item" data-value="1">Shaders &amp; materials</div>
+                                                    <div class="item" data-value="2">Render an object</div>
+                                                    <div class="item" data-value="3">Physics</div>
+                                                    <div class="item" data-value="4">Input</div>
+                                                    <div class="item" data-value="5">Audio</div>
+                                                    <div class="item" data-value="6">GUI</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="scrollerExamplesMain" style="height:310px;overflow-y:scroll;overflow-x:hidden;position:relative;">
+
+                                            <h4 id="exampleMain0" class="ui top attached inverted header example">Asset import</h4>
+                                            <pre><code class="language-cpp">// Import some assets
+HMesh myModel = gImporter().import&lt;Mesh&gt;("MyModel.fbx");
+HTexture myTexture = gImporter().import&lt;Texture&gt;("MyTexture.png");
+HAudioClip myAudioClip = gImporter().import&lt;AudioClip&gt;("MyAudioClip.ogg");</code></pre>
+                                            <h4 id="exampleMain1" class="ui top attached inverted header example">Shaders &amp; materials</h4>
+                                            <pre><code class="language-cpp">// Grab the default PBR shader
+HShader myShader = gBuiltinResources().getBuiltinShader(BuiltinShader::Standard);
+
+// Or import your own
+// HShader myShader = gImporter().import&lt;Shader&gt;("CustomShader.bsl");
+
+// Create material and assign a texture to it
+HMaterial myMaterial = Material::create(myShader);
+myShader->setTexture("gAlbedoTex", myTexture);</code></pre>
+
+                                            <h4 id="exampleMain2" class="ui top attached inverted header example">Render an object</h4>
+                                            <pre><code class="language-cpp">// Add a camera to view the world through
+HSceneObject cameraSO = SceneObject::create("Camera");
+HCamera camera = cameraSO->addComponent&lt;CCamera&gt;();
+
+// Position the camera 10 units along the Z axis, looking towards the origin
+cameraSO->setPosition(Vector3(0, 0, 10.0f));
+cameraSO->lookAt(Vector3(0, 0, 0));
+
+// Add a 3D object to render
+HSceneObject renderableSO = SceneObject::create("Renderable");
+HRenderable renderable = renderableSO->addComponent&lt;CRenderable&gt;();
+
+// Assign a 3D model and a material to render it with
+renderable->setMesh(myModel);
+renderable->setMaterial(myMaterial);</code></pre>
+
+                                            <h4 id="exampleMain3" class="ui top attached inverted header example">Physics</h4>
+                                            <pre><code class="language-cpp">// Add a character controller for moving the camera
+HCharacterController charController =
+    cameraSO->addComponent&lt;CCharacterController&gt;();
+
+// Make the character about 1.8m high, with 0.4m radius
+// (controller represents a capsule)
+charController->setHeight(1.0f);
+charController->setRadius(0.4f);
+
+// Rigidbody &amp; collider to make our 3D object interactable
+HRigidbody rigidbody = renderableSO->addComponent&lt;CRigidbody&gt;();
+HBoxCollider collider = renderableSO->addComponent&lt;CBoxCollider&gt;();
+collider->setExtents(Vector3(0.7f, 2.0f, 0.7f));
+</code></pre>
+                                            <h4 id="exampleMain4" class="ui top attached inverted header example">Input</h4>
+                                            <pre><code class="language-cpp">// Get current transform of the player's object
+const Transform&amp; tfrm = cameraSO->getTransform();
+
+// Determine movement of the object in four directions, relative to the
+// current orientation
+Vector3 direction = Vector3::ZERO;
+if(gInput().isButtonHeld(BC_W)) direction += tfrm.getForward();
+if(gInput().isButtonHeld(BC_S)) direction -= tfrm.getForward();
+if(gInput().isButtonHeld(BC_D)) direction += tfrm.getRight();
+if(gInput().isButtonHeld(BC_A)) direction -= tfrm.getRight();
+
+// Perform the movement
+charController->move(direction * gTime().getFrameDelta());
+</code></pre>
+
+                                            <h4 id="exampleMain5" class="ui top attached inverted header example">Audio</h4>
+                                            <pre><code class="language-cpp">// Add a listener to the player's (camera's) position
+HAudioListener listener = cameraSO->addComponent&lt;CAudioListener&gt;();
+
+// Add an audio source and assign a clip to play
+HSceneObject audioSourceSO = SceneObject::create("AudioSource");
+HAudioSource audioSource = audioSourceSO->addComponent&lt;CAudioSource&gt;();
+audioSource->setClip(myAudioClip);
+</code></pre>
+
+                                            <h4 id="exampleMain6" class="ui top attached inverted header example">GUI</h4>
+                                            <pre><code class="language-cpp">// Add a GUI widget to serve as a root GUI object
+HSceneObject guiSO = SceneObject::create("GUI");
+HGUIWidget gui = guiSO->addComponent&lt;CGUIWidget&gt;(camera);
+
+// Get a panel we can attach some elements to
+GUIPanel* guiPanel = gui->getPanel();
+
+// Add a layout for auto-formatting
+GUILayout* guiLayout = guiPanel->addNewElement&lt;GUILayoutY&gt;();
+
+// Add a couple of buttons to the layout (using the default GUI skin)
+guiLayout->addNewElement&lt;GUIButton&gt;(HString("Click me!"));
+guiLayout->addNewElement&lt;GUIButton&gt;(HString("Click me too!"));
+</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui divider features"></div>
+                            <div class="ui middle aligned stackable grid container">
+                                <div class="row">
+                                    <div class="eight wide column">
+                                        <div style="display: flex"><div class="exampleHeader">Code snippets (Rendering API)</div>
+                                            <div id="dropdownExamplesRendering" class="ui selection dropdown exampleDrop">
+                                                <input type="hidden" name="Examples">
+                                                <i class="dropdown icon"></i>
+                                                <div class="default text">Jump to...</div>
+                                                <div class="menu">
+                                                    <div class="item" data-value="0">Create a GPU program</div>
+                                                    <div class="item" data-value="1">Create a graphics pipeline state</div>
+                                                    <div class="item" data-value="2">Create a texture</div>
+                                                    <div class="item" data-value="3">Create a vertex buffer</div>
+                                                    <div class="item" data-value="4">Create a render surface</div>
+                                                    <div class="item" data-value="5">Drawing</div>
+                                                    <div class="item" data-value="6">Unified shading language (BSL)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="scrollerExamplesRendering" style="height:400px;overflow-y:scroll;overflow-x:hidden;position:relative;">
+                                            <h4 id="exampleRendering0" class="ui top attached inverted header example">Create a GPU program</h4>
+                                            <pre><code class="language-cpp">// Create a fragment GPU program from HLSL code
+const char* fragProgSrc = "HLSL code goes here...";
+
+GPU_PROGRAM_DESC fragProgDesc;
+fragProgDesc.type = GPT_FRAGMENT_PROGRAM;
+fragProgDesc.entryPoint = "main";
+fragProgDesc.language = "hlsl";
+fragProgDesc.source = fragProgSrc;
+
+SPtr&lt;GpuProgram&gt; fragProg = GpuProgram::create(fragProgDesc);</code></pre>
+                                            <h4 id="exampleRendering1" class="ui top attached inverted header example">Create a graphics pipeline state</h4>
+                                            <pre><code class="language-cpp">// Enable blending
+BLEND_STATE_DESC blendDesc;
+blendDesc.renderTargetDesc[0].blendEnable = true;
+blendDesc.renderTargetDesc[0].renderTargetWriteMask = 0b0111;
+blendDesc.renderTargetDesc[0].blendOp = BO_ADD;
+blendDesc.renderTargetDesc[0].srcBlend = BF_SOURCE_ALPHA;
+blendDesc.renderTargetDesc[0].dstBlend = BF_INV_SOURCE_ALPHA;
+
+// No depth writes or reads
+DEPTH_STENCIL_STATE_DESC depthStencilDesc;
+depthStencilDesc.depthWriteEnable = false;
+depthStencilDesc.depthReadEnable = false;
+
+// Create the pipeline state using GPU programs and a set of fixed states
+PIPELINE_STATE_DESC pipelineDesc;
+pipelineDesc.blendState = BlendState::create(blendDesc);
+pipelineDesc.depthStencilState = DepthStencilState::create(depthStencilDesc);
+pipelineDesc.vertexProgram = vertProg;
+pipelineDesc.fragmentProgram = fragProg;
+
+SPtr&lt;GraphicsPipelineState&gt; pipelineState =
+    GraphicsPipelineState::create(pipelineDesc);</code></pre>
+
+                                            <h4 id="exampleRendering2" class="ui top attached inverted header example">Create a texture</h4>
+                                            <pre><code class="language-cpp"> // Create a 1024x1024 texture using 32-bit floating point format
+TEXTURE_DESC desc;
+desc.type = TEX_TYPE_2D;
+desc.format = PF_R32F;
+desc.width = 1024;
+desc.height = 1024;
+
+SPtr&lt;Texture&gt; texture = Texture::create(desc);
+
+// Write some data to the texture
+PixelData pixelData = texture->lock(GBL_WRITE_ONLY_DISCARD);
+
+for (UINT32 y = 0; y &lt; desc.height; y++)
+    for (UINT32 x = 0; x &lt; desc.width; x++)
+        pixelData.setColorAt(Color::WHITE, x, y);
+
+texture->unlock();</code></pre>
+
+                                            <h4 id="exampleRendering3" class="ui top attached inverted header example">Create a vertex buffer</h4>
+                                            <pre><code class="language-cpp">// Create a vertex declaration for shader inputs
+SPtr&lt;VertexDataDesc&gt; vertexDesc = VertexDataDesc::create();
+vertexDesc->addVertElem(VET_FLOAT3, VES_POSITION);
+vertexDesc->addVertElem(VET_FLOAT2, VES_TEXCOORD);
+
+SPtr&lt;VertexDeclaration&gt; vertexDecl = VertexDeclaration::create(vertexDesc);
+
+// Create the vertex buffer object
+UINT32 vertexStride = vertexDesc->getVertexStride();
+
+VERTEX_BUFFER_DESC vbDesc;
+vbDesc.numVerts = NUM_VERTICES;
+vbDesc.vertexSize = vertexStride;
+
+SPtr&lt;VertexBuffer&gt; vertexBuffer = VertexBuffer::create(vbDesc);
+
+// Populate the vertex buffer with vertex information
+UINT8* vbData = (UINT8*)vertexBuffer->lock(0, vertexStride * NUM_VERTICES, GBL_WRITE_ONLY_DISCARD);
+UINT8* positions = vbData + vertexDesc->getElementOffsetFromStream(VES_POSITION);
+UINT8* uvs = vbData + vertexDesc->getElementOffsetFromStream(VES_TEXCOORD);
+
+AABox box(Vector3::ONE * -10.0f, Vector3::ONE * 10.0f);
+writeBoxVertices(box, positions, uvs, vertexStride); // Code not shown
+
+vertexBuffer->unlock();</code></pre>
+
+                                            <h4 id="exampleRendering4" class="ui top attached inverted header example">Create a render surface</h4>
+                                            <pre><code class="language-cpp">// Create a color attachment texture for the render surface
+TEXTURE_DESC colorAttDesc;
+colorAttDesc.width = windowResWidth;
+colorAttDesc.height = windowResHeight;
+colorAttDesc.format = PF_RGBA8;
+colorAttDesc.usage = TU_RENDERTARGET;
+
+SPtr&lt;Texture&gt; colorAtt = Texture::create(colorAttDesc);
+
+// Create a depth attachment texture for the render surface
+TEXTURE_DESC depthAttDesc;
+depthAttDesc.width = windowResWidth;
+depthAttDesc.height = windowResHeight;
+depthAttDesc.format = PF_D32;
+depthAttDesc.usage = TU_DEPTHSTENCIL;
+
+SPtr&lt;Texture&gt; depthAtt = Texture::create(depthAttDesc);
+
+// Create the render surface
+RENDER_TEXTURE_DESC desc;
+desc.colorSurfaces[0].texture = colorAtt;
+desc.depthStencilSurface.texture = depthAtt;
+
+SPtr&lt;RenderTarget&gt; renderTarget = RenderTexture::create(desc);
+</code></pre>
+
+                                            <h4 id="exampleRendering5" class="ui top attached inverted header example">Drawing</h4>
+                                            <pre><code class="language-cpp">// Get the primary render API access point
+RenderAPI&amp; rapi = RenderAPI::instance();
+
+// Bind render surface & clear it
+rapi.setRenderTarget(renderTarget);
+rapi.clearRenderTarget(FBT_COLOR | FBT_DEPTH);
+
+// Bind the pipeline state
+rapi.setGraphicsPipeline(pipelineState);
+
+// Set the vertex &amp; index buffers, as well as vertex declaration and draw type
+rapi.setVertexBuffers(0, vertexBuffer.get(), 1);
+rapi.setIndexBuffer(indexBuffer);
+rapi.setVertexDeclaration(vertexDecl);
+rapi.setDrawOperation(DOT_TRIANGLE_LIST);
+
+// Bind the GPU program parameters
+rapi.setGpuParams(gpuParams);
+
+// Draw
+rapi.drawIndexed(0, NUM_INDICES, 0, NUM_VERTICES, 1);</code></pre>
+
+                                            <h4 id="exampleRendering6" class="ui top attached inverted header example">Unified shading language (BSL)</h4>
+                                            <pre><code class="language-cpp">shader MyShader
+{
+    // No depth reads or writes
+    depth
+    {
+        read = false;
+        write = false;
+    };
+
+    // Enable blending on the first render target
+    blend
+    {
+        target
+        {
+            enabled = true;
+            color = { srcA, srcIA, add };
+            writemask = RGB;
+        };
+    };
+
+    // Disable culling
+    raster
+    {
+        cull = none;
+    };
+
+    // Only render if stencil test passes
+    stencil
+    {
+        enabled = true;
+        front = { keep, keep, keep, lte };
+        reference = 1;
+    };
+
+    // Render the geometry in plain white
+    code
+    {
+        struct VStoFS
+        {
+            float4 position : SV_Position;
+        };
+
+        cbuffer PerObject
+        {
+            float4x4 gMatWorldViewProj;
+        }
+
+        struct VertexInput
+        {
+            float3 position : POSITION;
+        };
+
+        VStoFS vsmain(VertexInput input)
+        {
+            VStoFS output;
+            output.position = mul(gMatWorldViewProj, input.position);
+            return output;
+        }
+
+        float4 fsmain(in VStoFS input) : SV_Target0
+        {
+            return float4(1.0f, 1.0f, 1.0f 1.0f);
+        }
+    };
+};</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="eight wide column">
+                                        <h2 class="ui inverted header">
+                                            <div class="content">
+                                                Modern rendering API
+                                                <div class="sub header feature">
+                                                    <div class="eight wide column">
+                                                        The framework comes with a low-level rendering API based on <b>Vulkan</b>. It offers extensive support for all modern rendering features, including compute and tesselation shaders, instanced rendering, texture arrays, buffers, unordered access reads and writes, as well as full API support for <b>pipeline state objects</b>, <b>command lists</b>, <b>explicit multi-GPU</b> and <b>async compute/upload</b> queues. The framework also comes with <b>DirectX 11</b> and <b>OpenGL 4.5</b> render backends, and is easily extensible to others. Full support for both <b>GLSL</b> and <b>HLSL</b> is provided, including reflection as well as bytecode caching.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </h2>
+                                        <h2 class="ui inverted header">
+                                            <div class="content">
+                                                Unified shading language
+                                                <div class="sub header feature">BSL is a <b>high-level shading language based on HLSL</b>, offering a very familiar syntax with a variety of high level features that make shader development easier. Some of the enhancements include the ability to define non-programmable states like blend, rasterizer or depth-stencil in the shader code itself. Mixins allow you to provide re-usable pieces of shader code that can be included in other more complex shaders. Variations allow you to easily declare multiple permutations of the same shader. BSL cross-compiles to HLSL and GLSL ensuring you can use the <b>same shaders for Vulkan, OpenGL or DirectX</b>.</div>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui divider features"></div>
+                            <div class="ui middle aligned stackable grid container">
+                                <div class="row">
+                                    <div class="eight wide column">
+                                        <h2 class="ui inverted header">
+                                            <div class="content">
+                                                Physically based renderer
+                                                <div class="sub header feature">The framework comes with a <b>gamma-correct</b>, <b>HDR enabled</b> renderer with support for <b>physically based shading</b> models, as well as the ability to define custom surface and lighting models. The renderer is a hybrid of <b>tiled deferred</b> and <b>clustered forward</b> algorithms, utilizing compute capabilities for fast rendering with many lights. It supports punctual and <b>area lights</b> with <b>soft shadows</b>, <b>reflection probes</b> with geometry proxies, <b>indirect lighting</b> via irradiance maps, <b>screen space reflections</b> and many more features. </div>
+                                            </div>
+                                        </h2>
+                                        <h2 class="ui inverted header">
+                                            <div class="content">
+                                                Multi-threaded and high performance
+                                                <div class="sub header feature">The framework was designed so it can satisfy the performance needs of even the most demanding projects. All major systems are <b>multi-threaded</b>, including animation, audio, physics and most importantly the renderer. Performance critical systems are well optimized with data organized in <b>cache friendly</b> structures, with the use of <b>CPU vector instructions</b> where applicable. <b>Custom memory allocators</b> ensure minimal memory allocation overhead and fragmentation. Built-in systems for <b>CPU, GPU and memory profiling</b> are provided.</div>
+                                            </div>
+                                        </h2>
+                                        <h2 class="ui inverted header">
+                                            <div class="content">
+                                                Extensible
+                                                <div class="sub header feature">Built with advanced users in mind, with internals that can be <b>easily tweaked and enhanced</b> with new systems, ensuring it is suitable for projects with highly specialized features as well as to serve as a quality foundation for higher level frameworks, engines or tools. Offers a <b>clean, modular architecture</b> that is easy to follow and modify. Implementations are <b>lightweight</b> without the crud often found in older, larger solutions. The internals are fully documented and come with a set of manuals guiding you how to extend various aspects of the core.</div>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <div class="eight wide column">
+                                        <div class="ui grid">
+                                            <div class="row">
+                                                <div class="eight wide column">
+                                                    <a class="showModal1" style="cursor: pointer">
+                                                        <img class="ui centered bordered rounded image" src="images/1thumb.png">
+                                                    </a>
+                                                </div>
+                                                <div class="eight wide column">
+                                                    <a class="showModal2" style="cursor: pointer">
+                                                        <img class="ui centered bordered rounded image" src="images/2thumb.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="eight wide column">
+                                                    <a class="showModal3" style="cursor: pointer">
+                                                        <img class="ui centered bordered rounded image" src="images/3thumb.gif">
+                                                    </a>
+                                                </div>
+                                                <div class="eight wide column">
+                                                    <a class="showModal4" style="cursor: pointer">
+                                                        <img class="ui centered bordered rounded image" src="images/4thumb.gif">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="eight wide column">
+                                                    <a class="showModal5" style="cursor: pointer">
+                                                        <img class="ui centered bordered rounded image" src="images/5thumb.png">
+                                                    </a>
+                                                </div>
+                                                <div class="eight wide column">
+                                                    <a class="showModal6" style="cursor: pointer">
+                                                        <img class="ui centered bordered rounded image" src="images/6thumb.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="ui inverted header subTitle" style="border-bottom: 1px solid #555555">
+                            Get started
+                        </h2>
+                        <div class="ui middle aligned stackable grid container">
+                            <div class="row">
+                                <div class="eight wide column">
+                                    <div class="ui fluid raised card">
+                                        <div class="content">
+                                            <div class="header">User manuals</div>
+                                            <div class="description">
+                                                <p>Visit the documentation and start reading the user manuals. They will show you how to use the framework from the ground up, including how to get started with your own project.</p>
+                                            </div>
+                                        </div>
+                                        <a class="ui bottom attached button" href="docs/index.html">
+                                            <i class="external square icon"></i>
+                                            Visit
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="eight wide column">
+                                    <div class="ui fluid raised card">
+                                        <div class="content">
+                                            <div class="header">Examples</div>
+                                            <div class="description">
+                                                <p>Take a look at working examples utilizing the framework. Analyze and tweak them in order to learn, or even expand them into your own project! Take this option if you want a quick start.</p>
+                                            </div>
+                                        </div>
+                                        <a class="ui bottom attached button" href="https://github.com/GameFoundry/bsfExamples">
+                                            <i class="external square icon"></i>
+                                            Visit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="ui inverted vertical footer segment" style="border-top: 2px solid #f9500d;">
+                    <div class="ui container">
+                        <div class="ui stackable inverted divided equal height grid">
+                            <div class="three wide column">
+                                <h4 class="ui inverted header">Contact</h4>
+                                <div class="ui inverted link list">
+                                    <a href="mailto:contact@bsframework.io" class="item">Contact us</a>
+                                    <a href="https://github.com/GameFoundry/bsf/issues" target="_blank" class="item">Report an issue</a>
+                                </div>
+                            </div>
+                            <div class="three wide column">
+                                <h4 class="ui inverted header">Info</h4>
+                                <div class="ui inverted link list">
+                                    <a href="https://github.com/GameFoundry/bsf" target="_blank" class="item">Contribute</a>
+                                    <a href="https://github.com/GameFoundry/bsf/blob/master/Documentation/GitHub/roadmap.md" target="_blank" class="item">Roadmap</a>
+                                    <a href="https://github.com/GameFoundry/bsf/blob/master/LICENSE.md" target="_blank" class="item">License</a>
+                                </div>
+                            </div>
+                            <div class="seven wide column">
+                                <h4 class="ui inverted header">Donate</h4>
+                                <div class="ui horizontal list">
+                                    <div class="item"><a href="https://www.patreon.com/bsf"><img class="ui image" src="images/become_a_patron_button.png"></a></div>
+                                    <div class="item"><a href="https://www.paypal.me/MarkoPintera/10" target="_blank"><img class="ui image" src="images/paypalDonate.png"></a></div>
+                                </div>
+                                <p style="padding-top:7px"><i>bs::f</i> is developed by Marko Pintera and contributors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
