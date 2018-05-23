@@ -207,6 +207,10 @@ Methods</h2></td></tr>
 <tr class="memitem:a51b186821556ed27f191a1efd1ae6158"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_element.html#a51b186821556ed27f191a1efd1ae6158">_acceptDragAndDrop</a> (const <a class="el" href="structbs_1_1_vector2_i.html">Vector2I</a> position, UINT32 typeId) const</td></tr>
 <tr class="memdesc:a51b186821556ed27f191a1efd1ae6158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the GUI element accepts a drag and drop operation of the specified type.  <a href="#a51b186821556ed27f191a1efd1ae6158">More...</a><br /></td></tr>
 <tr class="separator:a51b186821556ed27f191a1efd1ae6158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7c3c41ee49d16ccd86a61898b46dfe"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_element.html#a2f7c3c41ee49d16ccd86a61898b46dfe">_acceptsInputFocus</a> () const</td></tr>
+<tr class="memdesc:a2f7c3c41ee49d16ccd86a61898b46dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />
+Checks if the GUI element can receive input focus.  <a href="#a2f7c3c41ee49d16ccd86a61898b46dfe">More...</a><br /></td></tr>
+<tr class="separator:a2f7c3c41ee49d16ccd86a61898b46dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f3cf368a53c6189864a09e6f2fb4e55"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1_g_u_i_context_menu.html">GUIContextMenu</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_element.html#a0f3cf368a53c6189864a09e6f2fb4e55">_getContextMenu</a> () const</td></tr>
 <tr class="memdesc:a0f3cf368a53c6189864a09e6f2fb4e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a context menu if a GUI element has one.  <a href="#a0f3cf368a53c6189864a09e6f2fb4e55">More...</a><br /></td></tr>
 <tr class="separator:a0f3cf368a53c6189864a09e6f2fb4e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,6 +449,37 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a2f7c3c41ee49d16ccd86a61898b46dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7c3c41ee49d16ccd86a61898b46dfe">&#9670;&nbsp;</a></span>_acceptsInputFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool _acceptsInputFocus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><br />
+Checks if the GUI element can receive input focus. </p>
+<p>This controls whether the element can receive focus when "tabbing" between elements. </p>
+
+<p>Reimplemented in <a class="el" href="classbs_1_1_g_u_i_input_box.html#ae3e984725a0235b7ccde2224b8e327f0">GUIInputBox</a>, <a class="el" href="classbs_1_1_g_u_i_button_base.html#ae3e984725a0235b7ccde2224b8e327f0">GUIButtonBase</a>, and <a class="el" href="classbs_1_1_g_u_i_slider.html#ae3e984725a0235b7ccde2224b8e327f0">GUISlider</a>.</p>
+
+</div>
+</div>
 <a id="a66a10849212294431b28d1d7ca99185d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66a10849212294431b28d1d7ca99185d">&#9670;&nbsp;</a></span>_changeParentWidget()</h2>
 
@@ -504,7 +539,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Called when a command event is triggered. </p>
 <p>Return true if you have processed the event and don't want other elements to process it. </p>
 
-<p>Reimplemented in <a class="el" href="classbs_1_1_g_u_i_input_box.html#a54cc6531ff5c7a743f31d4a54307f7d9">GUIInputBox</a>, <a class="el" href="classbs_1_1_g_u_i_drop_down_content.html#a54cc6531ff5c7a743f31d4a54307f7d9">GUIDropDownContent</a>, and <a class="el" href="classbs_1_1_g_u_i_element_container.html#ad0615f1728da16b81b1bf5a16764df62">GUIElementContainer</a>.</p>
+<p>Reimplemented in <a class="el" href="classbs_1_1_g_u_i_toggle.html#a54cc6531ff5c7a743f31d4a54307f7d9">GUIToggle</a>, <a class="el" href="classbs_1_1_g_u_i_input_box.html#a54cc6531ff5c7a743f31d4a54307f7d9">GUIInputBox</a>, <a class="el" href="classbs_1_1_g_u_i_slider.html#a54cc6531ff5c7a743f31d4a54307f7d9">GUISlider</a>, <a class="el" href="classbs_1_1_g_u_i_drop_down_content.html#a54cc6531ff5c7a743f31d4a54307f7d9">GUIDropDownContent</a>, <a class="el" href="classbs_1_1_g_u_i_button_base.html#a54cc6531ff5c7a743f31d4a54307f7d9">GUIButtonBase</a>, and <a class="el" href="classbs_1_1_g_u_i_element_container.html#ad0615f1728da16b81b1bf5a16764df62">GUIElementContainer</a>.</p>
 
 </div>
 </div>
@@ -1820,7 +1855,7 @@ For example if you are rendering a button with an image and a text you will want
 <p>Called whenever element clipped bounds need to be recalculated. </p>
 <p>(for example when width, height or clip rectangles changes). </p>
 
-<p>Reimplemented in <a class="el" href="classbs_1_1_g_u_i_scroll_area.html#a861f25645a58971dd4b27feec6109865">GUIScrollArea</a>, <a class="el" href="classbs_1_1_g_u_i_slider_handle.html#a861f25645a58971dd4b27feec6109865">GUISliderHandle</a>, <a class="el" href="classbs_1_1_g_u_i_input_box.html#a861f25645a58971dd4b27feec6109865">GUIInputBox</a>, <a class="el" href="classbs_1_1_g_u_i_scroll_bar.html#a861f25645a58971dd4b27feec6109865">GUIScrollBar</a>, and <a class="el" href="classbs_1_1_g_u_i_viewport.html#a861f25645a58971dd4b27feec6109865">GUIViewport</a>.</p>
+<p>Reimplemented in <a class="el" href="classbs_1_1_g_u_i_slider_handle.html#a861f25645a58971dd4b27feec6109865">GUISliderHandle</a>, <a class="el" href="classbs_1_1_g_u_i_scroll_area.html#a861f25645a58971dd4b27feec6109865">GUIScrollArea</a>, <a class="el" href="classbs_1_1_g_u_i_input_box.html#a861f25645a58971dd4b27feec6109865">GUIInputBox</a>, <a class="el" href="classbs_1_1_g_u_i_scroll_bar.html#a861f25645a58971dd4b27feec6109865">GUIScrollBar</a>, and <a class="el" href="classbs_1_1_g_u_i_viewport.html#a861f25645a58971dd4b27feec6109865">GUIViewport</a>.</p>
 
 </div>
 </div>

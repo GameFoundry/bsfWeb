@@ -187,6 +187,7 @@ var searchData=
   ['bs_5fstack_5fdelete',['bs_stack_delete',['../group___memory.html#ga5377cdd5d095cefe6c394d40a071455b',1,'bs::bs_stack_delete(T *data)'],['../group___memory.html#gadbf58c1b2072f7702c5a0e4c5eca4fff',1,'bs::bs_stack_delete(T *data, UINT32 count)']]],
   ['bs_5fstack_5ffree',['bs_stack_free',['../group___memory.html#ga9e8c54648877a868f0bf83378afc6133',1,'bs']]],
   ['bs_5fstack_5fnew',['bs_stack_new',['../group___memory.html#ga6bbf50949ca59d848c31464b128b1d0d',1,'bs::bs_stack_new(UINT32 count=0)'],['../group___memory.html#gab56875fb0c6b332a2e3a3ebc335e9c13',1,'bs::bs_stack_new(Args &amp;&amp;...args, UINT32 count=0)']]],
+  ['bs_5fswap_5fand_5ferase',['bs_swap_and_erase',['../group___general.html#gab5a7bff4d1c5f407f4704ad9970f45cd',1,'bs']]],
   ['bs_5ftest_5fassert',['BS_TEST_ASSERT',['../group___testing.html#ga4569da3e55d9ff19e7470be1f50bd0df',1,'BsTestSuite.h']]],
   ['bs_5ftest_5fassert_5fmsg',['BS_TEST_ASSERT_MSG',['../group___testing.html#ga79a0b9244e2fc38aa5f3a75a822c5c40',1,'BsTestSuite.h']]],
   ['bs_5fthread_5fcurrent_5fid',['BS_THREAD_CURRENT_ID',['../group___threading.html#ga6a60e5f0ae1d93dd8b503f089798e38a',1,'BsThreadDefines.h']]],

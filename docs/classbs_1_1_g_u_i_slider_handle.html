@@ -109,6 +109,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memdesc:afbc210df8a78226891f61c3aed33fbb6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />
 Sets a step that defines the minimal increment the value can be increased/decreased by.  <a href="#afbc210df8a78226891f61c3aed33fbb6">More...</a><br /></td></tr>
 <tr class="separator:afbc210df8a78226891f61c3aed33fbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9233c5cdc6e7a813936539a0f1c36e8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_slider_handle.html#a9233c5cdc6e7a813936539a0f1c36e8d">moveOneStep</a> (bool forward)</td></tr>
+<tr class="memdesc:a9233c5cdc6e7a813936539a0f1c36e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the slider handle one step forwards or backwards.  <a href="#a9233c5cdc6e7a813936539a0f1c36e8d">More...</a><br /></td></tr>
+<tr class="separator:a9233c5cdc6e7a813936539a0f1c36e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Internal</div></td></tr>
 <tr class="memitem:ab46c06acb8b853908ce02eead4addbea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_slider_handle.html#ab46c06acb8b853908ce02eead4addbea">_setHandleSize</a> (float pct)</td></tr>
 <tr class="memdesc:ab46c06acb8b853908ce02eead4addbea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the handle in percent of the total draggable area, along the handle drag direction.  <a href="#ab46c06acb8b853908ce02eead4addbea">More...</a><br /></td></tr>
@@ -222,6 +225,10 @@ Sets a step that defines the minimal increment the value can be increased/decrea
 <tr class="memitem:a51b186821556ed27f191a1efd1ae6158 inherit pub_methods_classbs_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_element.html#a51b186821556ed27f191a1efd1ae6158">_acceptDragAndDrop</a> (const <a class="el" href="structbs_1_1_vector2_i.html">Vector2I</a> position, UINT32 typeId) const</td></tr>
 <tr class="memdesc:a51b186821556ed27f191a1efd1ae6158 inherit pub_methods_classbs_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the GUI element accepts a drag and drop operation of the specified type.  <a href="classbs_1_1_g_u_i_element.html#a51b186821556ed27f191a1efd1ae6158">More...</a><br /></td></tr>
 <tr class="separator:a51b186821556ed27f191a1efd1ae6158 inherit pub_methods_classbs_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7c3c41ee49d16ccd86a61898b46dfe inherit pub_methods_classbs_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_element.html#a2f7c3c41ee49d16ccd86a61898b46dfe">_acceptsInputFocus</a> () const</td></tr>
+<tr class="memdesc:a2f7c3c41ee49d16ccd86a61898b46dfe inherit pub_methods_classbs_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />
+Checks if the GUI element can receive input focus.  <a href="classbs_1_1_g_u_i_element.html#a2f7c3c41ee49d16ccd86a61898b46dfe">More...</a><br /></td></tr>
+<tr class="separator:a2f7c3c41ee49d16ccd86a61898b46dfe inherit pub_methods_classbs_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f3cf368a53c6189864a09e6f2fb4e55 inherit pub_methods_classbs_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1_g_u_i_context_menu.html">GUIContextMenu</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_element.html#a0f3cf368a53c6189864a09e6f2fb4e55">_getContextMenu</a> () const</td></tr>
 <tr class="memdesc:a0f3cf368a53c6189864a09e6f2fb4e55 inherit pub_methods_classbs_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a context menu if a GUI element has one.  <a href="classbs_1_1_g_u_i_element.html#a0f3cf368a53c6189864a09e6f2fb4e55">More...</a><br /></td></tr>
 <tr class="separator:a0f3cf368a53c6189864a09e6f2fb4e55 inherit pub_methods_classbs_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -948,6 +955,27 @@ GUI system attempts to reduce the number of GUI meshes so it will group sprites 
 
 </div>
 </div>
+<a id="a9233c5cdc6e7a813936539a0f1c36e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9233c5cdc6e7a813936539a0f1c36e8d">&#9670;&nbsp;</a></span>moveOneStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moveOneStep </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forward</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves the slider handle one step forwards or backwards. </p>
+<p>Step size is determined by step (if set) or handle size otherwise. If <code>forward</code> is true the handle is moved one step forward, otherwise one step backward. </p>
+
+</div>
+</div>
 <a id="afbc210df8a78226891f61c3aed33fbb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbc210df8a78226891f61c3aed33fbb6">&#9670;&nbsp;</a></span>setStep()</h2>
 
@@ -966,7 +994,7 @@ GUI system attempts to reduce the number of GUI meshes so it will group sprites 
 
 <p><br />
 Sets a step that defines the minimal increment the value can be increased/decreased by. </p>
-<p>Set to zero to have no step. </p>
+<p>Set to zero to have no step. In percent. </p>
 
 </div>
 </div>

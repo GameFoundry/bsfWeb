@@ -1446,6 +1446,7 @@ var searchData=
   ['guisliderhorz',['GUISliderHorz',['../classbs_1_1_g_u_i_slider_horz.html',1,'bs']]],
   ['guislidervert',['GUISliderVert',['../classbs_1_1_g_u_i_slider_vert.html',1,'bs']]],
   ['gui_20styles',['GUI styles',['../gui_styles.html',1,'']]],
+  ['guitabgroup',['GUITabGroup',['../classbs_1_1_g_u_i_tab_group.html',1,'bs']]],
   ['guitextinputevent',['GUITextInputEvent',['../classbs_1_1_g_u_i_text_input_event.html',1,'bs']]],
   ['guitexture',['GUITexture',['../classbs_1_1_g_u_i_texture.html',1,'bs']]],
   ['guitoggle',['GUIToggle',['../classbs_1_1_g_u_i_toggle.html',1,'bs']]],

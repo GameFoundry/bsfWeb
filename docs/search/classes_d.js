@@ -3,7 +3,7 @@ var searchData=
   ['macoscontext',['MacOSContext',['../classbs_1_1ct_1_1_mac_o_s_context.html',1,'bs::ct']]],
   ['macosglsupport',['MacOSGLSupport',['../classbs_1_1ct_1_1_mac_o_s_g_l_support.html',1,'bs::ct']]],
   ['macosplatform',['MacOSPlatform',['../classbs_1_1_mac_o_s_platform.html',1,'bs']]],
-  ['macosrenderwindow',['MacOSRenderWindow',['../classbs_1_1ct_1_1_mac_o_s_render_window.html',1,'MacOSRenderWindow'],['../classbs_1_1_mac_o_s_render_window.html',1,'MacOSRenderWindow']]],
+  ['macosrenderwindow',['MacOSRenderWindow',['../classbs_1_1_mac_o_s_render_window.html',1,'MacOSRenderWindow'],['../classbs_1_1ct_1_1_mac_o_s_render_window.html',1,'MacOSRenderWindow']]],
   ['macosvideomode',['MacOSVideoMode',['../classbs_1_1ct_1_1_mac_o_s_video_mode.html',1,'bs::ct']]],
   ['macosvideomodeinfo',['MacOSVideoModeInfo',['../classbs_1_1ct_1_1_mac_o_s_video_mode_info.html',1,'bs::ct']]],
   ['macosvideooutputinfo',['MacOSVideoOutputInfo',['../classbs_1_1ct_1_1_mac_o_s_video_output_info.html',1,'bs::ct']]],

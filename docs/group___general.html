@@ -265,6 +265,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga91dc514cff2002959cdaf4240bce7b82"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#ga91dc514cff2002959cdaf4240bce7b82">bs_size</a> (const T(&amp;array)[N])</td></tr>
 <tr class="memdesc:ga91dc514cff2002959cdaf4240bce7b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the provided static array.  <a href="group___general.html#ga91dc514cff2002959cdaf4240bce7b82">More...</a><br /></td></tr>
 <tr class="separator:ga91dc514cff2002959cdaf4240bce7b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5a7bff4d1c5f407f4704ad9970f45cd"><td class="memTemplParams" colspan="2">template&lt;class T , class A  = StdAlloc&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:gab5a7bff4d1c5f407f4704ad9970f45cd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#gab5a7bff4d1c5f407f4704ad9970f45cd">bs_swap_and_erase</a> (<a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; T, A &gt; &amp;container, const typename <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; T, A &gt;::iterator iter)</td></tr>
+<tr class="memdesc:gab5a7bff4d1c5f407f4704ad9970f45cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases the provided element from the container, but first swaps the element so its located at the end of the container, making the erase operation cheaper at the cost of an extra copy.  <a href="group___general.html#gab5a7bff4d1c5f407f4704ad9970f45cd">More...</a><br /></td></tr>
+<tr class="separator:gab5a7bff4d1c5f407f4704ad9970f45cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gae64ac6a25e31d7ec09110ec9acc8be2a"></a>
@@ -501,6 +505,37 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the size of the provided static array. </p>
+
+</div>
+</div>
+<a id="gab5a7bff4d1c5f407f4704ad9970f45cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5a7bff4d1c5f407f4704ad9970f45cd">&#9670;&nbsp;</a></span>bs_swap_and_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bs::bs_swap_and_erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; T, A &gt; &amp;&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; T, A &gt;::iterator&#160;</td>
+          <td class="paramname"><em>iter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Erases the provided element from the container, but first swaps the element so its located at the end of the container, making the erase operation cheaper at the cost of an extra copy. </p>
+<p>Return true if a swap occurred, or false if the element was already at the end of the container. </p>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['camera',['Camera',['../classbs_1_1_camera.html',1,'Camera'],['../classbs_1_1ct_1_1_camera.html',1,'Camera']]],
+  ['camera',['Camera',['../classbs_1_1ct_1_1_camera.html',1,'Camera'],['../classbs_1_1_camera.html',1,'Camera']]],
   ['camerabase',['CameraBase',['../classbs_1_1_camera_base.html',1,'bs']]],
   ['canimation',['CAnimation',['../classbs_1_1_c_animation.html',1,'bs']]],
   ['canvaselement',['CanvasElement',['../structbs_1_1_g_u_i_canvas_1_1_canvas_element.html',1,'bs::GUICanvas']]],

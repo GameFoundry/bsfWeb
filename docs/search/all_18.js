@@ -19,7 +19,7 @@ var searchData=
   ['win32glsupport',['Win32GLSupport',['../classbs_1_1ct_1_1_win32_g_l_support.html',1,'bs::ct']]],
   ['win32platform',['Win32Platform',['../classbs_1_1_win32_platform.html',1,'bs']]],
   ['win32platformutility',['Win32PlatformUtility',['../classbs_1_1_win32_platform_utility.html',1,'bs']]],
-  ['win32renderwindow',['Win32RenderWindow',['../classbs_1_1ct_1_1_win32_render_window.html',1,'Win32RenderWindow'],['../classbs_1_1_win32_render_window.html',1,'Win32RenderWindow']]],
+  ['win32renderwindow',['Win32RenderWindow',['../classbs_1_1_win32_render_window.html',1,'Win32RenderWindow'],['../classbs_1_1ct_1_1_win32_render_window.html',1,'Win32RenderWindow']]],
   ['win32videomode',['Win32VideoMode',['../classbs_1_1ct_1_1_win32_video_mode.html',1,'bs::ct']]],
   ['win32videomodeinfo',['Win32VideoModeInfo',['../classbs_1_1ct_1_1_win32_video_mode_info.html',1,'bs::ct']]],
   ['win32videooutputinfo',['Win32VideoOutputInfo',['../classbs_1_1ct_1_1_win32_video_output_info.html',1,'bs::ct']]],

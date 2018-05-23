@@ -40,6 +40,7 @@ var searchData=
   ['unregisterbutton',['unregisterButton',['../classbs_1_1_input_configuration.html#a07d0f3327a37d348b732c3a062c20748',1,'bs::InputConfiguration']]],
   ['unregistercamera',['unregisterCamera',['../classbs_1_1ct_1_1_renderer_scene.html#ac5a94a103f8abb3897b55bd088cc8658',1,'bs::ct::RendererScene']]],
   ['unregisterdroptarget',['unregisterDropTarget',['../classbs_1_1_linux_drag_and_drop.html#a6d975e97e1cd3d70a3397023c564269a',1,'bs::LinuxDragAndDrop::unregisterDropTarget()'],['../classbs_1_1_cocoa_drag_and_drop.html#a6d975e97e1cd3d70a3397023c564269a',1,'bs::CocoaDragAndDrop::unregisterDropTarget()'],['../classbs_1_1_win32_drop_target.html#a8027df56a62f7cfb6857e2c489ace51c',1,'bs::Win32DropTarget::unregisterDropTarget()'],['../classbs_1_1_win32_platform.html#a6d975e97e1cd3d70a3397023c564269a',1,'bs::Win32Platform::unregisterDropTarget()']]],
+  ['unregisterelement',['unregisterElement',['../classbs_1_1_g_u_i_tab_group.html#a5dde026072a2ee629bac73c3561b90f5',1,'bs::GUITabGroup']]],
   ['unregisterlight',['unregisterLight',['../classbs_1_1ct_1_1_renderer_scene.html#a3d597dc2851656e2254042e71c417b97',1,'bs::ct::RendererScene']]],
   ['unregisterlightprobevolume',['unregisterLightProbeVolume',['../classbs_1_1ct_1_1_renderer_scene.html#a0daf4d43eb70259c02f72b0f19b805e9',1,'bs::ct::RendererScene']]],
   ['unregisterlistener',['unregisterListener',['../classbs_1_1_resource_listener_manager.html#ae195ac8c55b38ecff1cf373889bd89b8',1,'bs::ResourceListenerManager']]],
