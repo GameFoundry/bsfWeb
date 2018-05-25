@@ -972,6 +972,9 @@ A GUI element that allows the user to draw custom graphics.  <a href="classbs_1_
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_mouse_event.html">GUIMouseEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains data about a GUI mouse input event.  <a href="classbs_1_1_g_u_i_mouse_event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_nav_group.html">GUINavGroup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a set of elements that can be navigated between using keyboard or gamepad buttons (i.e.  <a href="classbs_1_1_g_u_i_nav_group.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_option.html">GUIOption</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls GUI element layout options, possibly by overriding the default options specified in GUI element style.  <a href="classbs_1_1_g_u_i_option.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1013,9 +1016,6 @@ A GUI element that allows the user to draw custom graphics.  <a href="classbs_1_
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_slider_vert.html">GUISliderVert</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vertical slider with a draggable handle.  <a href="classbs_1_1_g_u_i_slider_vert.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_tab_group.html">GUITabGroup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a set of elements that can be navigated between using keyboard or gamepad buttons (i.e.  <a href="classbs_1_1_g_u_i_tab_group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_text_input_event.html">GUITextInputEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A text input event representing input of a single character.  <a href="classbs_1_1_g_u_i_text_input_event.html#details">More...</a><br /></td></tr>
@@ -3148,6 +3148,9 @@ typedef <a class="el" href="group___resources.html#ga9725baf9e9bc1d578543a89a7e4
 <tr class="memitem:a03bc2d18d50acbd707a5c5c8dadc4f4a"><td class="memItemLeft" align="right" valign="top"><a id="a03bc2d18d50acbd707a5c5c8dadc4f4a"></a>
 typedef <a class="el" href="group___resources.html#ga9725baf9e9bc1d578543a89a7e49cee2">ResourceHandle</a>&lt; <a class="el" href="classbs_1_1_g_u_i_skin.html">GUISkin</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>HGUISkin</b></td></tr>
 <tr class="separator:a03bc2d18d50acbd707a5c5c8dadc4f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13477c8210ccc2474377a9d66e01f8ed"><td class="memItemLeft" align="right" valign="top">
+typedef <a class="el" href="classbs_1_1_flags.html">Flags</a>&lt; <a class="el" href="group___implementation.html#gaf8997078b55539e00e121be44faf68f2">GUIElementOption</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElementOptions</b></td></tr>
+<tr class="separator:ga13477c8210ccc2474377a9d66e01f8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3eca48af19f5646f5ea012b37334c08d"><td class="memItemLeft" align="right" valign="top">
 typedef <a class="el" href="classbs_1_1_flags.html">Flags</a>&lt; <a class="el" href="group___g_u_i-_internal.html#gaa7f304dfb105038f89b54215ff3f7a03">GUISliderHandleFlag</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GUISliderHandleFlags</b></td></tr>
 <tr class="separator:ga3eca48af19f5646f5ea012b37334c08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5213,12 +5216,15 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a4d3d769b812b6faa6b76e1a8abaece2d">Active</a> = 0x04, 
 <a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18aa2e08e1fbbc3e1489d688eba112f7964">Focused</a> = 0x08, 
 <br />
-&#160;&#160;<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acf0411365ab5aaf6e4557bf52b9c295b">NormalOn</a> = 0x11, 
-<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a2b804e31eb7365661955c8f7e9bcb714">HoverOn</a> = 0x12, 
-<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acc47c5951b7415a81579f1abf0aa9456">ActiveOn</a> = 0x14, 
-<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a61174523f86fbacb58fa35ba7bbcbd99">FocusedOn</a> = 0x18, 
+&#160;&#160;<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a84dfd3e1a6504c345d2660eda10feef0">FocusedHover</a> = 0x10, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acf0411365ab5aaf6e4557bf52b9c295b">NormalOn</a> = 0x101, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a2b804e31eb7365661955c8f7e9bcb714">HoverOn</a> = 0x102, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acc47c5951b7415a81579f1abf0aa9456">ActiveOn</a> = 0x104, 
 <br />
-&#160;&#160;<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18ab89543294e09c87ecfe3972f3690848c">TypeMask</a> = 0x0F
+&#160;&#160;<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a61174523f86fbacb58fa35ba7bbcbd99">FocusedOn</a> = 0x108, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a29d24fac013bb1373c54abd523fa70eb">FocusedHoverOn</a> = 0x110, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18ab89543294e09c87ecfe3972f3690848c">TypeMask</a> = 0xFF, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acf2e696856c781bc638c9b8fbc0fc75b">OnFlag</a> = 0x100
 <br />
  }</td></tr>
 <tr class="memdesc:ga1a3cf4153c3af7870916e20a9b219b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of GUI element states.  <a href="group___g_u_i.html#ga1a3cf4153c3af7870916e20a9b219b18">More...</a><br /></td></tr>
@@ -5237,6 +5243,10 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gaabe10a7c90e8ac554b89e8ac1642d8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of drop down box types.  <a href="group___g_u_i-_internal.html#gaabe10a7c90e8ac554b89e8ac1642d8e6">More...</a><br /></td></tr>
 <tr class="separator:gaabe10a7c90e8ac554b89e8ac1642d8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8997078b55539e00e121be44faf68f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___implementation.html#gaf8997078b55539e00e121be44faf68f2">GUIElementOption</a> { <a class="el" href="group___implementation.html#ggaf8997078b55539e00e121be44faf68f2aa111aa5696074e8f3657d78f5629b952">ClickThrough</a>, 
+<a class="el" href="group___implementation.html#ggaf8997078b55539e00e121be44faf68f2a527eaa89602a60a76c1490556f7010b3">AcceptsKeyFocus</a>
+ }</td></tr>
+<tr class="separator:gaf8997078b55539e00e121be44faf68f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga392ddd6f866111446b105fb47bc9e51f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_u_i.html#ga392ddd6f866111446b105fb47bc9e51f">GUIImagePosition</a> { <b>Left</b>, 
 <b>Right</b>
  }</td></tr>

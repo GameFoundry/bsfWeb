@@ -101,11 +101,12 @@ GUI style properties</h1>
 <p><b>GUIElementStyle</b> allows you to set a variety of different properties to customize its look. They can be categorized into <em>states</em>, <em>textual</em>, <em>dimensions</em> and <em>offsets</em>.</p>
 <h2><a class="anchor" id="guiStyles_a_a"></a>
 States</h2>
-<p>States are used to change how an element looks as the user interacts with the element. There are four different states:</p><ul>
+<p>States are used to change how an element looks as the user interacts with the element. There are five different states:</p><ul>
 <li>Normal - Default state when no interaction is happening</li>
 <li>Hover - State when the user is hovering the pointer over the element</li>
 <li>Active - State when the user is interacting with the element</li>
 <li>Focused - State when the element has input focus</li>
+<li>Focused hover - State when the element has input focus and the user is hovering the pointer over the element</li>
 </ul>
 <p>All elements must have a <em>normal</em> state. This is the state that defines their default look. Elements that can be interacted with (like buttons) can optionally also provide the remaining states.</p>
 <p>The states can be set in <b>GUIElementStyle</b> by populating the following fields:</p><ul>
@@ -113,12 +114,14 @@ States</h2>
 <li><a class="el" href="structbs_1_1_g_u_i_element_style.html#a946d879d043b3323b7425d5315ea3432">GUIElementStyle::hover</a></li>
 <li><a class="el" href="structbs_1_1_g_u_i_element_style.html#a033f6acd41fed60fe4e453f526701298">GUIElementStyle::active</a></li>
 <li><a class="el" href="structbs_1_1_g_u_i_element_style.html#aef51f13ac8d2380a06f6fca30250b491">GUIElementStyle::focused</a></li>
+<li><a class="el" href="structbs_1_1_g_u_i_element_style.html#a72f949d89a9376618ab4b52a21bfd443">GUIElementStyle::focusedHover</a></li>
 </ul>
 <p>Additionally, certain elements can be permanently toggled on or off (i.e. toggle buttons). In that case it is useful to have a separate set of states for on and off modes. Therefore there are also states specific to the "on" mode (while above states default to "off"):</p><ul>
 <li><a class="el" href="structbs_1_1_g_u_i_element_style.html#a97b00a31c71377e2bcc5565771db3c0c">GUIElementStyle::normalOn</a></li>
 <li><a class="el" href="structbs_1_1_g_u_i_element_style.html#a1ae584073182187561c4d38aeab245e1">GUIElementStyle::hoverOn</a></li>
 <li><a class="el" href="structbs_1_1_g_u_i_element_style.html#a15b03cb2e96e8c9c228ba0a41262adbd">GUIElementStyle::activeOn</a></li>
 <li><a class="el" href="structbs_1_1_g_u_i_element_style.html#a418d84ab3b00fa66b628fef94c8df537">GUIElementStyle::focusedOn</a></li>
+<li><a class="el" href="structbs_1_1_g_u_i_element_style.html#a77246af5e8a25595210c5dbe28e725de">GUIElementStyle::focusedHoverOn</a></li>
 </ul>
 <p>Each of these eight states is a <a class="el" href="structbs_1_1_g_u_i_element_style_1_1_g_u_i_element_state_style.html">GUIElementStateStyle</a> object, which contains a single sprite texture and a text color tint. When the style is active the element will render the provided texture covering its available area, and render any text using the provided color.</p>
 <p>An example that sets up a button style that has different textures depending if the button is in normal, hovered or active state: </p><div class="fragment"><div class="line">HTexture normalTex = <a class="code" href="group___importer.html#gafda9808bfcae11afa60eee731056225e">gImporter</a>().<a class="code" href="classbs_1_1_importer.html#a956425fa45716612e04b109701bdd62f">import</a>&lt;Texture&gt;(<span class="stringliteral">&quot;normal.png&quot;</span>);</div><div class="line">HTexture hoverTex = <a class="code" href="group___importer.html#gafda9808bfcae11afa60eee731056225e">gImporter</a>().<a class="code" href="classbs_1_1_importer.html#a956425fa45716612e04b109701bdd62f">import</a>&lt;Texture&gt;(<span class="stringliteral">&quot;hover.png&quot;</span>);</div><div class="line">HTexture activeTex = <a class="code" href="group___importer.html#gafda9808bfcae11afa60eee731056225e">gImporter</a>().<a class="code" href="classbs_1_1_importer.html#a956425fa45716612e04b109701bdd62f">import</a>&lt;Texture&gt;(<span class="stringliteral">&quot;active.png&quot;</span>);</div><div class="line"></div><div class="line">GUIElementStyle myButtonStyle;</div><div class="line">myButtonStyle.normal.texture = SpriteTexture::create(normalTex);</div><div class="line">myButtonStyle.hover.texture = SpriteTexture::create(hoverTex);</div><div class="line">myButtonStyle.active.texture = SpriteTexture::create(activeTex);</div></div><!-- fragment --><h2><a class="anchor" id="guiStyles_a_b"></a>

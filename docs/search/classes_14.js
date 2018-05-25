@@ -43,7 +43,7 @@ var searchData=
   ['textinputevent',['TextInputEvent',['../structbs_1_1_text_input_event.html',1,'bs']]],
   ['textline',['TextLine',['../classbs_1_1_text_data_base_1_1_text_line.html',1,'bs::TextDataBase']]],
   ['textsprite',['TextSprite',['../classbs_1_1_text_sprite.html',1,'bs']]],
-  ['texture',['Texture',['../classbs_1_1ct_1_1_texture.html',1,'Texture'],['../classbs_1_1_texture.html',1,'Texture']]],
+  ['texture',['Texture',['../classbs_1_1_texture.html',1,'Texture'],['../classbs_1_1ct_1_1_texture.html',1,'Texture']]],
   ['texture_5fcopy_5fdesc',['TEXTURE_COPY_DESC',['../structbs_1_1_t_e_x_t_u_r_e___c_o_p_y___d_e_s_c.html',1,'bs']]],
   ['texture_5fdesc',['TEXTURE_DESC',['../structbs_1_1_t_e_x_t_u_r_e___d_e_s_c.html',1,'bs']]],
   ['texture_5fview_5fdesc',['TEXTURE_VIEW_DESC',['../structbs_1_1ct_1_1_t_e_x_t_u_r_e___v_i_e_w___d_e_s_c.html',1,'bs::ct']]],

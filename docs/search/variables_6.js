@@ -24,6 +24,8 @@ var searchData=
   ['focaldistance',['focalDistance',['../structbs_1_1_depth_of_field_settings.html#a57f00d353f941a588ca5edb1f9a4f8cd',1,'bs::DepthOfFieldSettings']]],
   ['focalrange',['focalRange',['../structbs_1_1_depth_of_field_settings.html#aab255d3a6563d5e7da9cf62a816cc434',1,'bs::DepthOfFieldSettings']]],
   ['focused',['focused',['../structbs_1_1_g_u_i_element_style.html#aef51f13ac8d2380a06f6fca30250b491',1,'bs::GUIElementStyle']]],
+  ['focusedhover',['focusedHover',['../structbs_1_1_g_u_i_element_style.html#a72f949d89a9376618ab4b52a21bfd443',1,'bs::GUIElementStyle']]],
+  ['focusedhoveron',['focusedHoverOn',['../structbs_1_1_g_u_i_element_style.html#a77246af5e8a25595210c5dbe28e725de',1,'bs::GUIElementStyle']]],
   ['focusedon',['focusedOn',['../structbs_1_1_g_u_i_element_style.html#a418d84ab3b00fa66b628fef94c8df537',1,'bs::GUIElementStyle']]],
   ['font',['font',['../structbs_1_1_t_e_x_t___s_p_r_i_t_e___d_e_s_c.html#aecb2cd98d23679bfca70f34b27938aa6',1,'bs::TEXT_SPRITE_DESC::font()'],['../structbs_1_1_g_u_i_element_style.html#aecb2cd98d23679bfca70f34b27938aa6',1,'bs::GUIElementStyle::font()']]],
   ['fontsize',['fontSize',['../structbs_1_1_t_e_x_t___s_p_r_i_t_e___d_e_s_c.html#aba0194db9909ae0a490964874171e7ff',1,'bs::TEXT_SPRITE_DESC::fontSize()'],['../structbs_1_1_g_u_i_element_style.html#aba0194db9909ae0a490964874171e7ff',1,'bs::GUIElementStyle::fontSize()']]],

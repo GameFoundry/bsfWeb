@@ -20,6 +20,7 @@ var searchData=
   ['guidimensionflags',['GUIDimensionFlags',['../group___g_u_i-_internal.html#gaa72100a0cd1bb4ac969d8c752659481f',1,'bs']]],
   ['guidropdowntype',['GUIDropDownType',['../group___g_u_i-_internal.html#gaabe10a7c90e8ac554b89e8ac1642d8e6',1,'bs']]],
   ['guielementflags',['GUIElementFlags',['../classbs_1_1_g_u_i_element_base.html#a3f391cef69e3e93282f945395deadb55',1,'bs::GUIElementBase']]],
+  ['guielementoption',['GUIElementOption',['../group___implementation.html#gaf8997078b55539e00e121be44faf68f2',1,'bs']]],
   ['guielementstate',['GUIElementState',['../group___g_u_i.html#ga1a3cf4153c3af7870916e20a9b219b18',1,'bs']]],
   ['guiimageposition',['GUIImagePosition',['../group___g_u_i.html#ga392ddd6f866111446b105fb47bc9e51f',1,'bs']]],
   ['guimeshtype',['GUIMeshType',['../group___utility-_engine.html#ga4b7ce34cc007dd94e52d9b4964712d8d',1,'bs']]],

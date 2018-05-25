@@ -35,6 +35,7 @@ var searchData=
   ['flags_3c_20clearmaskbits_20_3e',['Flags&lt; ClearMaskBits &gt;',['../classbs_1_1_flags.html',1,'bs']]],
   ['flags_3c_20componentflag_20_3e',['Flags&lt; ComponentFlag &gt;',['../classbs_1_1_flags.html',1,'bs']]],
   ['flags_3c_20descriptorsetbindflag_20_3e',['Flags&lt; DescriptorSetBindFlag &gt;',['../classbs_1_1_flags.html',1,'bs']]],
+  ['flags_3c_20guielementoption_20_3e',['Flags&lt; GUIElementOption &gt;',['../classbs_1_1_flags.html',1,'bs']]],
   ['flags_3c_20guisliderhandleflag_20_3e',['Flags&lt; GUISliderHandleFlag &gt;',['../classbs_1_1_flags.html',1,'bs']]],
   ['flags_3c_20physicsflag_20_3e',['Flags&lt; PhysicsFlag &gt;',['../classbs_1_1_flags.html',1,'bs']]],
   ['flags_3c_20renderapifeatureflag_20_3e',['Flags&lt; RenderAPIFeatureFlag &gt;',['../classbs_1_1_flags.html',1,'bs']]],

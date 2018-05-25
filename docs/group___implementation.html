@@ -442,6 +442,9 @@ typedef <a class="el" href="classbs_1_1_flags.html">Flags</a>&lt; <a class="el" 
 <tr class="memitem:ga572499be6fdacffdc91cdfcbc587d145"><td class="memItemLeft" align="right" valign="top"><a id="ga572499be6fdacffdc91cdfcbc587d145"></a>
 typedef <a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="structbs_1_1_game_object_instance_data.html">GameObjectInstanceData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GameObjectInstanceDataPtr</b></td></tr>
 <tr class="separator:ga572499be6fdacffdc91cdfcbc587d145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13477c8210ccc2474377a9d66e01f8ed"><td class="memItemLeft" align="right" valign="top"><a id="ga13477c8210ccc2474377a9d66e01f8ed"></a>
+typedef <a class="el" href="classbs_1_1_flags.html">Flags</a>&lt; <a class="el" href="group___implementation.html#gaf8997078b55539e00e121be44faf68f2">GUIElementOption</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElementOptions</b></td></tr>
+<tr class="separator:ga13477c8210ccc2474377a9d66e01f8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -479,6 +482,10 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga25b554c173667a501cbfd04a676e845a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals which portion of a Skybox is dirty.  <a href="group___implementation.html#ga25b554c173667a501cbfd04a676e845a">More...</a><br /></td></tr>
 <tr class="separator:ga25b554c173667a501cbfd04a676e845a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8997078b55539e00e121be44faf68f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___implementation.html#gaf8997078b55539e00e121be44faf68f2">GUIElementOption</a> { <a class="el" href="group___implementation.html#ggaf8997078b55539e00e121be44faf68f2aa111aa5696074e8f3657d78f5629b952">ClickThrough</a>, 
+<a class="el" href="group___implementation.html#ggaf8997078b55539e00e121be44faf68f2a527eaa89602a60a76c1490556f7010b3">AcceptsKeyFocus</a>
+ }</td></tr>
+<tr class="separator:gaf8997078b55539e00e121be44faf68f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -517,6 +524,36 @@ template&lt;class _Ty1 , bool _Weak1, class _Ty2 , bool _Weak2&gt; </td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="classbs_1_1_flags.html" title="Wrapper around an enum that allows simple use of bitwise logic operations. ">Flags</a> that determine which portion of the viewport to clear. </p>
+
+</div>
+</div>
+<a id="gaf8997078b55539e00e121be44faf68f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8997078b55539e00e121be44faf68f2">&#9670;&nbsp;</a></span>GUIElementOption</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___implementation.html#gaf8997078b55539e00e121be44faf68f2">GUIElementOption</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf8997078b55539e00e121be44faf68f2aa111aa5696074e8f3657d78f5629b952"></a>ClickThrough&#160;</td><td class="fielddoc"><p>Enable this option if you want pointer events to pass through this element by default. </p>
+<p>This will allow elements underneath this element to receive pointer events. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8997078b55539e00e121be44faf68f2a527eaa89602a60a76c1490556f7010b3"></a>AcceptsKeyFocus&#160;</td><td class="fielddoc"><p>Enable this option if the element accepts keyboard/gamepad input focus. </p>
+<p>This will allow the element to be navigated to using keys/buttons. </p>
+</td></tr>
+</table>
 
 </div>
 </div>

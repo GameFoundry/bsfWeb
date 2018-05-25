@@ -11,6 +11,8 @@ var searchData=
   ['fo_5fnone',['FO_NONE',['../group___utility-_core.html#gga7f1dfeea870eec2a3f18186ad02bc817a9b0f7b123c64d56eb10eab43d0f6413b',1,'bs']]],
   ['fo_5fpoint',['FO_POINT',['../group___utility-_core.html#gga7f1dfeea870eec2a3f18186ad02bc817a7301d507caf7533b432c0e0a714741fa',1,'bs']]],
   ['focused',['Focused',['../group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18aa2e08e1fbbc3e1489d688eba112f7964',1,'bs']]],
+  ['focusedhover',['FocusedHover',['../group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a84dfd3e1a6504c345d2660eda10feef0',1,'bs']]],
+  ['focusedhoveron',['FocusedHoverOn',['../group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a29d24fac013bb1373c54abd523fa70eb',1,'bs']]],
   ['focusedon',['FocusedOn',['../group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a61174523f86fbacb58fa35ba7bbcbd99',1,'bs']]],
   ['focusgained',['FocusGained',['../group___g_u_i-_internal.html#gga462413cd62d4c866900f456798f11040a14696db38b4e50b90abffffad50ab44c',1,'bs']]],
   ['focuslost',['FocusLost',['../group___render_a_p_i-_internal.html#gga6fe22635c1a150712fae448cd85a86c1aed3925e40166423f755045b0c3882868',1,'bs::FocusLost()'],['../group___g_u_i-_internal.html#gga462413cd62d4c866900f456798f11040aed3925e40166423f755045b0c3882868',1,'bs::FocusLost()']]],

@@ -121,6 +121,9 @@ A GUI element that allows the user to draw custom graphics.  <a href="classbs_1_
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_mouse_event.html">GUIMouseEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains data about a GUI mouse input event.  <a href="classbs_1_1_g_u_i_mouse_event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_nav_group.html">GUINavGroup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a set of elements that can be navigated between using keyboard or gamepad buttons (i.e.  <a href="classbs_1_1_g_u_i_nav_group.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_option.html">GUIOption</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls GUI element layout options, possibly by overriding the default options specified in GUI element style.  <a href="classbs_1_1_g_u_i_option.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,9 +163,6 @@ A GUI element that allows the user to draw custom graphics.  <a href="classbs_1_
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_flexible_space.html">GUIFlexibleSpace</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GUI element that may be inserted into layouts to make a space of a flexible size.  <a href="classbs_1_1_g_u_i_flexible_space.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_tab_group.html">GUITabGroup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a set of elements that can be navigated between using keyboard or gamepad buttons (i.e.  <a href="classbs_1_1_g_u_i_tab_group.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_text_input_event.html">GUITextInputEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A text input event representing input of a single character.  <a href="classbs_1_1_g_u_i_text_input_event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,12 +193,15 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a4d3d769b812b6faa6b76e1a8abaece2d">Active</a> = 0x04, 
 <a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18aa2e08e1fbbc3e1489d688eba112f7964">Focused</a> = 0x08, 
 <br />
-&#160;&#160;<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acf0411365ab5aaf6e4557bf52b9c295b">NormalOn</a> = 0x11, 
-<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a2b804e31eb7365661955c8f7e9bcb714">HoverOn</a> = 0x12, 
-<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acc47c5951b7415a81579f1abf0aa9456">ActiveOn</a> = 0x14, 
-<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a61174523f86fbacb58fa35ba7bbcbd99">FocusedOn</a> = 0x18, 
+&#160;&#160;<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a84dfd3e1a6504c345d2660eda10feef0">FocusedHover</a> = 0x10, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acf0411365ab5aaf6e4557bf52b9c295b">NormalOn</a> = 0x101, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a2b804e31eb7365661955c8f7e9bcb714">HoverOn</a> = 0x102, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acc47c5951b7415a81579f1abf0aa9456">ActiveOn</a> = 0x104, 
 <br />
-&#160;&#160;<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18ab89543294e09c87ecfe3972f3690848c">TypeMask</a> = 0x0F
+&#160;&#160;<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a61174523f86fbacb58fa35ba7bbcbd99">FocusedOn</a> = 0x108, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18a29d24fac013bb1373c54abd523fa70eb">FocusedHoverOn</a> = 0x110, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18ab89543294e09c87ecfe3972f3690848c">TypeMask</a> = 0xFF, 
+<a class="el" href="group___g_u_i.html#gga1a3cf4153c3af7870916e20a9b219b18acf2e696856c781bc638c9b8fbc0fc75b">OnFlag</a> = 0x100
 <br />
  }</td></tr>
 <tr class="memdesc:ga1a3cf4153c3af7870916e20a9b219b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of GUI element states.  <a href="group___g_u_i.html#ga1a3cf4153c3af7870916e20a9b219b18">More...</a><br /></td></tr>
@@ -266,23 +269,29 @@ Enumerations</h2></td></tr>
 
 <p>Type of GUI element states. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a960b44c579bc2f6818d2daaf9e4c16f0"></a>Normal&#160;</td><td class="fielddoc"><p>Normal state when button is not being iteracted with. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a960b44c579bc2f6818d2daaf9e4c16f0"></a>Normal&#160;</td><td class="fielddoc"><p>Normal state when element is not being iteracted with. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18aeee0168be69b854c20621fc6f01cc3fc"></a>Hover&#160;</td><td class="fielddoc"><p>State when pointer is hovering over the button. </p>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18aeee0168be69b854c20621fc6f01cc3fc"></a>Hover&#160;</td><td class="fielddoc"><p>State when pointer is hovering over the element. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a4d3d769b812b6faa6b76e1a8abaece2d"></a>Active&#160;</td><td class="fielddoc"><p>State when button is being clicked. </p>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a4d3d769b812b6faa6b76e1a8abaece2d"></a>Active&#160;</td><td class="fielddoc"><p>State when element is being clicked. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18aa2e08e1fbbc3e1489d688eba112f7964"></a>Focused&#160;</td><td class="fielddoc"><p>State when button has been selected. </p>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18aa2e08e1fbbc3e1489d688eba112f7964"></a>Focused&#160;</td><td class="fielddoc"><p>State when the element has input focus and pointer is not hovering over the element. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18acf0411365ab5aaf6e4557bf52b9c295b"></a>NormalOn&#160;</td><td class="fielddoc"><p>Normal state when button is not being iteracted with and is in "on" state. </p>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a84dfd3e1a6504c345d2660eda10feef0"></a>FocusedHover&#160;</td><td class="fielddoc"><p>State when the element has input focus and pointer is hovering over the element. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a2b804e31eb7365661955c8f7e9bcb714"></a>HoverOn&#160;</td><td class="fielddoc"><p>State when pointer is hovering over the button and is in "on" state. </p>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18acf0411365ab5aaf6e4557bf52b9c295b"></a>NormalOn&#160;</td><td class="fielddoc"><p>Same as Normal, if the element is also in the "on" state. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18acc47c5951b7415a81579f1abf0aa9456"></a>ActiveOn&#160;</td><td class="fielddoc"><p>State when button is being clicked and is in "on" state. </p>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a2b804e31eb7365661955c8f7e9bcb714"></a>HoverOn&#160;</td><td class="fielddoc"><p>Same as Hover, if the element is also in the "on" state. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a61174523f86fbacb58fa35ba7bbcbd99"></a>FocusedOn&#160;</td><td class="fielddoc"><p>State when button has been selected and is in "on" state. </p>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18acc47c5951b7415a81579f1abf0aa9456"></a>ActiveOn&#160;</td><td class="fielddoc"><p>Same as Active, if the element is also in the "on" state. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a61174523f86fbacb58fa35ba7bbcbd99"></a>FocusedOn&#160;</td><td class="fielddoc"><p>Same as Focused, if the element is also in the "on" state. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18a29d24fac013bb1373c54abd523fa70eb"></a>FocusedHoverOn&#160;</td><td class="fielddoc"><p>Same as FocusedHover, if the element is also in the "on" state. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18ab89543294e09c87ecfe3972f3690848c"></a>TypeMask&#160;</td><td class="fielddoc"><p>Mask for determining the state type (ignoring the on state). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1a3cf4153c3af7870916e20a9b219b18acf2e696856c781bc638c9b8fbc0fc75b"></a>OnFlag&#160;</td><td class="fielddoc"><p>Flag that differentiates between on and off states. </p>
 </td></tr>
 </table>
 
