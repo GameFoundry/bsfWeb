@@ -73,7 +73,7 @@ var searchData=
   ['vet_5fushort1',['VET_USHORT1',['../group___render_a_p_i.html#ggaff1f9fa06412cc13e0917617b7e8d0b3a4550fc2ec97012e49026c6a38c8ca777',1,'bs']]],
   ['vet_5fushort2',['VET_USHORT2',['../group___render_a_p_i.html#ggaff1f9fa06412cc13e0917617b7e8d0b3a829a6485ffb770a2cd5db087af96cc28',1,'bs']]],
   ['vet_5fushort4',['VET_USHORT4',['../group___render_a_p_i.html#ggaff1f9fa06412cc13e0917617b7e8d0b3ad433c0e1473cf1e9bbdb3dd3a624b9b3',1,'bs']]],
-  ['videomode',['VideoMode',['../classbs_1_1_video_mode.html',1,'VideoMode'],['../classbs_1_1_video_mode.html#a239ce9b13f9afb33dde4af6737764759',1,'bs::VideoMode::VideoMode()'],['../structbs_1_1_r_e_n_d_e_r___w_i_n_d_o_w___d_e_s_c.html#ac4ff9b65b1bd71d3bef828cc1ac2f43a',1,'bs::RENDER_WINDOW_DESC::videoMode()']]],
+  ['videomode',['VideoMode',['../classbs_1_1_video_mode.html',1,'VideoMode'],['../structbs_1_1_r_e_n_d_e_r___w_i_n_d_o_w___d_e_s_c.html#ac4ff9b65b1bd71d3bef828cc1ac2f43a',1,'bs::RENDER_WINDOW_DESC::videoMode()'],['../classbs_1_1_video_mode.html#a239ce9b13f9afb33dde4af6737764759',1,'bs::VideoMode::VideoMode()']]],
   ['videomodeinfo',['VideoModeInfo',['../classbs_1_1_video_mode_info.html',1,'bs']]],
   ['videooutputinfo',['VideoOutputInfo',['../classbs_1_1_video_output_info.html',1,'bs']]],
   ['view',['view',['../classbs_1_1_matrix4.html#aee8b6181661a672ba5bcc4a4842532fb',1,'bs::Matrix4']]],

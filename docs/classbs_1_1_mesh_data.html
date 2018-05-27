@@ -91,12 +91,12 @@ Methods</h2></td></tr>
 <tr class="memitem:a52715169016323a5b04bfa3f7ebb77e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#a52715169016323a5b04bfa3f7ebb77e7">MeshData</a> (UINT32 numVertices, UINT32 numIndexes, const <a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1_vertex_data_desc.html">VertexDataDesc</a> &gt; &amp;vertexData, <a class="el" href="group___utility-_core.html#ga2bfb0a0ff1c379a8b4e8f9d24fdd4839">IndexType</a> indexType=<a class="el" href="group___utility-_core.html#gga2bfb0a0ff1c379a8b4e8f9d24fdd4839ab61a4761c3045056cc7c177700a7f9ba">IT_32BIT</a>)</td></tr>
 <tr class="memdesc:a52715169016323a5b04bfa3f7ebb77e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new object that can hold number of vertices described by the provided vertex data description.  <a href="#a52715169016323a5b04bfa3f7ebb77e7">More...</a><br /></td></tr>
 <tr class="separator:a52715169016323a5b04bfa3f7ebb77e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96c5a24552ab70d36633bc25b580ed01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#a96c5a24552ab70d36633bc25b580ed01">setVertexData</a> (<a class="el" href="group___render_a_p_i.html#gaefea8c317b80104ca23292be815de16c">VertexElementSemantic</a> semantic, UINT8 *data, UINT32 size, UINT32 semanticIdx=0, UINT32 streamIdx=0)</td></tr>
-<tr class="memdesc:a96c5a24552ab70d36633bc25b580ed01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from <code>data</code> parameter into the internal buffer for the specified semantic.  <a href="#a96c5a24552ab70d36633bc25b580ed01">More...</a><br /></td></tr>
-<tr class="separator:a96c5a24552ab70d36633bc25b580ed01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0d127288e1435edbc3186b76a130cfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#af0d127288e1435edbc3186b76a130cfc">getVertexData</a> (<a class="el" href="group___render_a_p_i.html#gaefea8c317b80104ca23292be815de16c">VertexElementSemantic</a> semantic, UINT8 *data, UINT32 size, UINT32 semanticIdx=0, UINT32 streamIdx=0)</td></tr>
-<tr class="memdesc:af0d127288e1435edbc3186b76a130cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from the internal buffer to the pre-allocated buffer for the specified semantic.  <a href="#af0d127288e1435edbc3186b76a130cfc">More...</a><br /></td></tr>
-<tr class="separator:af0d127288e1435edbc3186b76a130cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba543baf8e83e5f28b91ee7b67a7932f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#aba543baf8e83e5f28b91ee7b67a7932f">setVertexData</a> (<a class="el" href="group___render_a_p_i.html#gaefea8c317b80104ca23292be815de16c">VertexElementSemantic</a> semantic, void *data, UINT32 size, UINT32 semanticIdx=0, UINT32 streamIdx=0)</td></tr>
+<tr class="memdesc:aba543baf8e83e5f28b91ee7b67a7932f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from <code>data</code> parameter into the internal buffer for the specified semantic.  <a href="#aba543baf8e83e5f28b91ee7b67a7932f">More...</a><br /></td></tr>
+<tr class="separator:aba543baf8e83e5f28b91ee7b67a7932f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a9f2b5d986fdfd1d32bd7210150811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#ac5a9f2b5d986fdfd1d32bd7210150811">getVertexData</a> (<a class="el" href="group___render_a_p_i.html#gaefea8c317b80104ca23292be815de16c">VertexElementSemantic</a> semantic, void *data, UINT32 size, UINT32 semanticIdx=0, UINT32 streamIdx=0)</td></tr>
+<tr class="memdesc:ac5a9f2b5d986fdfd1d32bd7210150811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from the internal buffer to the pre-allocated buffer for the specified semantic.  <a href="#ac5a9f2b5d986fdfd1d32bd7210150811">More...</a><br /></td></tr>
+<tr class="separator:ac5a9f2b5d986fdfd1d32bd7210150811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a451e936edf36fed588f895d07b5a2726"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbs_1_1_vertex_elem_iter.html">VertexElemIter</a>&lt; <a class="el" href="classbs_1_1_vector2.html">Vector2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#a451e936edf36fed588f895d07b5a2726">getVec2DataIter</a> (<a class="el" href="group___render_a_p_i.html#gaefea8c317b80104ca23292be815de16c">VertexElementSemantic</a> semantic, UINT32 semanticIdx=0, UINT32 streamIdx=0)</td></tr>
 <tr class="memdesc:a451e936edf36fed588f895d07b5a2726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator you can use for easily retrieving or setting <a class="el" href="classbs_1_1_vector2.html" title="A two dimensional vector. ">Vector2</a> vertex elements.  <a href="#a451e936edf36fed588f895d07b5a2726">More...</a><br /></td></tr>
 <tr class="separator:a451e936edf36fed588f895d07b5a2726"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -785,8 +785,8 @@ You must derive your own version of <a class="el" href="classbs_1_1_r_t_t_i_type
 
 </div>
 </div>
-<a id="af0d127288e1435edbc3186b76a130cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0d127288e1435edbc3186b76a130cfc">&#9670;&nbsp;</a></span>getVertexData()</h2>
+<a id="ac5a9f2b5d986fdfd1d32bd7210150811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a9f2b5d986fdfd1d32bd7210150811">&#9670;&nbsp;</a></span>getVertexData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -800,7 +800,7 @@ You must derive your own version of <a class="el" href="classbs_1_1_r_t_t_i_type
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">UINT8 *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -862,8 +862,8 @@ You must derive your own version of <a class="el" href="classbs_1_1_r_t_t_i_type
 
 </div>
 </div>
-<a id="a96c5a24552ab70d36633bc25b580ed01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96c5a24552ab70d36633bc25b580ed01">&#9670;&nbsp;</a></span>setVertexData()</h2>
+<a id="aba543baf8e83e5f28b91ee7b67a7932f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba543baf8e83e5f28b91ee7b67a7932f">&#9670;&nbsp;</a></span>setVertexData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -877,7 +877,7 @@ You must derive your own version of <a class="el" href="classbs_1_1_r_t_t_i_type
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">UINT8 *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>

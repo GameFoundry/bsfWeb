@@ -94,11 +94,11 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga7eff25c8c62ee478cb8e5909eb8c2c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga637b1bf89145149a5fd9afcca7276514"><td class="memTemplParams" colspan="2">template&lt;typename T , typename A  = StdAlloc&lt;T&gt;&gt; </td></tr>
 <tr class="memitem:ga637b1bf89145149a5fd9afcca7276514"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___containers.html#ga637b1bf89145149a5fd9afcca7276514">List</a> = std::list&lt; T, A &gt;</td></tr>
-<tr class="memdesc:ga637b1bf89145149a5fd9afcca7276514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container that supports constant time insertion and removal, but without fast random access to elements.  <a href="group___containers.html#ga637b1bf89145149a5fd9afcca7276514">More...</a><br /></td></tr>
+<tr class="memdesc:ga637b1bf89145149a5fd9afcca7276514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container that supports constant time insertion and removal for elements with known locations, but without fast random access to elements.  <a href="group___containers.html#ga637b1bf89145149a5fd9afcca7276514">More...</a><br /></td></tr>
 <tr class="separator:ga637b1bf89145149a5fd9afcca7276514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c4486afa16802acf45de817d5fd4752"><td class="memTemplParams" colspan="2">template&lt;typename T , typename A  = StdAlloc&lt;T&gt;&gt; </td></tr>
 <tr class="memitem:ga9c4486afa16802acf45de817d5fd4752"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___containers.html#ga9c4486afa16802acf45de817d5fd4752">ForwardList</a> = std::forward_list&lt; T, A &gt;</td></tr>
-<tr class="memdesc:ga9c4486afa16802acf45de817d5fd4752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container that supports constant time insertion and removal, but without fast random access to elements.  <a href="group___containers.html#ga9c4486afa16802acf45de817d5fd4752">More...</a><br /></td></tr>
+<tr class="memdesc:ga9c4486afa16802acf45de817d5fd4752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container that supports constant time insertion and removal for elements with known locations, but without fast random access to elements.  <a href="group___containers.html#ga9c4486afa16802acf45de817d5fd4752">More...</a><br /></td></tr>
 <tr class="separator:ga9c4486afa16802acf45de817d5fd4752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga33d9d2e440c98abbd0b5c46af7d6142b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename A  = StdAlloc&lt;T&gt;&gt; </td></tr>
 <tr class="memitem:ga33d9d2e440c98abbd0b5c46af7d6142b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___containers.html#ga33d9d2e440c98abbd0b5c46af7d6142b">Stack</a> = std::stack&lt; T, std::deque&lt; T, A &gt; &gt;</td></tr>
@@ -171,7 +171,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Container that supports constant time insertion and removal, but without fast random access to elements. </p>
+<p>Container that supports constant time insertion and removal for elements with known locations, but without fast random access to elements. </p>
 <p>Internally implemented as a singly linked list that doesn't support reverse iteration. </p>
 
 </div>
@@ -204,7 +204,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Container that supports constant time insertion and removal, but without fast random access to elements. </p>
+<p>Container that supports constant time insertion and removal for elements with known locations, but without fast random access to elements. </p>
 <p>Internally implemented as a doubly linked list. Use ForwardList if you do not need reverse iteration. </p>
 
 </div>

@@ -85,7 +85,7 @@ $(function() {
 <dl class="section note"><dt>Note</dt><dd><br />
 If adding or modifying <a class="el" href="classbs_1_1_g_u_i_manager.html" title="Manages the rendering and input of all GUI widgets in the scene. ">GUIManager</a> functionality ensure that <a class="el" href="classbs_1_1_g_u_i_manager.html" title="Manages the rendering and input of all GUI widgets in the scene. ">GUIManager</a> data never gets modified outside of <a class="el" href="classbs_1_1_g_u_i_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="Called once per frame. ">update()</a> method or <a class="el" href="classbs_1_1_input.html" title="Primary module used for dealing with input. ">Input</a> callbacks. If you need such functionality add temporary variables that store you changes and then execute them delayed in <a class="el" href="classbs_1_1_g_u_i_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="Called once per frame. ">update()</a>. </dd></dl>
 <dl class="section user"><dt></dt><dd>This ensures that GUIElements don't recursively modify <a class="el" href="classbs_1_1_g_u_i_manager.html" title="Manages the rendering and input of all GUI widgets in the scene. ">GUIManager</a> while <a class="el" href="classbs_1_1_g_u_i_manager.html" title="Manages the rendering and input of all GUI widgets in the scene. ">GUIManager</a> is still using that data. </dd></dl>
-<dl class="section user"><dt></dt><dd>For example <a class="el" href="classbs_1_1_g_u_i_manager.html#adf1d67b38b84f8c3362acf07f5878231" title="Change the GUI element focus state. ">setFocus()</a> usually gets called from within GUIElements, however we don't want elements in focus be modified immediately since that <a class="el" href="classbs_1_1_g_u_i_manager.html#adf1d67b38b84f8c3362acf07f5878231" title="Change the GUI element focus state. ">setFocus()</a> call could have originated in sendCommandEvent and elements in focus array would be modified while still being iterated upon. </dd></dl>
+<dl class="section user"><dt></dt><dd>For example <a class="el" href="classbs_1_1_g_u_i_manager.html#a8090801bdc9e8552017193d4ea0c9da0" title=" Change the GUI element focus state. ">setFocus()</a> usually gets called from within GUIElements, however we don't want elements in focus be modified immediately since that <a class="el" href="classbs_1_1_g_u_i_manager.html#a8090801bdc9e8552017193d4ea0c9da0" title=" Change the GUI element focus state. ">setFocus()</a> call could have originated in sendCommandEvent and elements in focus array would be modified while still being iterated upon. </dd></dl>
 </div>
 <p>Inherits <a class="el" href="classbs_1_1_module.html">Module&lt; GUIManager &gt;</a>.</p>
 <table class="memberdecls">
@@ -106,9 +106,10 @@ Methods</h2></td></tr>
 <tr class="memitem:a823aff732b865bb465a2e239409e295e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_manager.html#a823aff732b865bb465a2e239409e295e">processDestroyQueue</a> ()</td></tr>
 <tr class="memdesc:a823aff732b865bb465a2e239409e295e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces all GUI elements that are queued for destruction to be destroyed immediately.  <a href="#a823aff732b865bb465a2e239409e295e">More...</a><br /></td></tr>
 <tr class="separator:a823aff732b865bb465a2e239409e295e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf1d67b38b84f8c3362acf07f5878231"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_manager.html#adf1d67b38b84f8c3362acf07f5878231">setFocus</a> (<a class="el" href="classbs_1_1_g_u_i_element.html">GUIElement</a> *element, bool focus)</td></tr>
-<tr class="memdesc:adf1d67b38b84f8c3362acf07f5878231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the GUI element focus state.  <a href="#adf1d67b38b84f8c3362acf07f5878231">More...</a><br /></td></tr>
-<tr class="separator:adf1d67b38b84f8c3362acf07f5878231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8090801bdc9e8552017193d4ea0c9da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_manager.html#a8090801bdc9e8552017193d4ea0c9da0">setFocus</a> (<a class="el" href="classbs_1_1_g_u_i_element.html">GUIElement</a> *element, bool focus, bool clear)</td></tr>
+<tr class="memdesc:a8090801bdc9e8552017193d4ea0c9da0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br />
+Change the GUI element focus state.  <a href="#a8090801bdc9e8552017193d4ea0c9da0">More...</a><br /></td></tr>
+<tr class="separator:a8090801bdc9e8552017193d4ea0c9da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd3dd1ef40d1981df838c702b3edf3a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_g_u_i_manager.html#acd3dd1ef40d1981df838c702b3edf3a4">setCaretColor</a> (const <a class="el" href="classbs_1_1_color.html">Color</a> &amp;color)</td></tr>
 <tr class="memdesc:acd3dd1ef40d1981df838c702b3edf3a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the color of the input caret used in input boxes and similar controls.  <a href="#acd3dd1ef40d1981df838c702b3edf3a4">More...</a><br /></td></tr>
 <tr class="separator:acd3dd1ef40d1981df838c702b3edf3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,8 +331,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="adf1d67b38b84f8c3362acf07f5878231"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf1d67b38b84f8c3362acf07f5878231">&#9670;&nbsp;</a></span>setFocus()</h2>
+<a id="a8090801bdc9e8552017193d4ea0c9da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8090801bdc9e8552017193d4ea0c9da0">&#9670;&nbsp;</a></span>setFocus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +347,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>focus</em>&#160;</td>
+          <td class="paramname"><em>focus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>clear</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -356,7 +363,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Change the GUI element focus state. </p>
+<p><br />
+Change the GUI element focus state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>Element whose focus state to change </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">focus</td><td>Give the element focus or take it away. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clear</td><td>If true the focus will be cleared from any elements currently in focus. Otherwise the element will just be appended to the in-focus list (if enabling focus). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
