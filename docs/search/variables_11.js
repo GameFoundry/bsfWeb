@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['radius',['radius',['../structbs_1_1_c_h_a_r___c_o_n_t_r_o_l_l_e_r___d_e_s_c.html#a5050a760c11da521cd4aee6336f6529f',1,'bs::CHAR_CONTROLLER_DESC::radius()'],['../structbs_1_1_ambient_occlusion_settings.html#a5050a760c11da521cd4aee6336f6529f',1,'bs::AmbientOcclusionSettings::radius()']]],
+  ['radius',['radius',['../structbs_1_1_p_a_r_t_i_c_l_e___c_o_n_e___s_h_a_p_e___d_e_s_c.html#a5050a760c11da521cd4aee6336f6529f',1,'bs::PARTICLE_CONE_SHAPE_DESC::radius()'],['../structbs_1_1_p_a_r_t_i_c_l_e___s_p_h_e_r_e___s_h_a_p_e___d_e_s_c.html#a5050a760c11da521cd4aee6336f6529f',1,'bs::PARTICLE_SPHERE_SHAPE_DESC::radius()'],['../structbs_1_1_p_a_r_t_i_c_l_e___h_e_m_i_s_p_h_e_r_e___s_h_a_p_e___d_e_s_c.html#a5050a760c11da521cd4aee6336f6529f',1,'bs::PARTICLE_HEMISPHERE_SHAPE_DESC::radius()'],['../structbs_1_1_p_a_r_t_i_c_l_e___c_i_r_c_l_e___s_h_a_p_e___d_e_s_c.html#a5050a760c11da521cd4aee6336f6529f',1,'bs::PARTICLE_CIRCLE_SHAPE_DESC::radius()'],['../structbs_1_1_c_h_a_r___c_o_n_t_r_o_l_l_e_r___d_e_s_c.html#a5050a760c11da521cd4aee6336f6529f',1,'bs::CHAR_CONTROLLER_DESC::radius()'],['../structbs_1_1_ambient_occlusion_settings.html#a5050a760c11da521cd4aee6336f6529f',1,'bs::AmbientOcclusionSettings::radius()']]],
   ['randomgpuwrite',['randomGpuWrite',['../structbs_1_1_g_p_u___b_u_f_f_e_r___d_e_s_c.html#a7476b7fe9c26bf8a664ae85a0b4b2070',1,'bs::GPU_BUFFER_DESC']]],
   ['randomrotations',['randomRotations',['../structbs_1_1ct_1_1_s_s_a_o_texture_inputs.html#a14106524ab7984e5a306937c15857e9a',1,'bs::ct::SSAOTextureInputs']]],
   ['readmode',['readMode',['../structbs_1_1_a_u_d_i_o___c_l_i_p___d_e_s_c.html#a98a284816a73884517e75c4aeec2f214',1,'bs::AUDIO_CLIP_DESC']]],
-  ['renderableid',['renderableId',['../classbs_1_1ct_1_1_beast_renderable_element.html#a38f4a2b5b1f05358e609c6b93f797b0b',1,'bs::ct::BeastRenderableElement']]],
   ['renderapi',['renderAPI',['../structbs_1_1_s_t_a_r_t___u_p___d_e_s_c.html#a229e0cf1b90c08106e4da0f664c28944',1,'bs::START_UP_DESC']]],
+  ['renderelement',['renderElement',['../structbs_1_1ct_1_1_renderer_particles.html#acdc74dc675ec2e82bcfc9c81d09cef39',1,'bs::ct::RendererParticles']]],
   ['renderer',['renderer',['../structbs_1_1_s_t_a_r_t___u_p___d_e_s_c.html#ac2f755a2c9c65b5b5e2fe8c075dcc42b',1,'bs::START_UP_DESC']]],
   ['rendertargetwritemask',['renderTargetWriteMask',['../structbs_1_1_r_e_n_d_e_r___t_a_r_g_e_t___b_l_e_n_d___s_t_a_t_e___d_e_s_c.html#a5bb23278117ac137ae41fecc019400ed',1,'bs::RENDER_TARGET_BLEND_STATE_DESC']]],
   ['requiresadjacency',['requiresAdjacency',['../structbs_1_1_g_p_u___p_r_o_g_r_a_m___d_e_s_c.html#acbd45a342e7e3b52d3dace78364d4aa5',1,'bs::GPU_PROGRAM_DESC']]],

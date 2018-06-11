@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -114,6 +122,9 @@ Methods</h2></td></tr>
 <tr class="memitem:a0d273bf0ab032b292d675ad6f36f87b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_group_alloc.html#a0d273bf0ab032b292d675ad6f36f87b7">free</a> (void *data)</td></tr>
 <tr class="memdesc:a0d273bf0ab032b292d675ad6f36f87b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates a previously allocated piece of memory.  <a href="#a0d273bf0ab032b292d675ad6f36f87b7">More...</a><br /></td></tr>
 <tr class="separator:a0d273bf0ab032b292d675ad6f36f87b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_group_alloc.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees any internally allocated buffers.  <a href="#ac8bb3912a3ce86b15842e79d0b421204">More...</a><br /></td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0da6b022ea40372b81a6f7d886090a72"><td class="memTemplParams" colspan="2"><a id="a0da6b022ea40372b81a6f7d886090a72"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a0da6b022ea40372b81a6f7d886090a72"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbs_1_1_group_alloc.html#a0da6b022ea40372b81a6f7d886090a72">construct</a> (UINT32 count=1)</td></tr>
@@ -183,6 +194,26 @@ template&lt;class T , class... Args&gt; </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac8bb3912a3ce86b15842e79d0b421204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8bb3912a3ce86b15842e79d0b421204">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees any internally allocated buffers. </p>
+<p>All elements must be previously freed by calling <a class="el" href="classbs_1_1_group_alloc.html#a0d273bf0ab032b292d675ad6f36f87b7" title="Deallocates a previously allocated piece of memory. ">free()</a>. </p>
 
 </div>
 </div>
@@ -314,7 +345,7 @@ template&lt;class T , class... Args&gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Reserves the specified amount of bytes to allocate. </p>
-<p>Multiple calls to <a class="el" href="classbs_1_1_group_alloc.html#a9d00bcb1ad472208e827a670edd9e2ab" title="Reserves the specified amount of bytes to allocate. ">reserve()</a> are cumulative. After all needed memory is reserved, call <a class="el" href="classbs_1_1_group_alloc.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="Allocates internal memory as reserved by previous calls to reserve(). ">init()</a>, followed by actual allocation via <a class="el" href="classbs_1_1_group_alloc.html#a0da6b022ea40372b81a6f7d886090a72" title="Allocates enough memory to hold the object(s) of specified type using the static allocator, and constructs them. ">construct()</a> or <a class="el" href="classbs_1_1_group_alloc.html#ad6886390fd8d5403f8553b8c8369489b" title="Allocates a new piece of memory of the specified size. ">alloc()</a> methods. </p>
+<p>Multiple calls to <a class="el" href="classbs_1_1_group_alloc.html#a9d00bcb1ad472208e827a670edd9e2ab" title="Reserves the specified amount of bytes to allocate. ">reserve()</a> are cumulative. After all needed memory is reserved, call <a class="el" href="classbs_1_1_group_alloc.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="Allocates internal memory as reserved by previous calls to reserve(). ">init()</a>, followed by actual allocation via <a class="el" href="classbs_1_1_group_alloc.html#a0da6b022ea40372b81a6f7d886090a72" title="Allocates enough memory to hold the object(s) of specified type using the static allocator, and constructs them. ">construct()</a> or <a class="el" href="classbs_1_1_group_alloc.html#ad6886390fd8d5403f8553b8c8369489b" title="Allocates a new piece of memory of the specified size. ">alloc()</a> methods. If you need to change the size of your allocation, free your memory by using <a class="el" href="classbs_1_1_group_alloc.html#a0d273bf0ab032b292d675ad6f36f87b7" title="Deallocates a previously allocated piece of memory. ">free()</a>, followed by a call to <a class="el" href="classbs_1_1_group_alloc.html#ac8bb3912a3ce86b15842e79d0b421204" title="Frees any internally allocated buffers. ">clear()</a>. Then <a class="el" href="classbs_1_1_group_alloc.html#a9d00bcb1ad472208e827a670edd9e2ab" title="Reserves the specified amount of bytes to allocate. ">reserve()</a>, <a class="el" href="classbs_1_1_group_alloc.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="Allocates internal memory as reserved by previous calls to reserve(). ">init()</a> and <a class="el" href="classbs_1_1_group_alloc.html#ad6886390fd8d5403f8553b8c8369489b" title="Allocates a new piece of memory of the specified size. ">alloc()</a> again. </p>
 
 </div>
 </div>

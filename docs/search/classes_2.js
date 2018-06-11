@@ -2,7 +2,6 @@ var searchData=
 [
   ['baseconnectiondata',['BaseConnectionData',['../classbs_1_1_base_connection_data.html',1,'bs']]],
   ['basicrow',['BasicRow',['../structbs_1_1_profiler_overlay_internal_1_1_basic_row.html',1,'bs::ProfilerOverlayInternal']]],
-  ['beastrenderableelement',['BeastRenderableElement',['../classbs_1_1ct_1_1_beast_renderable_element.html',1,'bs::ct']]],
   ['binarycloner',['BinaryCloner',['../classbs_1_1_binary_cloner.html',1,'bs']]],
   ['binarydiff',['BinaryDiff',['../classbs_1_1_binary_diff.html',1,'bs']]],
   ['binaryserializer',['BinarySerializer',['../classbs_1_1_binary_serializer.html',1,'bs']]],

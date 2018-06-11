@@ -54,6 +54,7 @@ var searchData=
   ['debugdrawmat',['DebugDrawMat',['../classbs_1_1ct_1_1_debug_draw_mat.html',1,'bs::ct']]],
   ['debugdrawrenderer',['DebugDrawRenderer',['../classbs_1_1ct_1_1_debug_draw_renderer.html',1,'bs::ct']]],
   ['defaultmaterial',['DefaultMaterial',['../classbs_1_1ct_1_1_default_material.html',1,'bs::ct']]],
+  ['defaultparticlesmat',['DefaultParticlesMat',['../classbs_1_1ct_1_1_default_particles_mat.html',1,'bs::ct']]],
   ['defaultshaderincludehandler',['DefaultShaderIncludeHandler',['../classbs_1_1_default_shader_include_handler.html',1,'bs']]],
   ['deferredcallmanager',['DeferredCallManager',['../classbs_1_1_deferred_call_manager.html',1,'bs']]],
   ['deferreddirectionallightmat',['DeferredDirectionalLightMat',['../classbs_1_1ct_1_1_deferred_directional_light_mat.html',1,'bs::ct']]],

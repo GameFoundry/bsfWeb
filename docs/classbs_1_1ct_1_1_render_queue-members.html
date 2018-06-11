@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -80,7 +88,7 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#a1ee7e181209962f742ec64f2d2768377">add</a>(RenderableElement *element, float distFromCamera)</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#a52c8fc452005b6c511a7145f29b59782">add</a>(const RenderElement *element, float distFromCamera)</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>()</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#ab413d7c239d6af6d049b165e0064666b">elementSorterNoGroup</a>(UINT32 aIdx, UINT32 bIdx, const Vector&lt; SortableElement &gt; &amp;lookup)</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#a12447148e3d62b2bc5006f6717a17b11">elementSorterPreferGroup</a>(UINT32 aIdx, UINT32 bIdx, const Vector&lt; SortableElement &gt; &amp;lookup)</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
@@ -94,7 +102,7 @@ $(function() {
   <tr bgcolor="#f0f0f0"><td class="entry"><b>RenderQueue</b>(StateReduction grouping=StateReduction::Distance) (defined in <a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a>)</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#a0fff0459f3b9a2f1e3cad0549bc9c1cc">setStateReduction</a>(StateReduction mode)</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#aa484f63de36f7e9cb2727f5ffcdffd80">sort</a>()</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~RenderQueue</b>() (defined in <a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a>)</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~RenderQueue</b>()=default (defined in <a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a>)</td><td class="entry"><a class="el" href="classbs_1_1ct_1_1_render_queue.html">RenderQueue</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->

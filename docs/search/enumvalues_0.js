@@ -8,5 +8,6 @@ var searchData=
   ['anchor',['Anchor',['../group___physics.html#ggaa2c508bb9daf895981982999fa9b818baa34285645af2703a9501db6fc881e5df',1,'bs']]],
   ['anisotropic',['Anisotropic',['../group___render_beast.html#gga0bc9315dad61bf564b5582e97d4a6bb0a3cc429d7ee5b21a397fdc636221f8280',1,'bs::ct']]],
   ['automass',['AutoMass',['../group___physics.html#ggad5f2826d5dccc2fbb97be20a6c94cf53a21226c93c8d9ed5b0268a27028c8020c',1,'bs']]],
-  ['autotensors',['AutoTensors',['../group___physics.html#ggad5f2826d5dccc2fbb97be20a6c94cf53a97c693c0b076589270cfadadea3ff65f',1,'bs']]]
+  ['autotensors',['AutoTensors',['../group___physics.html#ggad5f2826d5dccc2fbb97be20a6c94cf53a97c693c0b076589270cfadadea3ff65f',1,'bs']]],
+  ['axis',['Axis',['../group___particles.html#ggab07a8b82e0a8e3b556d36ca22d1b8b88a39e6b4ab3e4adecf031d3aa8410bb3ce',1,'bs']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['camera',['Camera',['../classbs_1_1ct_1_1_camera.html',1,'Camera'],['../classbs_1_1_camera.html',1,'Camera']]],
+  ['camera',['Camera',['../classbs_1_1_camera.html',1,'Camera'],['../classbs_1_1ct_1_1_camera.html',1,'Camera']]],
   ['camerabase',['CameraBase',['../classbs_1_1_camera_base.html',1,'bs']]],
   ['canimation',['CAnimation',['../classbs_1_1_c_animation.html',1,'bs']]],
   ['canvaselement',['CanvasElement',['../structbs_1_1_g_u_i_canvas_1_1_canvas_element.html',1,'bs::GUICanvas']]],
@@ -34,6 +34,9 @@ var searchData=
   ['collisiondata',['CollisionData',['../structbs_1_1_collision_data.html',1,'bs']]],
   ['collisiondataraw',['CollisionDataRaw',['../structbs_1_1_collision_data_raw.html',1,'bs']]],
   ['color',['Color',['../classbs_1_1_color.html',1,'bs']]],
+  ['colordistribution',['ColorDistribution',['../structbs_1_1_color_distribution.html',1,'bs']]],
+  ['colorgradient',['ColorGradient',['../classbs_1_1_color_gradient.html',1,'bs']]],
+  ['colorgradientkey',['ColorGradientKey',['../structbs_1_1_color_gradient_key.html',1,'bs']]],
   ['colorgradingsettings',['ColorGradingSettings',['../structbs_1_1_color_grading_settings.html',1,'bs']]],
   ['commandbuffer',['CommandBuffer',['../classbs_1_1ct_1_1_command_buffer.html',1,'bs::ct']]],
   ['commandbuffermanager',['CommandBufferManager',['../classbs_1_1ct_1_1_command_buffer_manager.html',1,'bs::ct']]],
@@ -55,7 +58,7 @@ var searchData=
   ['controllercontrollercollision',['ControllerControllerCollision',['../structbs_1_1_controller_controller_collision.html',1,'bs']]],
   ['convexvolume',['ConvexVolume',['../classbs_1_1_convex_volume.html',1,'bs']]],
   ['coreapplication',['CoreApplication',['../classbs_1_1_core_application.html',1,'bs']]],
-  ['coreobject',['CoreObject',['../classbs_1_1_core_object.html',1,'CoreObject'],['../classbs_1_1ct_1_1_core_object.html',1,'CoreObject']]],
+  ['coreobject',['CoreObject',['../classbs_1_1ct_1_1_core_object.html',1,'CoreObject'],['../classbs_1_1_core_object.html',1,'CoreObject']]],
   ['coreobjectmanager',['CoreObjectManager',['../classbs_1_1_core_object_manager.html',1,'bs']]],
   ['coresyncdata',['CoreSyncData',['../classbs_1_1_core_sync_data.html',1,'bs']]],
   ['corethread',['CoreThread',['../classbs_1_1_core_thread.html',1,'bs']]],

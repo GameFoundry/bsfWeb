@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -92,10 +100,10 @@ Methods</h2></td></tr>
 <tr class="memdesc:a5099169c5d5949d4a96279844ad545ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the renderer. <br />
   <a href="#a5099169c5d5949d4a96279844ad545ad">More...</a><br /></td></tr>
 <tr class="separator:a5099169c5d5949d4a96279844ad545ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47ba06cc20370ab085e91c61a4cf4d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_beast.html#ad47ba06cc20370ab085e91c61a4cf4d5">renderAll</a> (const <a class="el" href="structbs_1_1_evaluated_animation_data.html">EvaluatedAnimationData</a> *animData) override</td></tr>
-<tr class="memdesc:ad47ba06cc20370ab085e91c61a4cf4d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called in order to render all currently active cameras. <br />
-  <a href="#ad47ba06cc20370ab085e91c61a4cf4d5">More...</a><br /></td></tr>
-<tr class="separator:ad47ba06cc20370ab085e91c61a4cf4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0703eec8265dbde05e106cfb21ab1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_beast.html#a6d0703eec8265dbde05e106cfb21ab1d">renderAll</a> (<a class="el" href="structbs_1_1_per_frame_data.html">PerFrameData</a> perFrameData) override</td></tr>
+<tr class="memdesc:a6d0703eec8265dbde05e106cfb21ab1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called in order to render all currently active cameras. <br />
+  <a href="#a6d0703eec8265dbde05e106cfb21ab1d">More...</a><br /></td></tr>
+<tr class="separator:a6d0703eec8265dbde05e106cfb21ab1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad87777f4e4af8f9672e4ae93b84733c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_beast.html#ad87777f4e4af8f9672e4ae93b84733c2">setOptions</a> (const <a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="structbs_1_1ct_1_1_renderer_options.html">RendererOptions</a> &gt; &amp;options) override</td></tr>
 <tr class="memdesc:ad87777f4e4af8f9672e4ae93b84733c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets options used for controlling the rendering.  <a href="#ad87777f4e4af8f9672e4ae93b84733c2">More...</a><br /></td></tr>
 <tr class="separator:ad87777f4e4af8f9672e4ae93b84733c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -389,8 +397,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="ad47ba06cc20370ab085e91c61a4cf4d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad47ba06cc20370ab085e91c61a4cf4d5">&#9670;&nbsp;</a></span>renderAll()</h2>
+<a id="a6d0703eec8265dbde05e106cfb21ab1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0703eec8265dbde05e106cfb21ab1d">&#9670;&nbsp;</a></span>renderAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,8 +409,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void renderAll </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structbs_1_1_evaluated_animation_data.html">EvaluatedAnimationData</a> *&#160;</td>
-          <td class="paramname"><em>animData</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structbs_1_1_per_frame_data.html">PerFrameData</a>&#160;</td>
+          <td class="paramname"><em>perFrameData</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -416,7 +424,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Called in order to render all currently active cameras. <br />
  </p>
 
-<p>Implements <a class="el" href="classbs_1_1ct_1_1_renderer.html#acd06dab5f0b66565c8b014a37f629488">Renderer</a>.</p>
+<p>Implements <a class="el" href="classbs_1_1ct_1_1_renderer.html#acea9f49325cbc98d723fde1b269c0163">Renderer</a>.</p>
 
 </div>
 </div>

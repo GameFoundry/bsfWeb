@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -77,73 +85,352 @@ $(function() {
 <a href="#pub-attribs">Fields</a> &#124;
 <a href="classbs_1_1ct_1_1_renderable_element-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">RenderableElement Class Reference<div class="ingroups"><a class="el" href="group___internals.html">Internals</a> &raquo; <a class="el" href="group___internal-_engine.html">Engine</a> &raquo; <a class="el" href="group___renderer-_engine-_internal.html">Renderer</a></div></div>  </div>
+<div class="title">RenderableElement Class Reference<div class="ingroups"><a class="el" href="group___plugins.html">Plugins</a> &raquo; <a class="el" href="group___render_beast.html">RenderBeast</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>Contains all information needed for rendering a single sub-mesh. </p>
-<p>Closely tied with <a class="el" href="classbs_1_1ct_1_1_renderer.html" title="Primarily rendering class that allows you to specify how to render objects that exist in the scene gr...">Renderer</a>. </p>
+<div class="textblock"><p>Contains information required for rendering a single <a class="el" href="classbs_1_1ct_1_1_renderable.html" title="Renderable represents any visible object in the scene.   ">Renderable</a> sub-mesh, representing a generic static or animated 3D model. </p>
 </div>
-<p>Inherited by <a class="el" href="classbs_1_1ct_1_1_beast_renderable_element.html">BeastRenderableElement</a>.</p>
+<p>Inherits <a class="el" href="classbs_1_1ct_1_1_render_element.html">RenderElement</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Fields</h2></td></tr>
-<tr class="memitem:a4f2ff6d75fcde35958402192b78af547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_mesh.html">Mesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a4f2ff6d75fcde35958402192b78af547">mesh</a></td></tr>
-<tr class="memdesc:a4f2ff6d75fcde35958402192b78af547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the mesh to render.  <a href="#a4f2ff6d75fcde35958402192b78af547">More...</a><br /></td></tr>
-<tr class="separator:a4f2ff6d75fcde35958402192b78af547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae533be51349a547431e9257caeecd7ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbs_1_1_sub_mesh.html">SubMesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#ae533be51349a547431e9257caeecd7ba">subMesh</a></td></tr>
-<tr class="memdesc:ae533be51349a547431e9257caeecd7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Portion of the mesh to render.  <a href="#ae533be51349a547431e9257caeecd7ba">More...</a><br /></td></tr>
-<tr class="separator:ae533be51349a547431e9257caeecd7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2272e301404d0de9565d64b5a5d61bae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a2272e301404d0de9565d64b5a5d61bae">material</a></td></tr>
-<tr class="memdesc:a2272e301404d0de9565d64b5a5d61bae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbs_1_1ct_1_1_material.html" title="Material that controls how objects are rendered.   ">Material</a> to render the mesh with.  <a href="#a2272e301404d0de9565d64b5a5d61bae">More...</a><br /></td></tr>
-<tr class="separator:a2272e301404d0de9565d64b5a5d61bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c50d2904b4fe5b57efb054475c2f11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbs_1_1ct_1_1_material_sampler_overrides.html">MaterialSamplerOverrides</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a79c50d2904b4fe5b57efb054475c2f11">samplerOverrides</a></td></tr>
+<tr class="memdesc:a79c50d2904b4fe5b57efb054475c2f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional overrides for material sampler states.  <a href="#a79c50d2904b4fe5b57efb054475c2f11">More...</a><br /></td></tr>
+<tr class="separator:a79c50d2904b4fe5b57efb054475c2f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513b8477c4f9f547faad0b21eddb660f"><td class="memItemLeft" align="right" valign="top">UINT64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a513b8477c4f9f547faad0b21eddb660f">animationId</a></td></tr>
+<tr class="memdesc:a513b8477c4f9f547faad0b21eddb660f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier of the animation running on the renderable's mesh.  <a href="#a513b8477c4f9f547faad0b21eddb660f">More...</a><br /></td></tr>
+<tr class="separator:a513b8477c4f9f547faad0b21eddb660f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf85dc28395e47175d57e10c4b57c91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___implementation.html#ga105d24b486944bc2d89055feb8ecf36b">RenderableAnimType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#acbf85dc28395e47175d57e10c4b57c91">animType</a></td></tr>
+<tr class="memdesc:acbf85dc28395e47175d57e10c4b57c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of animation applied to this element, if any.  <a href="#acbf85dc28395e47175d57e10c4b57c91">More...</a><br /></td></tr>
+<tr class="separator:acbf85dc28395e47175d57e10c4b57c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbb5a592bb510826a926505cec1e8dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbs_1_1_gpu_param_binding.html">GpuParamBinding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a4dbb5a592bb510826a926505cec1e8dc">perCameraBindings</a> [GPT_COUNT]</td></tr>
+<tr class="memdesc:a4dbb5a592bb510826a926505cec1e8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding indices representing where should the per-camera param block buffer be bound to.  <a href="#a4dbb5a592bb510826a926505cec1e8dc">More...</a><br /></td></tr>
+<tr class="separator:a4dbb5a592bb510826a926505cec1e8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af110b0b85fc4eb06cec6457aae7dd624"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbs_1_1_gpu_param_binding.html">GpuParamBinding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#af110b0b85fc4eb06cec6457aae7dd624">gridParamsBindings</a> [GPT_COUNT]</td></tr>
+<tr class="memdesc:af110b0b85fc4eb06cec6457aae7dd624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding indices representing where should lights param block buffer be bound to.  <a href="#af110b0b85fc4eb06cec6457aae7dd624">More...</a><br /></td></tr>
+<tr class="separator:af110b0b85fc4eb06cec6457aae7dd624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f16519978270f6d02688e5c20ab4b90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbs_1_1_t_gpu_param_buffer.html">GpuParamBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a1f16519978270f6d02688e5c20ab4b90">gridLightOffsetsAndSizeParam</a></td></tr>
+<tr class="memdesc:a1f16519978270f6d02688e5c20ab4b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter to which to bind a buffer containing light grid offsets and size, per grid cell.  <a href="#a1f16519978270f6d02688e5c20ab4b90">More...</a><br /></td></tr>
+<tr class="separator:a1f16519978270f6d02688e5c20ab4b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e1fa9124622bdf4ff908acb902b145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbs_1_1_t_gpu_param_buffer.html">GpuParamBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a81e1fa9124622bdf4ff908acb902b145">gridLightIndicesParam</a></td></tr>
+<tr class="memdesc:a81e1fa9124622bdf4ff908acb902b145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter to which to bind a buffer containing all light indices, as mapped by grid offsets &amp; size.  <a href="#a81e1fa9124622bdf4ff908acb902b145">More...</a><br /></td></tr>
+<tr class="separator:a81e1fa9124622bdf4ff908acb902b145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764ce5dc79cd8e62a7deb40647fcacc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbs_1_1_t_gpu_param_buffer.html">GpuParamBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a764ce5dc79cd8e62a7deb40647fcacc7">lightsBufferParam</a></td></tr>
+<tr class="memdesc:a764ce5dc79cd8e62a7deb40647fcacc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter to which to bind light buffer used for forward rendering.  <a href="#a764ce5dc79cd8e62a7deb40647fcacc7">More...</a><br /></td></tr>
+<tr class="separator:a764ce5dc79cd8e62a7deb40647fcacc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb69b616e96ee404ea5b8b062ac38fe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbs_1_1_t_gpu_param_buffer.html">GpuParamBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#afb69b616e96ee404ea5b8b062ac38fe0">gridProbeOffsetsAndSizeParam</a></td></tr>
+<tr class="memdesc:afb69b616e96ee404ea5b8b062ac38fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter to which to bind a buffer containing reflection probe grid offsets and size, per grid cell.  <a href="#afb69b616e96ee404ea5b8b062ac38fe0">More...</a><br /></td></tr>
+<tr class="separator:afb69b616e96ee404ea5b8b062ac38fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4140f551088dc425d6d72464e7ac3b2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbs_1_1ct_1_1_image_based_lighting_params.html">ImageBasedLightingParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a4140f551088dc425d6d72464e7ac3b2c">imageBasedParams</a></td></tr>
+<tr class="memdesc:a4140f551088dc425d6d72464e7ac3b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of parameters used for image based lighting.  <a href="#a4140f551088dc425d6d72464e7ac3b2c">More...</a><br /></td></tr>
+<tr class="separator:a4140f551088dc425d6d72464e7ac3b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb964dae44f418e6986d7776c9e36c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbs_1_1_gpu_param_binding.html">GpuParamBinding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#aabb964dae44f418e6986d7776c9e36c4">lightsParamBlockBinding</a></td></tr>
+<tr class="memdesc:aabb964dae44f418e6986d7776c9e36c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding for a parameter block containing a list of lights influencing this object.  <a href="#aabb964dae44f418e6986d7776c9e36c4">More...</a><br /></td></tr>
+<tr class="separator:aabb964dae44f418e6986d7776c9e36c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad377d76f150ec442e16731ca6d087a58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbs_1_1_gpu_param_binding.html">GpuParamBinding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#ad377d76f150ec442e16731ca6d087a58">lightAndReflProbeParamsParamBlockBinding</a></td></tr>
+<tr class="memdesc:ad377d76f150ec442e16731ca6d087a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding for a parameter block that contains the number of lights and reflection probes in the light/refl.  <a href="#ad377d76f150ec442e16731ca6d087a58">More...</a><br /></td></tr>
+<tr class="separator:ad377d76f150ec442e16731ca6d087a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219ee83e158810bfbe8ad220e71d9853"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_gpu_buffer.html">GpuBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a219ee83e158810bfbe8ad220e71d9853">boneMatrixBuffer</a></td></tr>
+<tr class="memdesc:a219ee83e158810bfbe8ad220e71d9853"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPU buffer containing element's bone matrices, if it requires any.  <a href="#a219ee83e158810bfbe8ad220e71d9853">More...</a><br /></td></tr>
+<tr class="separator:a219ee83e158810bfbe8ad220e71d9853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356191727d0e487782343d7728df1e37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_vertex_buffer.html">VertexBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a356191727d0e487782343d7728df1e37">morphShapeBuffer</a></td></tr>
+<tr class="memdesc:a356191727d0e487782343d7728df1e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex buffer containing element's morph shape vertices, if it has any.  <a href="#a356191727d0e487782343d7728df1e37">More...</a><br /></td></tr>
+<tr class="separator:a356191727d0e487782343d7728df1e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3c7f5036450983610a5a0badac3a79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_vertex_declaration.html">VertexDeclaration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a6a3c7f5036450983610a5a0badac3a79">morphVertexDeclaration</a></td></tr>
+<tr class="memdesc:a6a3c7f5036450983610a5a0badac3a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex declaration used for rendering meshes containing morph shape information.  <a href="#a6a3c7f5036450983610a5a0badac3a79">More...</a><br /></td></tr>
+<tr class="separator:a6a3c7f5036450983610a5a0badac3a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0130cb7d7499fbb6ffa3adb83be76db1"><td class="memItemLeft" align="right" valign="top">UINT32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html#a0130cb7d7499fbb6ffa3adb83be76db1">morphShapeVersion</a></td></tr>
+<tr class="memdesc:a0130cb7d7499fbb6ffa3adb83be76db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version of the morph shape vertices in the buffer.  <a href="#a0130cb7d7499fbb6ffa3adb83be76db1">More...</a><br /></td></tr>
+<tr class="separator:a0130cb7d7499fbb6ffa3adb83be76db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classbs_1_1ct_1_1_render_element"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classbs_1_1ct_1_1_render_element')"><img src="closed.png" alt="-"/>&#160;Fields inherited from <a class="el" href="classbs_1_1ct_1_1_render_element.html">RenderElement</a></td></tr>
+<tr class="memitem:a4f2ff6d75fcde35958402192b78af547 inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_mesh.html">Mesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_element.html#a4f2ff6d75fcde35958402192b78af547">mesh</a></td></tr>
+<tr class="memdesc:a4f2ff6d75fcde35958402192b78af547 inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the mesh to render.  <a href="classbs_1_1ct_1_1_render_element.html#a4f2ff6d75fcde35958402192b78af547">More...</a><br /></td></tr>
+<tr class="separator:a4f2ff6d75fcde35958402192b78af547 inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae533be51349a547431e9257caeecd7ba inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbs_1_1_sub_mesh.html">SubMesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_element.html#ae533be51349a547431e9257caeecd7ba">subMesh</a></td></tr>
+<tr class="memdesc:ae533be51349a547431e9257caeecd7ba inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Portion of the mesh to render.  <a href="classbs_1_1ct_1_1_render_element.html#ae533be51349a547431e9257caeecd7ba">More...</a><br /></td></tr>
+<tr class="separator:ae533be51349a547431e9257caeecd7ba inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2272e301404d0de9565d64b5a5d61bae inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_element.html#a2272e301404d0de9565d64b5a5d61bae">material</a></td></tr>
+<tr class="memdesc:a2272e301404d0de9565d64b5a5d61bae inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbs_1_1ct_1_1_material.html" title="Material that controls how objects are rendered.   ">Material</a> to render the mesh with.  <a href="classbs_1_1ct_1_1_render_element.html#a2272e301404d0de9565d64b5a5d61bae">More...</a><br /></td></tr>
+<tr class="separator:a2272e301404d0de9565d64b5a5d61bae inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6adc86c0cf080d1cdb0e3800082a9d inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memItemLeft" align="right" valign="top">UINT32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_element.html#adc6adc86c0cf080d1cdb0e3800082a9d">techniqueIdx</a></td></tr>
+<tr class="memdesc:adc6adc86c0cf080d1cdb0e3800082a9d inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the technique in the material to render the element with.  <a href="classbs_1_1ct_1_1_render_element.html#adc6adc86c0cf080d1cdb0e3800082a9d">More...</a><br /></td></tr>
+<tr class="separator:adc6adc86c0cf080d1cdb0e3800082a9d inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02636f17a0f2cd1cd0110e4e771770a0 inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_gpu_params_set.html">GpuParamsSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_element.html#a02636f17a0f2cd1cd0110e4e771770a0">params</a></td></tr>
+<tr class="memdesc:a02636f17a0f2cd1cd0110e4e771770a0 inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">All GPU parameters from the material used by the renderable.  <a href="classbs_1_1ct_1_1_render_element.html#a02636f17a0f2cd1cd0110e4e771770a0">More...</a><br /></td></tr>
+<tr class="separator:a02636f17a0f2cd1cd0110e4e771770a0 inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae405e91f0b92a0a707c8efbfe814b70 inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memItemLeft" align="right" valign="top">UINT32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_element.html#aae405e91f0b92a0a707c8efbfe814b70">type</a> = 0</td></tr>
+<tr class="memdesc:aae405e91f0b92a0a707c8efbfe814b70 inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbs_1_1ct_1_1_renderer.html" title="Primarily rendering class that allows you to specify how to render objects that exist in the scene gr...">Renderer</a> specific value that identifies the type of this renderable element.  <a href="classbs_1_1ct_1_1_render_element.html#aae405e91f0b92a0a707c8efbfe814b70">More...</a><br /></td></tr>
+<tr class="separator:aae405e91f0b92a0a707c8efbfe814b70 inherit pub_attribs_classbs_1_1ct_1_1_render_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2272e301404d0de9565d64b5a5d61bae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2272e301404d0de9565d64b5a5d61bae">&#9670;&nbsp;</a></span>material</h2>
+<a id="a513b8477c4f9f547faad0b21eddb660f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513b8477c4f9f547faad0b21eddb660f">&#9670;&nbsp;</a></span>animationId</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt;<a class="el" href="classbs_1_1ct_1_1_material.html">Material</a>&gt; material</td>
+          <td class="memname">UINT64 animationId</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classbs_1_1ct_1_1_material.html" title="Material that controls how objects are rendered.   ">Material</a> to render the mesh with. </p>
+<p>Identifier of the animation running on the renderable's mesh. </p>
+<p>-1 if no animation. </p>
 
 </div>
 </div>
-<a id="a4f2ff6d75fcde35958402192b78af547"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f2ff6d75fcde35958402192b78af547">&#9670;&nbsp;</a></span>mesh</h2>
+<a id="acbf85dc28395e47175d57e10c4b57c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf85dc28395e47175d57e10c4b57c91">&#9670;&nbsp;</a></span>animType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt;<a class="el" href="classbs_1_1ct_1_1_mesh.html">Mesh</a>&gt; mesh</td>
+          <td class="memname"><a class="el" href="group___implementation.html#ga105d24b486944bc2d89055feb8ecf36b">RenderableAnimType</a> animType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reference to the mesh to render. </p>
+<p>Type of animation applied to this element, if any. </p>
 
 </div>
 </div>
-<a id="ae533be51349a547431e9257caeecd7ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae533be51349a547431e9257caeecd7ba">&#9670;&nbsp;</a></span>subMesh</h2>
+<a id="a219ee83e158810bfbe8ad220e71d9853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a219ee83e158810bfbe8ad220e71d9853">&#9670;&nbsp;</a></span>boneMatrixBuffer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structbs_1_1_sub_mesh.html">SubMesh</a> subMesh</td>
+          <td class="memname"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt;<a class="el" href="classbs_1_1ct_1_1_gpu_buffer.html">GpuBuffer</a>&gt; boneMatrixBuffer</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Portion of the mesh to render. </p>
+<p>GPU buffer containing element's bone matrices, if it requires any. </p>
+
+</div>
+</div>
+<a id="a81e1fa9124622bdf4ff908acb902b145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e1fa9124622bdf4ff908acb902b145">&#9670;&nbsp;</a></span>gridLightIndicesParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbs_1_1_t_gpu_param_buffer.html">GpuParamBuffer</a> gridLightIndicesParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parameter to which to bind a buffer containing all light indices, as mapped by grid offsets &amp; size. </p>
+
+</div>
+</div>
+<a id="a1f16519978270f6d02688e5c20ab4b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f16519978270f6d02688e5c20ab4b90">&#9670;&nbsp;</a></span>gridLightOffsetsAndSizeParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbs_1_1_t_gpu_param_buffer.html">GpuParamBuffer</a> gridLightOffsetsAndSizeParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parameter to which to bind a buffer containing light grid offsets and size, per grid cell. </p>
+<p>Used for forward rendering. </p>
+
+</div>
+</div>
+<a id="af110b0b85fc4eb06cec6457aae7dd624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af110b0b85fc4eb06cec6457aae7dd624">&#9670;&nbsp;</a></span>gridParamsBindings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbs_1_1_gpu_param_binding.html">GpuParamBinding</a> gridParamsBindings[GPT_COUNT]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding indices representing where should lights param block buffer be bound to. </p>
+
+</div>
+</div>
+<a id="afb69b616e96ee404ea5b8b062ac38fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb69b616e96ee404ea5b8b062ac38fe0">&#9670;&nbsp;</a></span>gridProbeOffsetsAndSizeParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbs_1_1_t_gpu_param_buffer.html">GpuParamBuffer</a> gridProbeOffsetsAndSizeParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parameter to which to bind a buffer containing reflection probe grid offsets and size, per grid cell. </p>
+<p>Used for forward rendering. </p>
+
+</div>
+</div>
+<a id="a4140f551088dc425d6d72464e7ac3b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4140f551088dc425d6d72464e7ac3b2c">&#9670;&nbsp;</a></span>imageBasedParams</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbs_1_1ct_1_1_image_based_lighting_params.html">ImageBasedLightingParams</a> imageBasedParams</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Collection of parameters used for image based lighting. </p>
+
+</div>
+</div>
+<a id="ad377d76f150ec442e16731ca6d087a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad377d76f150ec442e16731ca6d087a58">&#9670;&nbsp;</a></span>lightAndReflProbeParamsParamBlockBinding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbs_1_1_gpu_param_binding.html">GpuParamBinding</a> lightAndReflProbeParamsParamBlockBinding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding for a parameter block that contains the number of lights and reflection probes in the light/refl. </p>
+<p>probe parameter blocks. Only used when standard (non-clustered) forward rendering is used. </p>
+
+</div>
+</div>
+<a id="a764ce5dc79cd8e62a7deb40647fcacc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a764ce5dc79cd8e62a7deb40647fcacc7">&#9670;&nbsp;</a></span>lightsBufferParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbs_1_1_t_gpu_param_buffer.html">GpuParamBuffer</a> lightsBufferParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parameter to which to bind light buffer used for forward rendering. </p>
+
+</div>
+</div>
+<a id="aabb964dae44f418e6986d7776c9e36c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb964dae44f418e6986d7776c9e36c4">&#9670;&nbsp;</a></span>lightsParamBlockBinding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbs_1_1_gpu_param_binding.html">GpuParamBinding</a> lightsParamBlockBinding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding for a parameter block containing a list of lights influencing this object. </p>
+<p>Only used when standard (non-clustered) forward rendering is used. </p>
+
+</div>
+</div>
+<a id="a356191727d0e487782343d7728df1e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356191727d0e487782343d7728df1e37">&#9670;&nbsp;</a></span>morphShapeBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt;<a class="el" href="classbs_1_1ct_1_1_vertex_buffer.html">VertexBuffer</a>&gt; morphShapeBuffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vertex buffer containing element's morph shape vertices, if it has any. </p>
+
+</div>
+</div>
+<a id="a0130cb7d7499fbb6ffa3adb83be76db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0130cb7d7499fbb6ffa3adb83be76db1">&#9670;&nbsp;</a></span>morphShapeVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT32 morphShapeVersion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Version of the morph shape vertices in the buffer. </p>
+
+</div>
+</div>
+<a id="a6a3c7f5036450983610a5a0badac3a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3c7f5036450983610a5a0badac3a79">&#9670;&nbsp;</a></span>morphVertexDeclaration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt;<a class="el" href="classbs_1_1ct_1_1_vertex_declaration.html">VertexDeclaration</a>&gt; morphVertexDeclaration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vertex declaration used for rendering meshes containing morph shape information. </p>
+
+</div>
+</div>
+<a id="a4dbb5a592bb510826a926505cec1e8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbb5a592bb510826a926505cec1e8dc">&#9670;&nbsp;</a></span>perCameraBindings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbs_1_1_gpu_param_binding.html">GpuParamBinding</a> perCameraBindings[GPT_COUNT]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding indices representing where should the per-camera param block buffer be bound to. </p>
+
+</div>
+</div>
+<a id="a79c50d2904b4fe5b57efb054475c2f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79c50d2904b4fe5b57efb054475c2f11">&#9670;&nbsp;</a></span>samplerOverrides</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbs_1_1ct_1_1_material_sampler_overrides.html">MaterialSamplerOverrides</a>* samplerOverrides</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional overrides for material sampler states. </p>
+<p>Used when renderer wants to override certain sampling properties on a global scale (for example filtering most commonly). </p>
 
 </div>
 </div>

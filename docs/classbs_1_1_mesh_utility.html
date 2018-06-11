@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -112,6 +120,9 @@ Static methods</h2></td></tr>
 <tr class="memitem:ac87170b70f6c432d8c2c13ff4e670525"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_utility.html#ac87170b70f6c432d8c2c13ff4e670525">unpackNormals</a> (UINT8 *source, <a class="el" href="classbs_1_1_vector4.html">Vector4</a> *destination, UINT32 count, UINT32 stride)</td></tr>
 <tr class="memdesc:ac87170b70f6c432d8c2c13ff4e670525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes normals from 4D 8-bit packed format into a 32-bit float format.  <a href="#ac87170b70f6c432d8c2c13ff4e670525">More...</a><br /></td></tr>
 <tr class="separator:ac87170b70f6c432d8c2c13ff4e670525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10b45b6f9d97fd36ccf489aec63a756"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbs_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_utility.html#ab10b45b6f9d97fd36ccf489aec63a756">unpackNormal</a> (const UINT8 *source)</td></tr>
+<tr class="memdesc:ab10b45b6f9d97fd36ccf489aec63a756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a normal from 4D 8-bit packed format into a 32-bit float format.  <a href="#ab10b45b6f9d97fd36ccf489aec63a756">More...</a><br /></td></tr>
+<tr class="separator:ab10b45b6f9d97fd36ccf489aec63a756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method documentation</h2>
 <a id="a6f7c06c95245f2628f5b6398c9ada7fb"></a>
@@ -663,6 +674,34 @@ Vertices should be split before calling this method if there are any discontinui
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab10b45b6f9d97fd36ccf489aec63a756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10b45b6f9d97fd36ccf489aec63a756">&#9670;&nbsp;</a></span>unpackNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classbs_1_1_vector3.html">Vector3</a> unpackNormal </td>
+          <td>(</td>
+          <td class="paramtype">const UINT8 *&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decodes a normal from 4D 8-bit packed format into a 32-bit float format. </p>
 
 </div>
 </div>

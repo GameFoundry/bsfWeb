@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -99,35 +107,63 @@ Static methods</h2></td></tr>
 <tr class="memitem:a659921323d652b76a34a6e2b434e23be"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a659921323d652b76a34a6e2b434e23be">isPow2</a> (T n)</td></tr>
 <tr class="memdesc:a659921323d652b76a34a6e2b434e23be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the number is power-of-two or not.  <a href="#a659921323d652b76a34a6e2b434e23be">More...</a><br /></td></tr>
 <tr class="separator:a659921323d652b76a34a6e2b434e23be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad73c6881bec6c04f0d8bd612d105e91b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad73c6881bec6c04f0d8bd612d105e91b"><td class="memTemplItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#ad73c6881bec6c04f0d8bd612d105e91b">getBitShift</a> (T mask)</td></tr>
-<tr class="memdesc:ad73c6881bec6c04f0d8bd612d105e91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bits a pattern must be shifted right by to remove right-hand zeros.  <a href="#ad73c6881bec6c04f0d8bd612d105e91b">More...</a><br /></td></tr>
-<tr class="separator:ad73c6881bec6c04f0d8bd612d105e91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f65f6026cfebffd6d1617390354a2f5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1f65f6026cfebffd6d1617390354a2f5"><td class="memTemplItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a1f65f6026cfebffd6d1617390354a2f5">getBitShift</a> (T mask)</td></tr>
+<tr class="memdesc:a1f65f6026cfebffd6d1617390354a2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bits a pattern must be shifted right by to remove right-hand zeros.  <a href="#a1f65f6026cfebffd6d1617390354a2f5">More...</a><br /></td></tr>
+<tr class="separator:a1f65f6026cfebffd6d1617390354a2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2da5cebe82ab584f813d234f73aec0d"><td class="memTemplParams" colspan="2">template&lt;typename SrcT , typename DestT &gt; </td></tr>
 <tr class="memitem:ae2da5cebe82ab584f813d234f73aec0d"><td class="memTemplItemLeft" align="right" valign="top">static DestT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#ae2da5cebe82ab584f813d234f73aec0d">convertBitPattern</a> (SrcT srcValue, SrcT srcBitMask, DestT destBitMask)</td></tr>
 <tr class="memdesc:ae2da5cebe82ab584f813d234f73aec0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a value with a given src bit mask, and produces another value with a desired bit mask.  <a href="#ae2da5cebe82ab584f813d234f73aec0d">More...</a><br /></td></tr>
 <tr class="separator:ae2da5cebe82ab584f813d234f73aec0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f618f6d598d1be287f2c133324963d2"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a8f618f6d598d1be287f2c133324963d2">fixedToFixed</a> (UINT32 value, unsigned int n, unsigned int p)</td></tr>
-<tr class="memdesc:a8f618f6d598d1be287f2c133324963d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert N bit color channel value to P bits.  <a href="#a8f618f6d598d1be287f2c133324963d2">More...</a><br /></td></tr>
-<tr class="separator:a8f618f6d598d1be287f2c133324963d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c3c9e5adf396f5022aaac20f31be5bd"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a1c3c9e5adf396f5022aaac20f31be5bd">unormToUint</a> (float value, unsigned int bits)</td></tr>
-<tr class="memdesc:a1c3c9e5adf396f5022aaac20f31be5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts floating point value in range [0, 1] to an unsigned integer of a certain number of bits.  <a href="#a1c3c9e5adf396f5022aaac20f31be5bd">More...</a><br /></td></tr>
-<tr class="separator:a1c3c9e5adf396f5022aaac20f31be5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfbf73166a4ae587a2124f5b46ea7f04"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#adfbf73166a4ae587a2124f5b46ea7f04">snormToUint</a> (float value, unsigned int bits)</td></tr>
-<tr class="memdesc:adfbf73166a4ae587a2124f5b46ea7f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts floating point value in range [-1, 1] to an unsigned integer of a certain number of bits.  <a href="#adfbf73166a4ae587a2124f5b46ea7f04">More...</a><br /></td></tr>
-<tr class="separator:adfbf73166a4ae587a2124f5b46ea7f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae50b4c9b89fb58dd5d2d3c112c960992"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#ae50b4c9b89fb58dd5d2d3c112c960992">uintToUnorm</a> (unsigned value, unsigned int bits)</td></tr>
-<tr class="memdesc:ae50b4c9b89fb58dd5d2d3c112c960992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an unsigned integer to a floating point in range [0, 1].  <a href="#ae50b4c9b89fb58dd5d2d3c112c960992">More...</a><br /></td></tr>
-<tr class="separator:ae50b4c9b89fb58dd5d2d3c112c960992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a862c996c6a2956955ac92d50657de152"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a862c996c6a2956955ac92d50657de152">uintToSnorm</a> (unsigned value, unsigned int bits)</td></tr>
-<tr class="memdesc:a862c996c6a2956955ac92d50657de152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an unsigned integer to a floating point in range [-1, 1].  <a href="#a862c996c6a2956955ac92d50657de152">More...</a><br /></td></tr>
-<tr class="separator:a862c996c6a2956955ac92d50657de152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae5575ccbc88bbe03f7e59d50907e13"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a5ae5575ccbc88bbe03f7e59d50907e13">intWrite</a> (void *dest, const int n, const unsigned int value)</td></tr>
-<tr class="memdesc:a5ae5575ccbc88bbe03f7e59d50907e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a n*8 bits integer value to memory in native endian.  <a href="#a5ae5575ccbc88bbe03f7e59d50907e13">More...</a><br /></td></tr>
-<tr class="separator:a5ae5575ccbc88bbe03f7e59d50907e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba513ae8886da6b989bf07f2aa6403fd"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#aba513ae8886da6b989bf07f2aa6403fd">intRead</a> (const void *src, int n)</td></tr>
-<tr class="memdesc:aba513ae8886da6b989bf07f2aa6403fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a n*8 bits integer value to memory in native endian.  <a href="#aba513ae8886da6b989bf07f2aa6403fd">More...</a><br /></td></tr>
-<tr class="separator:aba513ae8886da6b989bf07f2aa6403fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369ac50979d9c26cb3fc1e36833e9032"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a369ac50979d9c26cb3fc1e36833e9032">fixedToFixed</a> (UINT32 value, uint32_t n, uint32_t p)</td></tr>
+<tr class="memdesc:a369ac50979d9c26cb3fc1e36833e9032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert N bit color channel value to P bits.  <a href="#a369ac50979d9c26cb3fc1e36833e9032">More...</a><br /></td></tr>
+<tr class="separator:a369ac50979d9c26cb3fc1e36833e9032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d36afad0edb2402bcfae82fbe781f33"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a5d36afad0edb2402bcfae82fbe781f33">unormToUint</a> (float value, uint32_t bits)</td></tr>
+<tr class="memdesc:a5d36afad0edb2402bcfae82fbe781f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts floating point value in range [0, 1] to an unsigned integer of a certain number of bits.  <a href="#a5d36afad0edb2402bcfae82fbe781f33">More...</a><br /></td></tr>
+<tr class="separator:a5d36afad0edb2402bcfae82fbe781f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5274ef31bff3e0b88dc4fedc79517e7"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#ac5274ef31bff3e0b88dc4fedc79517e7">snormToUint</a> (float value, uint32_t bits)</td></tr>
+<tr class="memdesc:ac5274ef31bff3e0b88dc4fedc79517e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts floating point value in range [-1, 1] to an unsigned integer of a certain number of bits.  <a href="#ac5274ef31bff3e0b88dc4fedc79517e7">More...</a><br /></td></tr>
+<tr class="separator:ac5274ef31bff3e0b88dc4fedc79517e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28dfa42cdf9e9381ca7db3624cd2ced"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#aa28dfa42cdf9e9381ca7db3624cd2ced">uintToUnorm</a> (uint32_t value, uint32_t bits)</td></tr>
+<tr class="memdesc:aa28dfa42cdf9e9381ca7db3624cd2ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an unsigned integer to a floating point in range [0, 1].  <a href="#aa28dfa42cdf9e9381ca7db3624cd2ced">More...</a><br /></td></tr>
+<tr class="separator:aa28dfa42cdf9e9381ca7db3624cd2ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6768830e03257a72e931315a5519d5"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#abe6768830e03257a72e931315a5519d5">uintToSnorm</a> (uint32_t value, uint32_t bits)</td></tr>
+<tr class="memdesc:abe6768830e03257a72e931315a5519d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an unsigned integer to a floating point in range [-1, 1].  <a href="#abe6768830e03257a72e931315a5519d5">More...</a><br /></td></tr>
+<tr class="separator:abe6768830e03257a72e931315a5519d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b3c06aa78bf3b686f20502e465bb5d"><td class="memTemplParams" colspan="2">template&lt;uint32_t bits = 8&gt; </td></tr>
+<tr class="memitem:ad1b3c06aa78bf3b686f20502e465bb5d"><td class="memTemplItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#ad1b3c06aa78bf3b686f20502e465bb5d">unormToUint</a> (float value)</td></tr>
+<tr class="memdesc:ad1b3c06aa78bf3b686f20502e465bb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts floating point value in range [0, 1] to an unsigned integer of a certain number of bits.  <a href="#ad1b3c06aa78bf3b686f20502e465bb5d">More...</a><br /></td></tr>
+<tr class="separator:ad1b3c06aa78bf3b686f20502e465bb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666b4e2a7d6ddbacb1ca1b4c8abca21c"><td class="memTemplParams" colspan="2">template&lt;uint32_t bits = 8&gt; </td></tr>
+<tr class="memitem:a666b4e2a7d6ddbacb1ca1b4c8abca21c"><td class="memTemplItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a666b4e2a7d6ddbacb1ca1b4c8abca21c">snormToUint</a> (float value)</td></tr>
+<tr class="memdesc:a666b4e2a7d6ddbacb1ca1b4c8abca21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts floating point value in range [-1, 1] to an unsigned integer of a certain number of bits.  <a href="#a666b4e2a7d6ddbacb1ca1b4c8abca21c">More...</a><br /></td></tr>
+<tr class="separator:a666b4e2a7d6ddbacb1ca1b4c8abca21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240f954b109ee603b3a301289e93db8d"><td class="memTemplParams" colspan="2">template&lt;uint32_t bits = 8&gt; </td></tr>
+<tr class="memitem:a240f954b109ee603b3a301289e93db8d"><td class="memTemplItemLeft" align="right" valign="top">static float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a240f954b109ee603b3a301289e93db8d">uintToUnorm</a> (uint32_t value)</td></tr>
+<tr class="memdesc:a240f954b109ee603b3a301289e93db8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an unsigned integer to a floating point in range [0, 1].  <a href="#a240f954b109ee603b3a301289e93db8d">More...</a><br /></td></tr>
+<tr class="separator:a240f954b109ee603b3a301289e93db8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0539d28b8382f7efc7fcf8d0a321122"><td class="memTemplParams" colspan="2">template&lt;uint32_t bits = 8&gt; </td></tr>
+<tr class="memitem:ae0539d28b8382f7efc7fcf8d0a321122"><td class="memTemplItemLeft" align="right" valign="top">static float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#ae0539d28b8382f7efc7fcf8d0a321122">uintToSnorm</a> (uint32_t value)</td></tr>
+<tr class="memdesc:ae0539d28b8382f7efc7fcf8d0a321122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an unsigned integer to a floating point in range [-1, 1].  <a href="#ae0539d28b8382f7efc7fcf8d0a321122">More...</a><br /></td></tr>
+<tr class="separator:ae0539d28b8382f7efc7fcf8d0a321122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf472804d56ed8b762ce7775d755acb"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a0cf472804d56ed8b762ce7775d755acb">lerpByte</a> (uint32_t from, uint32_t to, uint32_t t)</td></tr>
+<tr class="memdesc:a0cf472804d56ed8b762ce7775d755acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates between two values using the <code>t</code> parameter.  <a href="#a0cf472804d56ed8b762ce7775d755acb">More...</a><br /></td></tr>
+<tr class="separator:a0cf472804d56ed8b762ce7775d755acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1bddea0e40ca86404cd31ed9e76ecf"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#adf1bddea0e40ca86404cd31ed9e76ecf">lerpWord</a> (uint32_t from, uint32_t to, uint32_t t)</td></tr>
+<tr class="memdesc:adf1bddea0e40ca86404cd31ed9e76ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates between two values using the <code>t</code> parameter.  <a href="#adf1bddea0e40ca86404cd31ed9e76ecf">More...</a><br /></td></tr>
+<tr class="separator:adf1bddea0e40ca86404cd31ed9e76ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc17801840a99384abfabfadc4b87be3"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#afc17801840a99384abfabfadc4b87be3">invLerpByte</a> (uint32_t from, uint32_t to, uint32_t val)</td></tr>
+<tr class="memdesc:afc17801840a99384abfabfadc4b87be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the position of the <code>val</code> parameter in the [from, to] range, returned in [0, 255] range where 0 is returned if <code>val</code> is less or equal than <code>from</code>, and 255 is returned if <code>val</code> is equal to greater to <code>to</code>, and in-between values returned accordingly.  <a href="#afc17801840a99384abfabfadc4b87be3">More...</a><br /></td></tr>
+<tr class="separator:afc17801840a99384abfabfadc4b87be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070f464be6c6f1ab6952e4436bd0fdb4"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a070f464be6c6f1ab6952e4436bd0fdb4">invLerpWord</a> (uint32_t from, uint32_t to, uint32_t val)</td></tr>
+<tr class="memdesc:a070f464be6c6f1ab6952e4436bd0fdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the position of the <code>val</code> parameter in the [from, to] range, returned in [0, 65536] range where 0 is returned if <code>val</code> is less or equal than <code>from</code>, and 65536 is returned if <code>val</code> is equal to greater to <code>to</code>, and in-between values returned accordingly.  <a href="#a070f464be6c6f1ab6952e4436bd0fdb4">More...</a><br /></td></tr>
+<tr class="separator:a070f464be6c6f1ab6952e4436bd0fdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe6ec5d163c2eac6a21093a45598aed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a5fe6ec5d163c2eac6a21093a45598aed">intWrite</a> (void *dest, const int32_t n, const uint32_t value)</td></tr>
+<tr class="memdesc:a5fe6ec5d163c2eac6a21093a45598aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a n*8 bits integer value to memory in native endian.  <a href="#a5fe6ec5d163c2eac6a21093a45598aed">More...</a><br /></td></tr>
+<tr class="separator:a5fe6ec5d163c2eac6a21093a45598aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb628e32756572543d54dc2b9a2e09b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a2fb628e32756572543d54dc2b9a2e09b">intRead</a> (const void *src, int32_t n)</td></tr>
+<tr class="memdesc:a2fb628e32756572543d54dc2b9a2e09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a n*8 bits integer value to memory in native endian.  <a href="#a2fb628e32756572543d54dc2b9a2e09b">More...</a><br /></td></tr>
+<tr class="separator:a2fb628e32756572543d54dc2b9a2e09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759cbb1703dbad58c8be2325970a9dfe"><td class="memItemLeft" align="right" valign="top">static UINT16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_bitwise.html#a759cbb1703dbad58c8be2325970a9dfe">floatToHalf</a> (float i)</td></tr>
 <tr class="memdesc:a759cbb1703dbad58c8be2325970a9dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a float32 to a float16 (NV_half_float).  <a href="#a759cbb1703dbad58c8be2325970a9dfe">More...</a><br /></td></tr>
 <tr class="separator:a759cbb1703dbad58c8be2325970a9dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,8 +268,8 @@ Static methods</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f618f6d598d1be287f2c133324963d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f618f6d598d1be287f2c133324963d2">&#9670;&nbsp;</a></span>fixedToFixed()</h2>
+<a id="a369ac50979d9c26cb3fc1e36833e9032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369ac50979d9c26cb3fc1e36833e9032">&#9670;&nbsp;</a></span>fixedToFixed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +278,7 @@ Static methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static unsigned int fixedToFixed </td>
+          <td class="memname">static uint32_t fixedToFixed </td>
           <td>(</td>
           <td class="paramtype">UINT32&#160;</td>
           <td class="paramname"><em>value</em>, </td>
@@ -250,13 +286,13 @@ Static methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
@@ -445,8 +481,8 @@ Static methods</h2></td></tr>
 
 </div>
 </div>
-<a id="ad73c6881bec6c04f0d8bd612d105e91b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad73c6881bec6c04f0d8bd612d105e91b">&#9670;&nbsp;</a></span>getBitShift()</h2>
+<a id="a1f65f6026cfebffd6d1617390354a2f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f65f6026cfebffd6d1617390354a2f5">&#9670;&nbsp;</a></span>getBitShift()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,7 +491,7 @@ Static methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static unsigned int getBitShift </td>
+          <td class="memname">static uint32_t getBitShift </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>mask</em></td><td>)</td>
@@ -529,8 +565,8 @@ Static methods</h2></td></tr>
 
 </div>
 </div>
-<a id="aba513ae8886da6b989bf07f2aa6403fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba513ae8886da6b989bf07f2aa6403fd">&#9670;&nbsp;</a></span>intRead()</h2>
+<a id="a2fb628e32756572543d54dc2b9a2e09b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb628e32756572543d54dc2b9a2e09b">&#9670;&nbsp;</a></span>intRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,7 +575,7 @@ Static methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static unsigned int intRead </td>
+          <td class="memname">static uint32_t intRead </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
@@ -547,7 +583,7 @@ Static methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">int32_t&#160;</td>
           <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
@@ -567,8 +603,8 @@ Static methods</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ae5575ccbc88bbe03f7e59d50907e13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae5575ccbc88bbe03f7e59d50907e13">&#9670;&nbsp;</a></span>intWrite()</h2>
+<a id="a5fe6ec5d163c2eac6a21093a45598aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe6ec5d163c2eac6a21093a45598aed">&#9670;&nbsp;</a></span>intWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -585,13 +621,13 @@ Static methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const int32_t&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramtype">const uint32_t&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -608,6 +644,96 @@ Static methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Write a n*8 bits integer value to memory in native endian. </p>
+
+</div>
+</div>
+<a id="afc17801840a99384abfabfadc4b87be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc17801840a99384abfabfadc4b87be3">&#9670;&nbsp;</a></span>invLerpByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t invLerpByte </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines the position of the <code>val</code> parameter in the [from, to] range, returned in [0, 255] range where 0 is returned if <code>val</code> is less or equal than <code>from</code>, and 255 is returned if <code>val</code> is equal to greater to <code>to</code>, and in-between values returned accordingly. </p>
+<p>All values must be in [0, 255] range. </p>
+
+</div>
+</div>
+<a id="a070f464be6c6f1ab6952e4436bd0fdb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070f464be6c6f1ab6952e4436bd0fdb4">&#9670;&nbsp;</a></span>invLerpWord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t invLerpWord </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines the position of the <code>val</code> parameter in the [from, to] range, returned in [0, 65536] range where 0 is returned if <code>val</code> is less or equal than <code>from</code>, and 65536 is returned if <code>val</code> is equal to greater to <code>to</code>, and in-between values returned accordingly. </p>
+<p>All values must be in [0, 65536] range. </p>
 
 </div>
 </div>
@@ -636,6 +762,96 @@ Static methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determines whether the number is power-of-two or not. </p>
+
+</div>
+</div>
+<a id="a0cf472804d56ed8b762ce7775d755acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf472804d56ed8b762ce7775d755acb">&#9670;&nbsp;</a></span>lerpByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t lerpByte </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Interpolates between two values using the <code>t</code> parameter. </p>
+<p>All parameters must be in [0, 255] range. When <code>t</code> is zero, <code>from</code> value will be returned, and when it is 255 <code>to</code> value will be returned, and interpolation between <code>from</code> and <code>to</code> will occurr for in-between values. </p>
+
+</div>
+</div>
+<a id="adf1bddea0e40ca86404cd31ed9e76ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1bddea0e40ca86404cd31ed9e76ecf">&#9670;&nbsp;</a></span>lerpWord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t lerpWord </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Interpolates between two values using the <code>t</code> parameter. </p>
+<p>All parameters must be in [0, 65536] range. When <code>t</code> is zero, <code>from</code> value will be returned, and when it is 65536 <code>to</code> value will be returned, and interpolation between <code>from</code> and <code>to</code> will occurr for in-between values. </p>
 
 </div>
 </div>
@@ -751,8 +967,8 @@ Static methods</h2></td></tr>
 
 </div>
 </div>
-<a id="adfbf73166a4ae587a2124f5b46ea7f04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfbf73166a4ae587a2124f5b46ea7f04">&#9670;&nbsp;</a></span>snormToUint()</h2>
+<a id="ac5274ef31bff3e0b88dc4fedc79517e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5274ef31bff3e0b88dc4fedc79517e7">&#9670;&nbsp;</a></span>snormToUint() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -761,7 +977,7 @@ Static methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static unsigned int snormToUint </td>
+          <td class="memname">static uint32_t snormToUint </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>value</em>, </td>
@@ -769,7 +985,7 @@ Static methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>bits</em>&#160;</td>
         </tr>
         <tr>
@@ -790,8 +1006,37 @@ Static methods</h2></td></tr>
 
 </div>
 </div>
-<a id="a862c996c6a2956955ac92d50657de152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a862c996c6a2956955ac92d50657de152">&#9670;&nbsp;</a></span>uintToSnorm()</h2>
+<a id="a666b4e2a7d6ddbacb1ca1b4c8abca21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a666b4e2a7d6ddbacb1ca1b4c8abca21c">&#9670;&nbsp;</a></span>snormToUint() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t snormToUint </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts floating point value in range [-1, 1] to an unsigned integer of a certain number of bits. </p>
+<p>Works for any value of bits between 0 and 31. </p>
+
+</div>
+</div>
+<a id="abe6768830e03257a72e931315a5519d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6768830e03257a72e931315a5519d5">&#9670;&nbsp;</a></span>uintToSnorm() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -802,13 +1047,13 @@ Static methods</h2></td></tr>
         <tr>
           <td class="memname">static float uintToSnorm </td>
           <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>bits</em>&#160;</td>
         </tr>
         <tr>
@@ -828,8 +1073,36 @@ Static methods</h2></td></tr>
 
 </div>
 </div>
-<a id="ae50b4c9b89fb58dd5d2d3c112c960992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae50b4c9b89fb58dd5d2d3c112c960992">&#9670;&nbsp;</a></span>uintToUnorm()</h2>
+<a id="ae0539d28b8382f7efc7fcf8d0a321122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0539d28b8382f7efc7fcf8d0a321122">&#9670;&nbsp;</a></span>uintToSnorm() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float uintToSnorm </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts an unsigned integer to a floating point in range [-1, 1]. </p>
+
+</div>
+</div>
+<a id="aa28dfa42cdf9e9381ca7db3624cd2ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa28dfa42cdf9e9381ca7db3624cd2ced">&#9670;&nbsp;</a></span>uintToUnorm() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -840,13 +1113,13 @@ Static methods</h2></td></tr>
         <tr>
           <td class="memname">static float uintToUnorm </td>
           <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>bits</em>&#160;</td>
         </tr>
         <tr>
@@ -866,8 +1139,8 @@ Static methods</h2></td></tr>
 
 </div>
 </div>
-<a id="a1c3c9e5adf396f5022aaac20f31be5bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c3c9e5adf396f5022aaac20f31be5bd">&#9670;&nbsp;</a></span>unormToUint()</h2>
+<a id="a240f954b109ee603b3a301289e93db8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a240f954b109ee603b3a301289e93db8d">&#9670;&nbsp;</a></span>uintToUnorm() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -876,7 +1149,35 @@ Static methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static unsigned int unormToUint </td>
+          <td class="memname">static float uintToUnorm </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts an unsigned integer to a floating point in range [0, 1]. </p>
+
+</div>
+</div>
+<a id="a5d36afad0edb2402bcfae82fbe781f33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d36afad0edb2402bcfae82fbe781f33">&#9670;&nbsp;</a></span>unormToUint() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t unormToUint </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>value</em>, </td>
@@ -884,13 +1185,42 @@ Static methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>bits</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts floating point value in range [0, 1] to an unsigned integer of a certain number of bits. </p>
+<p>Works for any value of bits between 0 and 31. </p>
+
+</div>
+</div>
+<a id="ad1b3c06aa78bf3b686f20502e465bb5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b3c06aa78bf3b686f20502e465bb5d">&#9670;&nbsp;</a></span>unormToUint() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t unormToUint </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>

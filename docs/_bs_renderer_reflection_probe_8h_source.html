@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -82,7 +90,7 @@ $(function() {
 <div class="ttc" id="classbs_1_1ct_1_1_visible_refl_probe_data_html_a032f8b5db1b4e4956fa53793ad66fabb"><div class="ttname"><a href="classbs_1_1ct_1_1_visible_refl_probe_data.html#a032f8b5db1b4e4956fa53793ad66fabb">bs::ct::VisibleReflProbeData::getProbeData</a></div><div class="ttdeci">const ReflProbeData &amp; getProbeData(UINT32 idx) const</div><div class="ttdoc">Returns information about a probe at the specified index. </div><div class="ttdef"><b>Definition:</b> BsRendererReflectionProbe.h:56</div></div>
 <div class="ttc" id="classbs_1_1ct_1_1_visible_refl_probe_data_html"><div class="ttname"><a href="classbs_1_1ct_1_1_visible_refl_probe_data.html">bs::ct::VisibleReflProbeData</a></div><div class="ttdoc">Contains GPU buffers used by the renderer to manipulate reflection probes. </div><div class="ttdef"><b>Definition:</b> BsRendererReflectionProbe.h:38</div></div>
 <div class="ttc" id="classbs_1_1ct_1_1_visible_refl_probe_data_html_a03ba6fce0e574a5a43cb03bb3acde2d9"><div class="ttname"><a href="classbs_1_1ct_1_1_visible_refl_probe_data.html#a03ba6fce0e574a5a43cb03bb3acde2d9">bs::ct::VisibleReflProbeData::getNumProbes</a></div><div class="ttdeci">UINT32 getNumProbes() const</div><div class="ttdoc">Returns the number of reflection probes in the probe buffer. </div><div class="ttdef"><b>Definition:</b> BsRendererReflectionProbe.h:53</div></div>
-<div class="ttc" id="classbs_1_1ct_1_1_renderer_view_group_html"><div class="ttname"><a href="classbs_1_1ct_1_1_renderer_view_group.html">bs::ct::RendererViewGroup</a></div><div class="ttdoc">Contains one or multiple RendererViews that are in some way related. </div><div class="ttdef"><b>Definition:</b> BsRendererView.h:404</div></div>
+<div class="ttc" id="classbs_1_1ct_1_1_renderer_view_group_html"><div class="ttname"><a href="classbs_1_1ct_1_1_renderer_view_group.html">bs::ct::RendererViewGroup</a></div><div class="ttdoc">Contains one or multiple RendererViews that are in some way related. </div><div class="ttdef"><b>Definition:</b> BsRendererView.h:430</div></div>
 <div class="ttc" id="structbs_1_1ct_1_1_image_based_lighting_params_html"><div class="ttname"><a href="structbs_1_1ct_1_1_image_based_lighting_params.html">bs::ct::ImageBasedLightingParams</a></div><div class="ttdoc">Helper struct containing all parameters for binding image lighting related data to the GPU programs u...</div><div class="ttdef"><b>Definition:</b> BsRendererReflectionProbe.h:91</div></div>
 <div class="ttc" id="classbs_1_1ct_1_1_renderer_reflection_probe_html"><div class="ttname"><a href="classbs_1_1ct_1_1_renderer_reflection_probe.html">bs::ct::RendererReflectionProbe</a></div><div class="ttdoc">Renderer information specific to a single reflection probe. </div><div class="ttdef"><b>Definition:</b> BsRendererReflectionProbe.h:76</div></div>
 <div class="ttc" id="classbs_1_1ct_1_1_visible_refl_probe_data_html_a2120830d9725abaa88a8c7727bb97c73"><div class="ttname"><a href="classbs_1_1ct_1_1_visible_refl_probe_data.html#a2120830d9725abaa88a8c7727bb97c73">bs::ct::VisibleReflProbeData::getProbeBuffer</a></div><div class="ttdeci">SPtr&lt; GpuBuffer &gt; getProbeBuffer() const</div><div class="ttdoc">Returns a GPU bindable buffer containing information about every reflection probe. </div><div class="ttdef"><b>Definition:</b> BsRendererReflectionProbe.h:50</div></div>
@@ -104,7 +112,7 @@ $(function() {
 <div class="ttc" id="group___renderer-_internal_html_ga95b07ed76685c320ac25d63c023aa0b1"><div class="ttname"><a href="group___renderer-_internal.html#ga95b07ed76685c320ac25d63c023aa0b1">BS_PARAM_BLOCK_END</a></div><div class="ttdeci">#define BS_PARAM_BLOCK_END</div><div class="ttdoc">Ends parameter block definition. </div><div class="ttdef"><b>Definition:</b> BsParamBlocks.h:191</div></div>
 <div class="ttc" id="group___memory_html_ga5076b1659821c8d7ce06da09452ba382"><div class="ttname"><a href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">bs::SPtr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; SPtr</div><div class="ttdoc">Smart pointer that retains shared ownership of an project through a pointer. </div><div class="ttdef"><b>Definition:</b> BsStdHeaders.h:190</div></div>
 <div class="ttc" id="classbs_1_1_t_gpu_param_buffer_html"><div class="ttname"><a href="classbs_1_1_t_gpu_param_buffer.html">bs::TGpuParamBuffer&lt; true &gt;</a></div></div>
-<div class="ttc" id="structbs_1_1ct_1_1_scene_info_html"><div class="ttname"><a href="structbs_1_1ct_1_1_scene_info.html">bs::ct::SceneInfo</a></div><div class="ttdoc">Contains most scene objects relevant to the renderer. </div><div class="ttdef"><b>Definition:</b> BsRendererScene.h:27</div></div>
+<div class="ttc" id="structbs_1_1ct_1_1_scene_info_html"><div class="ttname"><a href="structbs_1_1ct_1_1_scene_info.html">bs::ct::SceneInfo</a></div><div class="ttdoc">Contains most scene objects relevant to the renderer. </div><div class="ttdef"><b>Definition:</b> BsRendererScene.h:29</div></div>
 <div class="ttc" id="structbs_1_1ct_1_1_refl_probe_data_html"><div class="ttname"><a href="structbs_1_1ct_1_1_refl_probe_data.html">bs::ct::ReflProbeData</a></div><div class="ttdoc">Information about a single reflection probe, as seen by the lighting shader. </div><div class="ttdef"><b>Definition:</b> BsRendererReflectionProbe.h:25</div></div>
 <div class="ttc" id="group___renderer-_internal_html_gac3e84287768a037184a3f36f0206f85f"><div class="ttname"><a href="group___renderer-_internal.html#gac3e84287768a037184a3f36f0206f85f">BS_PARAM_BLOCK_ENTRY</a></div><div class="ttdeci">#define BS_PARAM_BLOCK_ENTRY(Type, Name)</div><div class="ttdoc">Registers a new entry in a parameter block. </div><div class="ttdef"><b>Definition:</b> BsParamBlocks.h:188</div></div>
 </div><!-- fragment --></div><!-- contents -->

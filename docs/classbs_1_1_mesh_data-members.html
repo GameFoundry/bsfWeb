@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -98,16 +106,20 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#aeed55842a89d675e8582cafbc12b651b">getDWORDDataIter</a>(VertexElementSemantic semantic, UINT32 semanticIdx=0, UINT32 streamIdx=0)</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a2315aa6d644572a8ff958b7943ad078b">getElementData</a>(VertexElementSemantic semantic, UINT32 semanticIdx=0, UINT32 streamIdx=0) const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#afca348e39f20f2794d909dcda50d890b">getElementOffset</a>(VertexElementSemantic semantic, UINT32 semanticIdx=0, UINT32 streamIdx=0) const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a72106c40bdd1905b29f1ff282db2cbc6">getIndexElementSize</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a91b5c62d315501169cdaf59b537b437a">getIndexType</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a777e45635721d37c0497ad0198d28832">getIndices16</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#ae610a543d059a950908680d4a9e491a9">getIndices32</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a57e4ee1bfed5c47b0f5cfd33bd4cbed6">getInternalBufferSize</a>() const override</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#ae40a9a413edf96766b2977e693c11630">getNumIndices</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a0a2d5986a5bc380656f18547ca3bd667">getNumVertices</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#ae03f79e6cf1240fe724f6188ae77904a">getRTTI</a>() const override</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getRTTIStatic</b>() (defined in <a class="el" href="classbs_1_1_mesh_data.html">MeshData</a>)</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#aee07b35f394554713293253d46e4260d">getSize</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a0bf5f7cefbd7f6b5578657dd2e6684f1">getIndexData</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a72106c40bdd1905b29f1ff282db2cbc6">getIndexElementSize</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a91b5c62d315501169cdaf59b537b437a">getIndexType</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a777e45635721d37c0497ad0198d28832">getIndices16</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#ae610a543d059a950908680d4a9e491a9">getIndices32</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a57e4ee1bfed5c47b0f5cfd33bd4cbed6">getInternalBufferSize</a>() const override</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#ae40a9a413edf96766b2977e693c11630">getNumIndices</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a0a2d5986a5bc380656f18547ca3bd667">getNumVertices</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#ae03f79e6cf1240fe724f6188ae77904a">getRTTI</a>() const override</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getRTTIStatic</b>() (defined in <a class="el" href="classbs_1_1_mesh_data.html">MeshData</a>)</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#aee07b35f394554713293253d46e4260d">getSize</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#aaa9fb7b976371ffdff348fa786b32fa1">getStreamData</a>(UINT32 streamIdx) const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a8d29b3980f98f96809342c69c9bf9a5c">getStreamSize</a>(UINT32 streamIdx) const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#abd033d7e4dc015b142ee36119a1f7dea">getStreamSize</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_i_reflectable.html#aa6032c8032ae82d1905740e8c0b5844d">getTypeId</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_i_reflectable.html">IReflectable</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbs_1_1_i_reflectable.html#a98e2705ee1aa41cb9fc53f7af322c780">getTypeName</a>() const</td><td class="entry"><a class="el" href="classbs_1_1_i_reflectable.html">IReflectable</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html#a451e936edf36fed588f895d07b5a2726">getVec2DataIter</a>(VertexElementSemantic semantic, UINT32 semanticIdx=0, UINT32 streamIdx=0)</td><td class="entry"><a class="el" href="classbs_1_1_mesh_data.html">MeshData</a></td><td class="entry"></td></tr>

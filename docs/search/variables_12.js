@@ -1,7 +1,7 @@
 var searchData=
 [
   ['samplerate',['sampleRate',['../structbs_1_1_audio_data_info.html#af9c99d9d0bb92e751a3a3d2e5fbecf36',1,'bs::AudioDataInfo']]],
-  ['sampleroverrides',['samplerOverrides',['../classbs_1_1ct_1_1_beast_renderable_element.html#a79c50d2904b4fe5b57efb054475c2f11',1,'bs::ct::BeastRenderableElement']]],
+  ['sampleroverrides',['samplerOverrides',['../classbs_1_1ct_1_1_renderable_element.html#a79c50d2904b4fe5b57efb054475c2f11',1,'bs::ct::RenderableElement']]],
   ['saturation',['saturation',['../structbs_1_1_color_grading_settings.html#ace6317fdf6732cb564c0ae640e929356',1,'bs::ColorGradingSettings']]],
   ['scale',['scale',['../structbs_1_1_animation_curves.html#a01b117fd53ebe69d00a219a0677b5b9a',1,'bs::AnimationCurves']]],
   ['scalecaches',['scaleCaches',['../structbs_1_1_animation_state.html#a394affe937f9c851c5d7f17f67261c31',1,'bs::AnimationState']]],
@@ -32,7 +32,8 @@ var searchData=
   ['shift',['shift',['../structbs_1_1_pointer_event.html#ace78b37abb3d96740735fd8eb41235e6',1,'bs::PointerEvent']]],
   ['showborder',['showBorder',['../structbs_1_1_w_i_n_d_o_w___d_e_s_c.html#a5392246ba17f865c936ae04809a432a2',1,'bs::WINDOW_DESC::showBorder()'],['../structbs_1_1_r_e_n_d_e_r___w_i_n_d_o_w___d_e_s_c.html#a5392246ba17f865c936ae04809a432a2',1,'bs::RENDER_WINDOW_DESC::showBorder()']]],
   ['showtitlebar',['showTitleBar',['../structbs_1_1_w_i_n_d_o_w___d_e_s_c.html#a84c149c7e02190725e31cea2a6564b53',1,'bs::WINDOW_DESC::showTitleBar()'],['../structbs_1_1_r_e_n_d_e_r___w_i_n_d_o_w___d_e_s_c.html#a84c149c7e02190725e31cea2a6564b53',1,'bs::RENDER_WINDOW_DESC::showTitleBar()']]],
-  ['size',['size',['../structbs_1_1_font_bitmap.html#a6d4bac4be8d2f0ee400eb63ac2204aac',1,'bs::FontBitmap']]],
+  ['size',['size',['../structbs_1_1_particle_render_data.html#a18e4a661d0d476b57e8c9cd1fea94707',1,'bs::ParticleRenderData::size()'],['../structbs_1_1_font_bitmap.html#a6d4bac4be8d2f0ee400eb63ac2204aac',1,'bs::FontBitmap::size()']]],
+  ['sizetexture',['sizeTexture',['../classbs_1_1ct_1_1_particles_render_element.html#ad042227c2b72ae56434f728152d2ff26',1,'bs::ct::ParticlesRenderElement']]],
   ['skeleton',['skeleton',['../structbs_1_1_m_e_s_h___d_e_s_c.html#a534264817472dc49e7df9c58f05313cf',1,'bs::MESH_DESC']]],
   ['skin',['skin',['../structbs_1_1_d_r_o_p___d_o_w_n___b_o_x___d_e_s_c.html#afae96d7dfa423ecf0dc05c5c38a7f068',1,'bs::DROP_DOWN_BOX_DESC']]],
   ['slopelimit',['slopeLimit',['../structbs_1_1_c_h_a_r___c_o_n_t_r_o_l_l_e_r___d_e_s_c.html#ae688ce6e1e52bbb17028605d770bb726',1,'bs::CHAR_CONTROLLER_DESC']]],
@@ -60,7 +61,7 @@ var searchData=
   ['stopped',['stopped',['../structbs_1_1_animation_clip_state.html#a4bbd5ff52abed3e07aa5205f1179d9d3',1,'bs::AnimationClipState']]],
   ['streamout',['streamOut',['../structbs_1_1_v_e_r_t_e_x___b_u_f_f_e_r___d_e_s_c.html#a09602d6af6b19e1cea1073096c41f22c',1,'bs::VERTEX_BUFFER_DESC']]],
   ['subjectbounds',['subjectBounds',['../structbs_1_1ct_1_1_shadow_info.html#a32569bcd5909f6cb2c7989d3e38c2656',1,'bs::ct::ShadowInfo']]],
-  ['submesh',['subMesh',['../classbs_1_1ct_1_1_renderable_element.html#ae533be51349a547431e9257caeecd7ba',1,'bs::ct::RenderableElement']]],
+  ['submesh',['subMesh',['../classbs_1_1ct_1_1_render_element.html#ae533be51349a547431e9257caeecd7ba',1,'bs::ct::RenderElement']]],
   ['submeshes',['subMeshes',['../structbs_1_1_m_e_s_h___d_e_s_c.html#a13c65ab926b15637a00670cb811d81e6',1,'bs::MESH_DESC']]],
   ['subshaders',['subShaders',['../structbs_1_1_t_s_h_a_d_e_r___d_e_s_c.html#aef961bd4aa57f60d8ef8f56fc78bb494',1,'bs::TSHADER_DESC']]],
   ['substyles',['subStyles',['../structbs_1_1_g_u_i_element_style.html#a52b519daac63092b2420280ce2c29086',1,'bs::GUIElementStyle']]],

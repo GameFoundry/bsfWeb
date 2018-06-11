@@ -1,6 +1,11 @@
 var searchData=
 [
   ['paramtype',['ParamType',['../classbs_1_1_material_params_base.html#a3a023c0c27667e78ae521eb64f1c7c81',1,'bs::MaterialParamsBase::ParamType()'],['../classbs_1_1_shader_variation.html#a3a023c0c27667e78ae521eb64f1c7c81',1,'bs::ShaderVariation::ParamType()'],['../classbs_1_1_gpu_pipeline_param_info_base.html#a3a023c0c27667e78ae521eb64f1c7c81',1,'bs::GpuPipelineParamInfoBase::ParamType()']]],
+  ['particleemitterboxtype',['ParticleEmitterBoxType',['../group___particles.html#gabca86a3ffcc6926380d8ed4ca152fabd',1,'bs']]],
+  ['particleemitterconetype',['ParticleEmitterConeType',['../group___particles.html#gacbe87bbe0676a2e1ee6448f35d627668',1,'bs']]],
+  ['particleemittermeshtype',['ParticleEmitterMeshType',['../group___particles.html#ga69de341dc64ba61d0e8a077f438678f3',1,'bs']]],
+  ['particleorientation',['ParticleOrientation',['../group___particles.html#gab07a8b82e0a8e3b556d36ca22d1b8b88',1,'bs']]],
+  ['particlesimulationspace',['ParticleSimulationSpace',['../group___particles.html#gaad52a18c28ec6b26b1ae4b52eb690782',1,'bs']]],
   ['physicsflag',['PhysicsFlag',['../group___physics.html#ga00d6141cb1860ee641ff72e91d46274e',1,'bs']]],
   ['physicsmeshtype',['PhysicsMeshType',['../group___utility-_core.html#gae0141accd6cb1ad18ea671b709515fb8',1,'bs']]],
   ['physicsownertype',['PhysicsOwnerType',['../group___physics.html#ga7cb6db30c601dfbec9036428d0e49d33',1,'bs']]],
@@ -15,5 +20,6 @@ var searchData=
   ['polygonmode',['PolygonMode',['../group___utility-_core.html#gaa2371b6569c7a782419ffaeb50b97fa7',1,'bs']]],
   ['profiledthread',['ProfiledThread',['../group___profiling-_internal.html#ga9b2e89b31ee937f589b4c4c56558b8c6',1,'bs']]],
   ['profileroverlaytype',['ProfilerOverlayType',['../group___g_u_i-_internal.html#ga5f02a0bbf6c7e0c54452038afa46a206',1,'bs']]],
-  ['projectiontype',['ProjectionType',['../group___utility-_core.html#gaddbdeb0c4a9113fece681e37faca81d3',1,'bs']]]
+  ['projectiontype',['ProjectionType',['../group___utility-_core.html#gaddbdeb0c4a9113fece681e37faca81d3',1,'bs']]],
+  ['propertydistributiontype',['PropertyDistributionType',['../group___particles-_internal.html#ga390d476a1e4a95efb4c4eff4822f4053',1,'bs']]]
 ];

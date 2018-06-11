@@ -13,7 +13,7 @@ var searchData=
   ['lightprobes',['LightProbes',['../classbs_1_1ct_1_1_light_probes.html',1,'bs::ct']]],
   ['lightprobeshcoefficients',['LightProbeSHCoefficients',['../structbs_1_1_light_probe_s_h_coefficients.html',1,'bs']]],
   ['lightprobesinfo',['LightProbesInfo',['../structbs_1_1ct_1_1_light_probes_info.html',1,'bs::ct']]],
-  ['lightprobevolume',['LightProbeVolume',['../classbs_1_1ct_1_1_light_probe_volume.html',1,'LightProbeVolume'],['../classbs_1_1_light_probe_volume.html',1,'LightProbeVolume']]],
+  ['lightprobevolume',['LightProbeVolume',['../classbs_1_1_light_probe_volume.html',1,'LightProbeVolume'],['../classbs_1_1ct_1_1_light_probe_volume.html',1,'LightProbeVolume']]],
   ['limitangularrange',['LimitAngularRange',['../structbs_1_1_limit_angular_range.html',1,'bs']]],
   ['limitcommon',['LimitCommon',['../structbs_1_1_limit_common.html',1,'bs']]],
   ['limitconerange',['LimitConeRange',['../structbs_1_1_limit_cone_range.html',1,'bs']]],

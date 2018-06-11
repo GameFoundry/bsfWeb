@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -133,6 +141,18 @@ Methods</h2></td></tr>
 <tr class="memitem:afca348e39f20f2794d909dcda50d890b"><td class="memItemLeft" align="right" valign="top">UINT32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#afca348e39f20f2794d909dcda50d890b">getElementOffset</a> (<a class="el" href="group___render_a_p_i.html#gaefea8c317b80104ca23292be815de16c">VertexElementSemantic</a> semantic, UINT32 semanticIdx=0, UINT32 streamIdx=0) const</td></tr>
 <tr class="memdesc:afca348e39f20f2794d909dcda50d890b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an offset into the internal buffer where this element with the provided semantic starts.  <a href="#afca348e39f20f2794d909dcda50d890b">More...</a><br /></td></tr>
 <tr class="separator:afca348e39f20f2794d909dcda50d890b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf5f7cefbd7f6b5578657dd2e6684f1"><td class="memItemLeft" align="right" valign="top">UINT8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#a0bf5f7cefbd7f6b5578657dd2e6684f1">getIndexData</a> () const</td></tr>
+<tr class="memdesc:a0bf5f7cefbd7f6b5578657dd2e6684f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the start of the index buffer.  <a href="#a0bf5f7cefbd7f6b5578657dd2e6684f1">More...</a><br /></td></tr>
+<tr class="separator:a0bf5f7cefbd7f6b5578657dd2e6684f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9fb7b976371ffdff348fa786b32fa1"><td class="memItemLeft" align="right" valign="top">UINT8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#aaa9fb7b976371ffdff348fa786b32fa1">getStreamData</a> (UINT32 streamIdx) const</td></tr>
+<tr class="memdesc:aaa9fb7b976371ffdff348fa786b32fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the start of the specified vertex stream.  <a href="#aaa9fb7b976371ffdff348fa786b32fa1">More...</a><br /></td></tr>
+<tr class="separator:aaa9fb7b976371ffdff348fa786b32fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d29b3980f98f96809342c69c9bf9a5c"><td class="memItemLeft" align="right" valign="top">UINT32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#a8d29b3980f98f96809342c69c9bf9a5c">getStreamSize</a> (UINT32 streamIdx) const</td></tr>
+<tr class="memdesc:a8d29b3980f98f96809342c69c9bf9a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the specified stream in bytes.  <a href="#a8d29b3980f98f96809342c69c9bf9a5c">More...</a><br /></td></tr>
+<tr class="separator:a8d29b3980f98f96809342c69c9bf9a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd033d7e4dc015b142ee36119a1f7dea"><td class="memItemLeft" align="right" valign="top">UINT32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#abd033d7e4dc015b142ee36119a1f7dea">getStreamSize</a> () const</td></tr>
+<tr class="memdesc:abd033d7e4dc015b142ee36119a1f7dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of all the streams in bytes.  <a href="#abd033d7e4dc015b142ee36119a1f7dea">More...</a><br /></td></tr>
+<tr class="separator:abd033d7e4dc015b142ee36119a1f7dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af52ef1c247da1b61f5ac0ae320d869c5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1_vertex_data_desc.html">VertexDataDesc</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_mesh_data.html#af52ef1c247da1b61f5ac0ae320d869c5">getVertexDesc</a> () const</td></tr>
 <tr class="memdesc:af52ef1c247da1b61f5ac0ae320d869c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an object that describes data contained in a single vertex.  <a href="#af52ef1c247da1b61f5ac0ae320d869c5">More...</a><br /></td></tr>
 <tr class="separator:af52ef1c247da1b61f5ac0ae320d869c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -478,6 +498,25 @@ static <a class="el" href="classbs_1_1_r_t_t_i_type_base.html">RTTITypeBase</a> 
 
 </div>
 </div>
+<a id="a0bf5f7cefbd7f6b5578657dd2e6684f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf5f7cefbd7f6b5578657dd2e6684f1">&#9670;&nbsp;</a></span>getIndexData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT8* getIndexData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the start of the index buffer. </p>
+
+</div>
+</div>
 <a id="a72106c40bdd1905b29f1ff282db2cbc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72106c40bdd1905b29f1ff282db2cbc6">&#9670;&nbsp;</a></span>getIndexElementSize()</h2>
 
@@ -668,6 +707,65 @@ You must derive your own version of <a class="el" href="classbs_1_1_r_t_t_i_type
 </div><div class="memdoc">
 
 <p>Return the size (in bytes) of the entire buffer. </p>
+
+</div>
+</div>
+<a id="aaa9fb7b976371ffdff348fa786b32fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9fb7b976371ffdff348fa786b32fa1">&#9670;&nbsp;</a></span>getStreamData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT8* getStreamData </td>
+          <td>(</td>
+          <td class="paramtype">UINT32&#160;</td>
+          <td class="paramname"><em>streamIdx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the start of the specified vertex stream. </p>
+
+</div>
+</div>
+<a id="a8d29b3980f98f96809342c69c9bf9a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d29b3980f98f96809342c69c9bf9a5c">&#9670;&nbsp;</a></span>getStreamSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT32 getStreamSize </td>
+          <td>(</td>
+          <td class="paramtype">UINT32&#160;</td>
+          <td class="paramname"><em>streamIdx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the size of the specified stream in bytes. </p>
+
+</div>
+</div>
+<a id="abd033d7e4dc015b142ee36119a1f7dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd033d7e4dc015b142ee36119a1f7dea">&#9670;&nbsp;</a></span>getStreamSize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT32 getStreamSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the size of all the streams in bytes. </p>
 
 </div>
 </div>

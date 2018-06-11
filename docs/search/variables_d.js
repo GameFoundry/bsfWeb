@@ -27,6 +27,7 @@ var searchData=
   ['nummips',['numMips',['../structbs_1_1_t_e_x_t_u_r_e___d_e_s_c.html#a95d3cfcd6320eaa3fe50ae7c8870b397',1,'bs::TEXTURE_DESC::numMips()'],['../structbs_1_1ct_1_1_t_e_x_t_u_r_e___v_i_e_w___d_e_s_c.html#a95d3cfcd6320eaa3fe50ae7c8870b397',1,'bs::ct::TEXTURE_VIEW_DESC::numMips()']]],
   ['numobjectscreated',['numObjectsCreated',['../structbs_1_1_g_p_u_profile_sample.html#a5ccef21311e03911833d5df8cb328716',1,'bs::GPUProfileSample']]],
   ['numobjectsdestroyed',['numObjectsDestroyed',['../structbs_1_1_g_p_u_profile_sample.html#adc79a91d4890cd868d941b2d652549ac',1,'bs::GPUProfileSample']]],
+  ['numparticles',['numParticles',['../structbs_1_1_particle_render_data.html#aacf4f5227fec0c1cc5e7062f89537a0c',1,'bs::ParticleRenderData::numParticles()'],['../classbs_1_1ct_1_1_particles_render_element.html#aacf4f5227fec0c1cc5e7062f89537a0c',1,'bs::ct::ParticlesRenderElement::numParticles()']]],
   ['numpipelinestatechanges',['numPipelineStateChanges',['../structbs_1_1_g_p_u_profile_sample.html#ac958d7a82a8e7fa30eccca49e38e9635',1,'bs::GPUProfileSample']]],
   ['numpresents',['numPresents',['../structbs_1_1_g_p_u_profile_sample.html#a43a78c9bcd56cf5790fa57f92654edb7',1,'bs::GPUProfileSample']]],
   ['numprimitives',['numPrimitives',['../structbs_1_1_g_p_u_profile_sample.html#a99c54ae09b1021853b2a0b9cb70d8cb2',1,'bs::GPUProfileSample']]],

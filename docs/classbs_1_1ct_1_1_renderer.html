@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -102,9 +110,9 @@ Methods</h2></td></tr>
 <tr class="memitem:a293c9f17a04b517323dcab8d267ad62e"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classbs_1_1_string_i_d.html">StringID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer.html#a293c9f17a04b517323dcab8d267ad62e">getName</a> () const =0</td></tr>
 <tr class="memdesc:a293c9f17a04b517323dcab8d267ad62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the renderer.  <a href="#a293c9f17a04b517323dcab8d267ad62e">More...</a><br /></td></tr>
 <tr class="separator:a293c9f17a04b517323dcab8d267ad62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd06dab5f0b66565c8b014a37f629488"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer.html#acd06dab5f0b66565c8b014a37f629488">renderAll</a> (const <a class="el" href="structbs_1_1_evaluated_animation_data.html">EvaluatedAnimationData</a> *animData)=0</td></tr>
-<tr class="memdesc:acd06dab5f0b66565c8b014a37f629488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called in order to render all currently active cameras.  <a href="#acd06dab5f0b66565c8b014a37f629488">More...</a><br /></td></tr>
-<tr class="separator:acd06dab5f0b66565c8b014a37f629488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea9f49325cbc98d723fde1b269c0163"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer.html#acea9f49325cbc98d723fde1b269c0163">renderAll</a> (<a class="el" href="structbs_1_1_per_frame_data.html">PerFrameData</a> perFrameData)=0</td></tr>
+<tr class="memdesc:acea9f49325cbc98d723fde1b269c0163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called in order to render all currently active cameras.  <a href="#acea9f49325cbc98d723fde1b269c0163">More...</a><br /></td></tr>
+<tr class="separator:acea9f49325cbc98d723fde1b269c0163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5c37cf831b5951a833c949af61d8580"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer.html#ac5c37cf831b5951a833c949af61d8580">notifyCameraAdded</a> (<a class="el" href="classbs_1_1ct_1_1_camera.html">Camera</a> *camera)</td></tr>
 <tr class="memdesc:ac5c37cf831b5951a833c949af61d8580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a new camera is created.  <a href="#ac5c37cf831b5951a833c949af61d8580">More...</a><br /></td></tr>
 <tr class="separator:ac5c37cf831b5951a833c949af61d8580"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +164,15 @@ Methods</h2></td></tr>
 <tr class="memitem:ae522d132efd5b87f5e5e1fa2ace23e62"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer.html#ae522d132efd5b87f5e5e1fa2ace23e62">notifySkyboxRemoved</a> (<a class="el" href="classbs_1_1ct_1_1_skybox.html">Skybox</a> *skybox)</td></tr>
 <tr class="memdesc:ae522d132efd5b87f5e5e1fa2ace23e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a skybox is destroyed.  <a href="#ae522d132efd5b87f5e5e1fa2ace23e62">More...</a><br /></td></tr>
 <tr class="separator:ae522d132efd5b87f5e5e1fa2ace23e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cafce17f44cb7dae92f1eb39d88cb54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer.html#a6cafce17f44cb7dae92f1eb39d88cb54">notifyParticleSystemAdded</a> (<a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *particleSystem)</td></tr>
+<tr class="memdesc:a6cafce17f44cb7dae92f1eb39d88cb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a new particle system is created.  <a href="#a6cafce17f44cb7dae92f1eb39d88cb54">More...</a><br /></td></tr>
+<tr class="separator:a6cafce17f44cb7dae92f1eb39d88cb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0e6858eadc8bb7640efe688cfde503"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer.html#a3b0e6858eadc8bb7640efe688cfde503">notifyParticleSystemUpdated</a> (<a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *particleSystem)</td></tr>
+<tr class="memdesc:a3b0e6858eadc8bb7640efe688cfde503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a particle system is updated.  <a href="#a3b0e6858eadc8bb7640efe688cfde503">More...</a><br /></td></tr>
+<tr class="separator:a3b0e6858eadc8bb7640efe688cfde503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b6e620738e6da6974e7bb21de181cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer.html#a19b6e620738e6da6974e7bb21de181cc">notifyParticleSystemRemoved</a> (<a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *particleSystem)</td></tr>
+<tr class="memdesc:a19b6e620738e6da6974e7bb21de181cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a particle system is destroyed.  <a href="#a19b6e620738e6da6974e7bb21de181cc">More...</a><br /></td></tr>
+<tr class="separator:a19b6e620738e6da6974e7bb21de181cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af11cd6876d5d71826cfb6ad7387e8a26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer.html#af11cd6876d5d71826cfb6ad7387e8a26">captureSceneCubeMap</a> (const <a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_texture.html">Texture</a> &gt; &amp;cubemap, const <a class="el" href="classbs_1_1_vector3.html">Vector3</a> &amp;position, const <a class="el" href="structbs_1_1ct_1_1_capture_settings.html">CaptureSettings</a> &amp;settings)=0</td></tr>
 <tr class="memdesc:af11cd6876d5d71826cfb6ad7387e8a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures the scene at the specified location into a cubemap.  <a href="#af11cd6876d5d71826cfb6ad7387e8a26">More...</a><br /></td></tr>
 <tr class="separator:af11cd6876d5d71826cfb6ad7387e8a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -847,6 +864,93 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a6cafce17f44cb7dae92f1eb39d88cb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cafce17f44cb7dae92f1eb39d88cb54">&#9670;&nbsp;</a></span>notifyParticleSystemAdded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void notifyParticleSystemAdded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *&#160;</td>
+          <td class="paramname"><em>particleSystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called whenever a new particle system is created. </p>
+<dl class="section note"><dt>Note</dt><dd>Core thread. </dd></dl>
+
+</div>
+</div>
+<a id="a19b6e620738e6da6974e7bb21de181cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19b6e620738e6da6974e7bb21de181cc">&#9670;&nbsp;</a></span>notifyParticleSystemRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void notifyParticleSystemRemoved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *&#160;</td>
+          <td class="paramname"><em>particleSystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called whenever a particle system is destroyed. </p>
+<dl class="section note"><dt>Note</dt><dd>Core thread. </dd></dl>
+
+</div>
+</div>
+<a id="a3b0e6858eadc8bb7640efe688cfde503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0e6858eadc8bb7640efe688cfde503">&#9670;&nbsp;</a></span>notifyParticleSystemUpdated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void notifyParticleSystemUpdated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *&#160;</td>
+          <td class="paramname"><em>particleSystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called whenever a particle system is updated. </p>
+<dl class="section note"><dt>Note</dt><dd>Core thread. </dd></dl>
+
+</div>
+</div>
 <a id="aeac99d3307107e6f048373743b5c8ea1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeac99d3307107e6f048373743b5c8ea1">&#9670;&nbsp;</a></span>notifyReflectionProbeAdded()</h2>
 
@@ -1191,8 +1295,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="acd06dab5f0b66565c8b014a37f629488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd06dab5f0b66565c8b014a37f629488">&#9670;&nbsp;</a></span>renderAll()</h2>
+<a id="acea9f49325cbc98d723fde1b269c0163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acea9f49325cbc98d723fde1b269c0163">&#9670;&nbsp;</a></span>renderAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1203,8 +1307,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">virtual void renderAll </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structbs_1_1_evaluated_animation_data.html">EvaluatedAnimationData</a> *&#160;</td>
-          <td class="paramname"><em>animData</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structbs_1_1_per_frame_data.html">PerFrameData</a>&#160;</td>
+          <td class="paramname"><em>perFrameData</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1217,7 +1321,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Called in order to render all currently active cameras. </p>
 
-<p>Implemented in <a class="el" href="classbs_1_1ct_1_1_render_beast.html#ad47ba06cc20370ab085e91c61a4cf4d5">RenderBeast</a>.</p>
+<p>Implemented in <a class="el" href="classbs_1_1ct_1_1_render_beast.html#a6d0703eec8265dbde05e106cfb21ab1d">RenderBeast</a>.</p>
 
 </div>
 </div>

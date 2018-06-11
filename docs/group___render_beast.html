@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -224,11 +232,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_visible_light_data.html">VisibleLightData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains lights that are visible from a specific set of views, determined by scene information provided to setLights().  <a href="classbs_1_1ct_1_1_visible_light_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_beast_renderable_element.html">BeastRenderableElement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all information needed for rendering a single sub-mesh.  <a href="classbs_1_1ct_1_1_beast_renderable_element.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_particles_render_element.html">ParticlesRenderElement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains information required for rendering a single particle system.  <a href="classbs_1_1ct_1_1_particles_render_element.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1ct_1_1_renderer_object.html">RendererObject</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains information about a <a class="el" href="classbs_1_1ct_1_1_renderable.html" title="Renderable represents any visible object in the scene.   ">Renderable</a>, used by the <a class="el" href="classbs_1_1ct_1_1_renderer.html" title="Primarily rendering class that allows you to specify how to render objects that exist in the scene gr...">Renderer</a>.  <a href="structbs_1_1ct_1_1_renderer_object.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1ct_1_1_renderer_particles.html">RendererParticles</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains information about a <a class="el" href="classbs_1_1ct_1_1_particle_system.html" title="Core thread counterpart of bs::ParticleSystem. ">ParticleSystem</a>, used by the <a class="el" href="classbs_1_1ct_1_1_renderer.html" title="Primarily rendering class that allows you to specify how to render objects that exist in the scene gr...">Renderer</a>.  <a href="structbs_1_1ct_1_1_renderer_particles.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_default_particles_mat.html">DefaultParticlesMat</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default material used for rendering particles, when no other is available.  <a href="classbs_1_1ct_1_1_default_particles_mat.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_particle_texture_pool.html">ParticleTexturePool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps a pool of textures used for the purposes of the particle system.  <a href="classbs_1_1ct_1_1_particle_texture_pool.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_particle_renderer.html">ParticleRenderer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles internal logic for rendering of particle systems.  <a href="classbs_1_1ct_1_1_particle_renderer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1ct_1_1_refl_probe_data.html">ReflProbeData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a single reflection probe, as seen by the lighting shader.  <a href="structbs_1_1ct_1_1_refl_probe_data.html#details">More...</a><br /></td></tr>
@@ -244,6 +261,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1ct_1_1_refl_probe_param_buffer.html">ReflProbeParamBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter buffer containing information about reflection probes.  <a href="structbs_1_1ct_1_1_refl_probe_param_buffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html">RenderableElement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains information required for rendering a single <a class="el" href="classbs_1_1ct_1_1_renderable.html" title="Renderable represents any visible object in the scene.   ">Renderable</a> sub-mesh, representing a generic static or animated 3D model.  <a href="classbs_1_1ct_1_1_renderable_element.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1ct_1_1_renderer_renderable.html">RendererRenderable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains information about a <a class="el" href="classbs_1_1ct_1_1_renderable.html" title="Renderable represents any visible object in the scene.   ">Renderable</a>, used by the <a class="el" href="classbs_1_1ct_1_1_renderer.html" title="Primarily rendering class that allows you to specify how to render objects that exist in the scene gr...">Renderer</a>.  <a href="structbs_1_1ct_1_1_renderer_renderable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1ct_1_1_scene_info.html">SceneInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains most scene objects relevant to the renderer.  <a href="structbs_1_1ct_1_1_scene_info.html#details">More...</a><br /></td></tr>
@@ -477,6 +500,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8a4a11b742ed122e0395af6ad1f96228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___memory.html#ga5076b1659821c8d7ce06da09452ba382">SPtr</a>&lt; <a class="el" href="classbs_1_1ct_1_1_render_beast.html">RenderBeast</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___render_beast.html#ga8a4a11b742ed122e0395af6ad1f96228">gRenderBeast</a> ()</td></tr>
 <tr class="memdesc:ga8a4a11b742ed122e0395af6ad1f96228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides easy access to the <a class="el" href="classbs_1_1ct_1_1_render_beast.html" title="Default renderer for Banshee. ">RenderBeast</a> renderer.  <a href="group___render_beast.html#ga8a4a11b742ed122e0395af6ad1f96228">More...</a><br /></td></tr>
 <tr class="separator:ga8a4a11b742ed122e0395af6ad1f96228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6ac3225543907c5a1a7fdbea24b1cf2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classbs_1_1_shader_variation.html">ShaderVariation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___render_beast.html#gab6ac3225543907c5a1a7fdbea24b1cf2">getParticleShaderVariation</a> (<a class="el" href="group___particles.html#gab07a8b82e0a8e3b556d36ca22d1b8b88">ParticleOrientation</a> orient, bool lockY)</td></tr>
+<tr class="memdesc:gab6ac3225543907c5a1a7fdbea24b1cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a particle material variation matching the provided parameters.  <a href="group___render_beast.html#gab6ac3225543907c5a1a7fdbea24b1cf2">More...</a><br /></td></tr>
+<tr class="separator:gab6ac3225543907c5a1a7fdbea24b1cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -507,18 +533,21 @@ Variables</h2></td></tr>
 <tr class="memitem:ga19d932c1ea7037a99c7b8feb0b2cd948"><td class="memItemLeft" align="right" valign="top"><a id="ga19d932c1ea7037a99c7b8feb0b2cd948"></a>
 <a class="el" href="group___renderer-_internal.html#ga95b07ed76685c320ac25d63c023aa0b1">BS_PARAM_BLOCK_END</a> LightAndReflProbeParamsParamDef&#160;</td><td class="memItemRight" valign="bottom"><b>gLightAndReflProbeParamsParamDef</b></td></tr>
 <tr class="separator:ga19d932c1ea7037a99c7b8feb0b2cd948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab618d15d3bb7c3af60874ef4c81aa4fe"><td class="memItemLeft" align="right" valign="top"><a id="gab618d15d3bb7c3af60874ef4c81aa4fe"></a>
-<a class="el" href="group___renderer-_internal.html#ga95b07ed76685c320ac25d63c023aa0b1">BS_PARAM_BLOCK_END</a> PerObjectParamDef&#160;</td><td class="memItemRight" valign="bottom"><b>gPerObjectParamDef</b></td></tr>
-<tr class="separator:gab618d15d3bb7c3af60874ef4c81aa4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga46da5a07a7290c2be3a144e0fb36a4e0"><td class="memItemLeft" align="right" valign="top"><a id="ga46da5a07a7290c2be3a144e0fb36a4e0"></a>
-<a class="el" href="group___renderer-_internal.html#ga95b07ed76685c320ac25d63c023aa0b1">BS_PARAM_BLOCK_END</a> PerCallParamDef&#160;</td><td class="memItemRight" valign="bottom"><b>gPerCallParamDef</b></td></tr>
-<tr class="separator:ga46da5a07a7290c2be3a144e0fb36a4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ccc43be136469e977ab8a1d25faafd0"><td class="memItemLeft" align="right" valign="top"><a id="ga1ccc43be136469e977ab8a1d25faafd0"></a>
+<a class="el" href="group___renderer-_internal.html#ga95b07ed76685c320ac25d63c023aa0b1">BS_PARAM_BLOCK_END</a> ParticlesParamDef&#160;</td><td class="memItemRight" valign="bottom"><b>gParticlesParamDef</b></td></tr>
+<tr class="separator:ga1ccc43be136469e977ab8a1d25faafd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e7a6f5710166cde5191bb4dffda11dc"><td class="memItemLeft" align="right" valign="top"><a id="ga5e7a6f5710166cde5191bb4dffda11dc"></a>
 <a class="el" href="group___renderer-_internal.html#ga95b07ed76685c320ac25d63c023aa0b1">BS_PARAM_BLOCK_END</a> ReflProbeParamsParamDef&#160;</td><td class="memItemRight" valign="bottom"><b>gReflProbeParamsParamDef</b></td></tr>
 <tr class="separator:ga5e7a6f5710166cde5191bb4dffda11dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1fb5bff2403aac2b0fd0abcd5fcd93c2"><td class="memItemLeft" align="right" valign="top"><a id="ga1fb5bff2403aac2b0fd0abcd5fcd93c2"></a>
 <a class="el" href="group___renderer-_internal.html#ga95b07ed76685c320ac25d63c023aa0b1">BS_PARAM_BLOCK_END</a> ReflProbesParamDef&#160;</td><td class="memItemRight" valign="bottom"><b>gReflProbesParamDef</b></td></tr>
 <tr class="separator:ga1fb5bff2403aac2b0fd0abcd5fcd93c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab618d15d3bb7c3af60874ef4c81aa4fe"><td class="memItemLeft" align="right" valign="top"><a id="gab618d15d3bb7c3af60874ef4c81aa4fe"></a>
+<a class="el" href="group___renderer-_internal.html#ga95b07ed76685c320ac25d63c023aa0b1">BS_PARAM_BLOCK_END</a> PerObjectParamDef&#160;</td><td class="memItemRight" valign="bottom"><b>gPerObjectParamDef</b></td></tr>
+<tr class="separator:gab618d15d3bb7c3af60874ef4c81aa4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46da5a07a7290c2be3a144e0fb36a4e0"><td class="memItemLeft" align="right" valign="top"><a id="ga46da5a07a7290c2be3a144e0fb36a4e0"></a>
+<a class="el" href="group___renderer-_internal.html#ga95b07ed76685c320ac25d63c023aa0b1">BS_PARAM_BLOCK_END</a> PerCallParamDef&#160;</td><td class="memItemRight" valign="bottom"><b>gPerCallParamDef</b></td></tr>
+<tr class="separator:ga46da5a07a7290c2be3a144e0fb36a4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga341e2cb4d4233d4885bd9c54740fb1e8"><td class="memItemLeft" align="right" valign="top"><a id="ga341e2cb4d4233d4885bd9c54740fb1e8"></a>
 constexpr UINT32&#160;</td><td class="memItemRight" valign="bottom"><b>MaxReflectionCubemaps</b> = 2048 / 6</td></tr>
 <tr class="separator:ga341e2cb4d4233d4885bd9c54740fb1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -665,6 +694,44 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_BLUR_SAMPLES
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gab6ac3225543907c5a1a7fdbea24b1cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6ac3225543907c5a1a7fdbea24b1cf2">&#9670;&nbsp;</a></span>getParticleShaderVariation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classbs_1_1_shader_variation.html">ShaderVariation</a>&amp; bs::ct::getParticleShaderVariation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___particles.html#gab07a8b82e0a8e3b556d36ca22d1b8b88">ParticleOrientation</a>&#160;</td>
+          <td class="paramname"><em>orient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>lockY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a particle material variation matching the provided parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">orient</td><td>Determines in which direction are billboard particles oriented. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lockY</td><td>If true, billboard rotation will be locked around the Y axis, otherwise the rotation is free. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Object that can be used for looking up the variation technique in the material. </dd></dl>
+
+</div>
+</div>
 <a id="ga8a4a11b742ed122e0395af6ad1f96228"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8a4a11b742ed122e0395af6ad1f96228">&#9670;&nbsp;</a></span>gRenderBeast()</h2>
 

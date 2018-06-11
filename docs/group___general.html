@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -261,6 +269,14 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa2f427e6d8e2759b02cd83e224fa5c3a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#gaa2f427e6d8e2759b02cd83e224fa5c3a">bs_zero_out</a> (T *arr, size_t count)</td></tr>
 <tr class="memdesc:gaa2f427e6d8e2759b02cd83e224fa5c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets contents of a block of memory to zero.  <a href="group___general.html#gaa2f427e6d8e2759b02cd83e224fa5c3a">More...</a><br /></td></tr>
 <tr class="separator:gaa2f427e6d8e2759b02cd83e224fa5c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca964ed97a4fef40a1f506f4b6f0a7f9"><td class="memTemplParams" colspan="2">template&lt;class T , size_t N&gt; </td></tr>
+<tr class="memitem:gaca964ed97a4fef40a1f506f4b6f0a7f9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#gaca964ed97a4fef40a1f506f4b6f0a7f9">bs_copy</a> (T(&amp;dst)[N], T(&amp;src)[N], size_t count)</td></tr>
+<tr class="memdesc:gaca964ed97a4fef40a1f506f4b6f0a7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the contents of one array to another.  <a href="group___general.html#gaca964ed97a4fef40a1f506f4b6f0a7f9">More...</a><br /></td></tr>
+<tr class="separator:gaca964ed97a4fef40a1f506f4b6f0a7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebff9e6d87931c4deb10cd4a8b92030a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:gaebff9e6d87931c4deb10cd4a8b92030a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#gaebff9e6d87931c4deb10cd4a8b92030a">bs_copy</a> (T *dst, T *src, size_t count)</td></tr>
+<tr class="memdesc:gaebff9e6d87931c4deb10cd4a8b92030a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the contents of one array to another.  <a href="group___general.html#gaebff9e6d87931c4deb10cd4a8b92030a">More...</a><br /></td></tr>
+<tr class="separator:gaebff9e6d87931c4deb10cd4a8b92030a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga91dc514cff2002959cdaf4240bce7b82"><td class="memTemplParams" colspan="2">template&lt;class T , std::size_t N&gt; </td></tr>
 <tr class="memitem:ga91dc514cff2002959cdaf4240bce7b82"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#ga91dc514cff2002959cdaf4240bce7b82">bs_size</a> (const T(&amp;array)[N])</td></tr>
 <tr class="memdesc:ga91dc514cff2002959cdaf4240bce7b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the provided static array.  <a href="group___general.html#ga91dc514cff2002959cdaf4240bce7b82">More...</a><br /></td></tr>
@@ -488,6 +504,80 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaca964ed97a4fef40a1f506f4b6f0a7f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca964ed97a4fef40a1f506f4b6f0a7f9">&#9670;&nbsp;</a></span>bs_copy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bs::bs_copy </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)&#160;</td>
+          <td class="paramname"><em>dst</em>[N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)&#160;</td>
+          <td class="paramname"><em>src</em>[N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies the contents of one array to another. </p>
+<p>Automatically accounts for array element size. </p>
+
+</div>
+</div>
+<a id="gaebff9e6d87931c4deb10cd4a8b92030a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebff9e6d87931c4deb10cd4a8b92030a">&#9670;&nbsp;</a></span>bs_copy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bs::bs_copy </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies the contents of one array to another. </p>
+<p>Automatically accounts for array element size. </p>
+
+</div>
+</div>
 <a id="ga91dc514cff2002959cdaf4240bce7b82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga91dc514cff2002959cdaf4240bce7b82">&#9670;&nbsp;</a></span>bs_size()</h2>
 
@@ -535,7 +625,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Erases the provided element from the container, but first swaps the element so its located at the end of the container, making the erase operation cheaper at the cost of an extra move operation. </p>
-<p>Doesn't preserve ordering within the element. Return true if a swap occurred, or false if the element was already at the end of the container. </p>
+<p>Doesn't preserve ordering within the element. Returns true if a swap occurred, or false if the element was already at the end of the container. </p>
 
 </div>
 </div>

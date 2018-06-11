@@ -3,7 +3,7 @@ var searchData=
   ['id',['id',['../structbs_1_1_animated_scene_object_info.html#a281c940d065d9d0088ddbc7413d2c2a0',1,'bs::AnimatedSceneObjectInfo']]],
   ['image',['image',['../structbs_1_1ct_1_1_v_u_l_k_a_n___a_t_t_a_c_h_m_e_n_t___d_e_s_c.html#a7d4259f9ecf464a3cef91b95984cd93b',1,'bs::ct::VULKAN_ATTACHMENT_DESC::image()'],['../structbs_1_1ct_1_1_v_u_l_k_a_n___i_m_a_g_e___d_e_s_c.html#ac48af4a2f518b64b67c40aa0efa7de6b',1,'bs::ct::VULKAN_IMAGE_DESC::image()']]],
   ['image_5ftext_5fspacing',['IMAGE_TEXT_SPACING',['../classbs_1_1_g_u_i_content.html#a585c7998338c87fee86f625b3fe6d599',1,'bs::GUIContent']]],
-  ['imagebasedparams',['imageBasedParams',['../classbs_1_1ct_1_1_beast_renderable_element.html#a4140f551088dc425d6d72464e7ac3b2c',1,'bs::ct::BeastRenderableElement']]],
+  ['imagebasedparams',['imageBasedParams',['../classbs_1_1ct_1_1_renderable_element.html#a4140f551088dc425d6d72464e7ac3b2c',1,'bs::ct::RenderableElement']]],
   ['imageposition',['imagePosition',['../structbs_1_1_g_u_i_element_style.html#a19b7f7ca272e4a583f6bcbf2b93f7f91',1,'bs::GUIElementStyle']]],
   ['importers',['importers',['../structbs_1_1_s_t_a_r_t___u_p___d_e_s_c.html#a20102118a05936d138da356ef00e0938',1,'bs::START_UP_DESC']]],
   ['impulse',['impulse',['../structbs_1_1_contact_point.html#ac7155760e2c3ffcfabfb37cd74809825',1,'bs::ContactPoint']]],

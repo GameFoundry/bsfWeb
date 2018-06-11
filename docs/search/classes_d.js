@@ -83,6 +83,8 @@ var searchData=
   ['module_3c_20messagehandler_20_3e',['Module&lt; MessageHandler &gt;',['../classbs_1_1_module.html',1,'bs']]],
   ['module_3c_20monomanager_20_3e',['Module&lt; MonoManager &gt;',['../classbs_1_1_module.html',1,'bs']]],
   ['module_3c_20paramblockmanager_20_3e',['Module&lt; ParamBlockManager &gt;',['../classbs_1_1_module.html',1,'bs']]],
+  ['module_3c_20particlemanager_20_3e',['Module&lt; ParticleManager &gt;',['../classbs_1_1_module.html',1,'bs']]],
+  ['module_3c_20particlerenderer_20_3e',['Module&lt; ParticleRenderer &gt;',['../classbs_1_1_module.html',1,'bs']]],
   ['module_3c_20physics_20_3e',['Module&lt; Physics &gt;',['../classbs_1_1_module.html',1,'bs']]],
   ['module_3c_20physicsmanager_20_3e',['Module&lt; PhysicsManager &gt;',['../classbs_1_1_module.html',1,'bs']]],
   ['module_3c_20profilercpu_20_3e',['Module&lt; ProfilerCPU &gt;',['../classbs_1_1_module.html',1,'bs']]],

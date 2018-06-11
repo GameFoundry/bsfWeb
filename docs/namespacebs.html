@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -356,6 +364,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_color.html">Color</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbs_1_1_color.html" title="Color represented as 4 components, each being a floating point value ranging from 0 to 1...">Color</a> represented as 4 components, each being a floating point value ranging from 0 to 1.  <a href="classbs_1_1_color.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_color_distribution.html">ColorDistribution</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies a color as a distribution, which can include a constant color, random color range or a color gradient.  <a href="structbs_1_1_color_distribution.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_color_gradient.html">ColorGradient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a range of color values over some parameters, similar to a curve.  <a href="classbs_1_1_color_gradient.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_color_gradient_key.html">ColorGradientKey</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single key in a <a class="el" href="classbs_1_1_color_gradient.html" title="Represents a range of color values over some parameters, similar to a curve. ">ColorGradient</a>.  <a href="structbs_1_1_color_gradient_key.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_color_grading_settings.html">ColorGradingSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings that control color grading post-process.  <a href="structbs_1_1_color_grading_settings.html#details">More...</a><br /></td></tr>
@@ -1462,6 +1479,92 @@ A GUI element that allows the user to draw custom graphics.  <a href="classbs_1_
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionbs_1_1_packed_normal.html">PackedNormal</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal packed in a 32-bit structure.  <a href="unionbs_1_1_packed_normal.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_p_a_r_t_i_c_l_e___b_o_x___s_h_a_p_e___d_e_s_c.html">PARTICLE_BOX_SHAPE_DESC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information describing a <a class="el" href="classbs_1_1_particle_emitter_box_shape.html" title="Particle emitter shape that emits particles from an axis aligned box. ">ParticleEmitterBoxShape</a>.  <a href="structbs_1_1_p_a_r_t_i_c_l_e___b_o_x___s_h_a_p_e___d_e_s_c.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_p_a_r_t_i_c_l_e___c_i_r_c_l_e___s_h_a_p_e___d_e_s_c.html">PARTICLE_CIRCLE_SHAPE_DESC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information describing a <a class="el" href="classbs_1_1_particle_emitter_circle_shape.html" title="Particle emitter shape that emits particles from a circle. ">ParticleEmitterCircleShape</a>.  <a href="structbs_1_1_p_a_r_t_i_c_l_e___c_i_r_c_l_e___s_h_a_p_e___d_e_s_c.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_p_a_r_t_i_c_l_e___c_o_n_e___s_h_a_p_e___d_e_s_c.html">PARTICLE_CONE_SHAPE_DESC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information describing a <a class="el" href="classbs_1_1_particle_emitter_cone_shape.html" title="Particle emitter shape that emits particles from a cone. ">ParticleEmitterConeShape</a>.  <a href="structbs_1_1_p_a_r_t_i_c_l_e___c_o_n_e___s_h_a_p_e___d_e_s_c.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_p_a_r_t_i_c_l_e___h_e_m_i_s_p_h_e_r_e___s_h_a_p_e___d_e_s_c.html">PARTICLE_HEMISPHERE_SHAPE_DESC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information describing a <a class="el" href="classbs_1_1_particle_emitter_hemisphere_shape.html" title="Particle emitter shape that emits particles from a hemisphere. ">ParticleEmitterHemisphereShape</a>.  <a href="structbs_1_1_p_a_r_t_i_c_l_e___h_e_m_i_s_p_h_e_r_e___s_h_a_p_e___d_e_s_c.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_p_a_r_t_i_c_l_e___l_i_n_e___s_h_a_p_e___d_e_s_c.html">PARTICLE_LINE_SHAPE_DESC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information describing a <a class="el" href="classbs_1_1_particle_emitter_line_shape.html" title="Particle emitter shape that emits particles from a line segment. ">ParticleEmitterLineShape</a>.  <a href="structbs_1_1_p_a_r_t_i_c_l_e___l_i_n_e___s_h_a_p_e___d_e_s_c.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_p_a_r_t_i_c_l_e___m_e_s_h___s_h_a_p_e___d_e_s_c.html">PARTICLE_MESH_SHAPE_DESC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information describing a <a class="el" href="classbs_1_1_particle_emitter_static_mesh_shape.html" title="Particle emitter shape that emits particles from a surface of a static (non-animated) mesh...">ParticleEmitterStaticMeshShape</a> and <a class="el" href="classbs_1_1_particle_emitter_skinned_mesh_shape.html" title="Particle emitter shape that emits particles from a surface of a skinned (animated) mesh...">ParticleEmitterSkinnedMeshShape</a>.  <a href="structbs_1_1_p_a_r_t_i_c_l_e___m_e_s_h___s_h_a_p_e___d_e_s_c.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_p_a_r_t_i_c_l_e___r_e_c_t___s_h_a_p_e___d_e_s_c.html">PARTICLE_RECT_SHAPE_DESC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information describing a <a class="el" href="classbs_1_1_particle_emitter_rect_shape.html" title="Particle emitter shape that emits particles from the surface of a rectangle. ">ParticleEmitterRectShape</a>.  <a href="structbs_1_1_p_a_r_t_i_c_l_e___r_e_c_t___s_h_a_p_e___d_e_s_c.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_p_a_r_t_i_c_l_e___s_p_h_e_r_e___s_h_a_p_e___d_e_s_c.html">PARTICLE_SPHERE_SHAPE_DESC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information describing a <a class="el" href="classbs_1_1_particle_emitter_sphere_shape.html" title="Particle emitter shape that emits particles from a sphere. ">ParticleEmitterSphereShape</a>.  <a href="structbs_1_1_p_a_r_t_i_c_l_e___s_p_h_e_r_e___s_h_a_p_e___d_e_s_c.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_debug_evolver.html">ParticleDebugEvolver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter.html">ParticleEmitter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles spawning of new particles using the specified parameters and shape.  <a href="classbs_1_1_particle_emitter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_box_shape.html">ParticleEmitterBoxShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle emitter shape that emits particles from an axis aligned box.  <a href="classbs_1_1_particle_emitter_box_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_circle_shape.html">ParticleEmitterCircleShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle emitter shape that emits particles from a circle.  <a href="classbs_1_1_particle_emitter_circle_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_cone_shape.html">ParticleEmitterConeShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle emitter shape that emits particles from a cone.  <a href="classbs_1_1_particle_emitter_cone_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_hemisphere_shape.html">ParticleEmitterHemisphereShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle emitter shape that emits particles from a hemisphere.  <a href="classbs_1_1_particle_emitter_hemisphere_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_line_shape.html">ParticleEmitterLineShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle emitter shape that emits particles from a line segment.  <a href="classbs_1_1_particle_emitter_line_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_rect_shape.html">ParticleEmitterRectShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle emitter shape that emits particles from the surface of a rectangle.  <a href="classbs_1_1_particle_emitter_rect_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_shape.html">ParticleEmitterShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class from all emitter shapes.  <a href="classbs_1_1_particle_emitter_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_skinned_mesh_shape.html">ParticleEmitterSkinnedMeshShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle emitter shape that emits particles from a surface of a skinned (animated) mesh.  <a href="classbs_1_1_particle_emitter_skinned_mesh_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_sphere_shape.html">ParticleEmitterSphereShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle emitter shape that emits particles from a sphere.  <a href="classbs_1_1_particle_emitter_sphere_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_particle_emitter_state.html">ParticleEmitterState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains particle emitter state that varies from frame to frame.  <a href="structbs_1_1_particle_emitter_state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_emitter_static_mesh_shape.html">ParticleEmitterStaticMeshShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle emitter shape that emits particles from a surface of a static (non-animated) mesh.  <a href="classbs_1_1_particle_emitter_static_mesh_shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_evolver.html">ParticleEvolver</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates properties of all active particles in a particle system in some way.  <a href="classbs_1_1_particle_evolver.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_manager.html">ParticleManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps track of all active <a class="el" href="classbs_1_1_particle_system.html" title="Controls spawning, evolution and rendering of particles. ">ParticleSystem</a>s and performs per-frame updates.  <a href="classbs_1_1_particle_manager.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_module.html">ParticleModule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbs_1_1_module.html" title="Represents one engine module. ">Module</a> that in some way modified or effects a <a class="el" href="classbs_1_1_particle_system.html" title="Controls spawning, evolution and rendering of particles. ">ParticleSystem</a>.  <a href="classbs_1_1_particle_module.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_particle_render_data.html">ParticleRenderData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data used for rendering a <a class="el" href="classbs_1_1_particle_system.html" title="Controls spawning, evolution and rendering of particles. ">ParticleSystem</a>.  <a href="structbs_1_1_particle_render_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_particle_render_data_group.html">ParticleRenderDataGroup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all rendering data for all particle systems, for a single frame.  <a href="structbs_1_1_particle_render_data_group.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_set.html">ParticleSet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a simple and fast way to allocate and deallocate particles.  <a href="classbs_1_1_particle_set.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_particle_set_data.html">ParticleSetData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles buffers containing particle data and their allocation/deallocation.  <a href="structbs_1_1_particle_set_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_particle_system.html">ParticleSystem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls spawning, evolution and rendering of particles.  <a href="classbs_1_1_particle_system.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_pass.html">Pass</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class defining a single pass of a technique (of a material).  <a href="classbs_1_1_pass.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1473,6 +1576,9 @@ A GUI element that allows the user to draw custom graphics.  <a href="classbs_1_
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_paths.html">Paths</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains common engine paths and utility method for searching for paths.  <a href="classbs_1_1_paths.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_per_frame_data.html">PerFrameData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains various data evaluated by external systems on a per-frame basis that is to be used by the renderer.  <a href="structbs_1_1_per_frame_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_physics.html">Physics</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides global physics settings, factory methods for physics objects and scene queries.  <a href="classbs_1_1_physics.html#details">More...</a><br /></td></tr>
@@ -1626,6 +1732,9 @@ A GUI element that allows the user to draw custom graphics.  <a href="classbs_1_
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_radian.html">Radian</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper class which indicates a given angle value is in radians.  <a href="classbs_1_1_radian.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_random.html">Random</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates pseudo random numbers using the Xorshift128 algorithm.  <a href="classbs_1_1_random.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_r_a_s_t_e_r_i_z_e_r___s_t_a_t_e___d_e_s_c.html">RASTERIZER_STATE_DESC</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure that describes pipeline rasterizer state.  <a href="structbs_1_1_r_a_s_t_e_r_i_z_e_r___s_t_a_t_e___d_e_s_c.html#details">More...</a><br /></td></tr>
@@ -2086,6 +2195,9 @@ A GUI element that allows the user to draw custom graphics.  <a href="classbs_1_
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_t_curve_cache.html">TCurveCache</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds cached information used for animation curve evaluation so that sequential evaluations can be sped up.  <a href="structbs_1_1_t_curve_cache.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbs_1_1_t_distribution.html">TDistribution</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies a value as a distribution, which can include a constant value, random range or a curve.  <a href="structbs_1_1_t_distribution.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1_technique.html">Technique</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbs_1_1_technique.html" title="Technique is a set of shading passes bindable to the GPU pipeline. ">Technique</a> is a set of shading passes bindable to the GPU pipeline.  <a href="classbs_1_1_technique.html#details">More...</a><br /></td></tr>
@@ -3038,6 +3150,12 @@ typedef <a class="el" href="classbs_1_1_t_material_param_samp_state.html">TMater
 <tr class="memitem:ga9e3faa2bded79cd8364a08f0cd622cce"><td class="memItemLeft" align="right" valign="top">
 typedef <a class="el" href="structbs_1_1_t_s_h_a_d_e_r___d_e_s_c.html">TSHADER_DESC</a>&lt; false &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SHADER_DESC</b></td></tr>
 <tr class="separator:ga9e3faa2bded79cd8364a08f0cd622cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f1d80bb023a1df07dc24dbb77c825ef"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>FloatDistribution</b> = <a class="el" href="structbs_1_1_t_distribution.html">TDistribution</a>&lt; float &gt;</td></tr>
+<tr class="separator:ga0f1d80bb023a1df07dc24dbb77c825ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga661a614e07c4f9a7943edece0faa4945"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Vector3Distribution</b> = <a class="el" href="structbs_1_1_t_distribution.html">TDistribution</a>&lt; <a class="el" href="classbs_1_1_vector3.html">Vector3</a> &gt;</td></tr>
+<tr class="separator:ga661a614e07c4f9a7943edece0faa4945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga208c0c21d818df5b7b10ead40498ebf1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classbs_1_1_flags.html">Flags</a>&lt; <a class="el" href="group___physics.html#ga4bbba215d6cf1b6fedf126c7887298b4">CharacterCollisionFlag</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___physics.html#ga208c0c21d818df5b7b10ead40498ebf1">CharacterCollisionFlags</a></td></tr>
 <tr class="memdesc:ga208c0c21d818df5b7b10ead40498ebf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports in which directions is the character colliding with other objects. <br />
   <a href="group___physics.html#ga208c0c21d818df5b7b10ead40498ebf1">More...</a><br /></td></tr>
@@ -3241,7 +3359,8 @@ Enumerations</h2></td></tr>
 <b>TID_Flags</b> = 68, 
 <b>TID_IReflectable</b> = 69, 
 <br />
-&#160;&#160;<b>TID_DataBlob</b> = 70
+&#160;&#160;<b>TID_DataBlob</b> = 70, 
+<b>TID_ColorGradient</b> = 71
 <br />
  }</td></tr>
 <tr class="separator:a1bf4d29c029638ba975ab3f5662867ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3481,24 +3600,27 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>TID_DepthStencilStateDesc</b> = 1152, 
 <b>TID_SerializedGpuProgramData</b> = 1153, 
 <b>TID_SubShader</b> = 1154, 
-<b>TID_CCamera</b> = 30000, 
+<b>TID_ParticleSystem</b> = 1155, 
 <br />
-&#160;&#160;<b>TID_Camera</b> = 30003, 
-<b>TID_CRenderable</b> = 30001, 
+&#160;&#160;<b>TID_ColorDistribution</b> = 1156, 
+<b>TID_TDistribution</b> = 1157, 
+<b>TID_CCamera</b> = 30000, 
+<b>TID_Camera</b> = 30003, 
+<br />
+&#160;&#160;<b>TID_CRenderable</b> = 30001, 
 <b>TID_Renderable</b> = 30004, 
 <b>TID_Light</b> = 30011, 
+<b>TID_CLight</b> = 30012, 
 <br />
-&#160;&#160;<b>TID_CLight</b> = 30012, 
-<b>TID_AutoExposureSettings</b> = 30016, 
+&#160;&#160;<b>TID_AutoExposureSettings</b> = 30016, 
 <b>TID_TonemappingSettings</b> = 30017, 
 <b>TID_WhiteBalanceSettings</b> = 30018, 
+<b>TID_ColorGradingSettings</b> = 30019, 
 <br />
-&#160;&#160;<b>TID_ColorGradingSettings</b> = 30019, 
-<b>TID_DepthOfFieldSettings</b> = 30020, 
+&#160;&#160;<b>TID_DepthOfFieldSettings</b> = 30020, 
 <b>TID_AmbientOcclusionSettings</b> = 30021, 
 <b>TID_ScreenSpaceReflectionsSettings</b> = 30022, 
-<br />
-&#160;&#160;<b>TID_ShadowSettings</b> = 30023
+<b>TID_ShadowSettings</b> = 30023
 <br />
  }</td></tr>
 <tr class="separator:a1df4a65724a680e3fdce3cd23ef71637"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4291,6 +4413,41 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga57657fb3eecdc767bb603e4e31c12c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Planned usage for the mesh.  <a href="group___resources.html#ga57657fb3eecdc767bb603e4e31c12c19">More...</a><br /></td></tr>
 <tr class="separator:ga57657fb3eecdc767bb603e4e31c12c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga390d476a1e4a95efb4c4eff4822f4053"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___particles-_internal.html#ga390d476a1e4a95efb4c4eff4822f4053">PropertyDistributionType</a> { <a class="el" href="group___particles-_internal.html#gga390d476a1e4a95efb4c4eff4822f4053a5431b0eb694216c404d471b03e6bded2">PDT_Constant</a>, 
+<a class="el" href="group___particles-_internal.html#gga390d476a1e4a95efb4c4eff4822f4053a5a4fd5061e1fd340d2da691b058bd8a0">PDT_RandomRange</a>, 
+<a class="el" href="group___particles-_internal.html#gga390d476a1e4a95efb4c4eff4822f4053a5c052357b7cb1675f2f7d456845fa3c1">PDT_Curve</a>, 
+<a class="el" href="group___particles-_internal.html#gga390d476a1e4a95efb4c4eff4822f4053a3f59401dbea683de9b398a2061d38098">PDT_RandomCurveRange</a>
+ }</td></tr>
+<tr class="memdesc:ga390d476a1e4a95efb4c4eff4822f4053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines type of distribution used by distribution properties.  <a href="group___particles-_internal.html#ga390d476a1e4a95efb4c4eff4822f4053">More...</a><br /></td></tr>
+<tr class="separator:ga390d476a1e4a95efb4c4eff4822f4053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbe87bbe0676a2e1ee6448f35d627668"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___particles.html#gacbe87bbe0676a2e1ee6448f35d627668">ParticleEmitterConeType</a> { <a class="el" href="group___particles.html#ggacbe87bbe0676a2e1ee6448f35d627668a095a1b43effec73955e31e790438de49">Base</a>, 
+<a class="el" href="group___particles.html#ggacbe87bbe0676a2e1ee6448f35d627668abd7a9717d29c5ddcab1bc175eda1e298">Volume</a>
+ }</td></tr>
+<tr class="memdesc:gacbe87bbe0676a2e1ee6448f35d627668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the emission type for the cone particle emitter shape.  <a href="group___particles.html#gacbe87bbe0676a2e1ee6448f35d627668">More...</a><br /></td></tr>
+<tr class="separator:gacbe87bbe0676a2e1ee6448f35d627668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabca86a3ffcc6926380d8ed4ca152fabd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___particles.html#gabca86a3ffcc6926380d8ed4ca152fabd">ParticleEmitterBoxType</a> { <a class="el" href="group___particles.html#ggabca86a3ffcc6926380d8ed4ca152fabdabd7a9717d29c5ddcab1bc175eda1e298">Volume</a>, 
+<a class="el" href="group___particles.html#ggabca86a3ffcc6926380d8ed4ca152fabdaaa0d528ba11ea1485d466dfe1ea40819">Surface</a>, 
+<a class="el" href="group___particles.html#ggabca86a3ffcc6926380d8ed4ca152fabdae4a297a0f76119a442c2595ac040673e">Edge</a>
+ }</td></tr>
+<tr class="memdesc:gabca86a3ffcc6926380d8ed4ca152fabd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the emission type for the cone particle emitter shape.  <a href="group___particles.html#gabca86a3ffcc6926380d8ed4ca152fabd">More...</a><br /></td></tr>
+<tr class="separator:gabca86a3ffcc6926380d8ed4ca152fabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69de341dc64ba61d0e8a077f438678f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___particles.html#ga69de341dc64ba61d0e8a077f438678f3">ParticleEmitterMeshType</a> { <a class="el" href="group___particles.html#gga69de341dc64ba61d0e8a077f438678f3ab22b929ba52471a02d18bb3a4e4472e6">Vertex</a>, 
+<a class="el" href="group___particles.html#gga69de341dc64ba61d0e8a077f438678f3ae4a297a0f76119a442c2595ac040673e">Edge</a>, 
+<a class="el" href="group___particles.html#gga69de341dc64ba61d0e8a077f438678f3a5e5500cb2b82eb72d550de644bd1b64b">Triangle</a>
+ }</td></tr>
+<tr class="memdesc:ga69de341dc64ba61d0e8a077f438678f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the emission type for the mesh particle emitter shape.  <a href="group___particles.html#ga69de341dc64ba61d0e8a077f438678f3">More...</a><br /></td></tr>
+<tr class="separator:ga69de341dc64ba61d0e8a077f438678f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab07a8b82e0a8e3b556d36ca22d1b8b88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___particles.html#gab07a8b82e0a8e3b556d36ca22d1b8b88">ParticleOrientation</a> { <a class="el" href="group___particles.html#ggab07a8b82e0a8e3b556d36ca22d1b8b88a32a6af166771d69c2b327731269be4f9">ViewPlane</a>, 
+<a class="el" href="group___particles.html#ggab07a8b82e0a8e3b556d36ca22d1b8b88a9960170a6153bc6fe4206dfc26fcb618">ViewPosition</a>, 
+<a class="el" href="group___particles.html#ggab07a8b82e0a8e3b556d36ca22d1b8b88a39e6b4ab3e4adecf031d3aa8410bb3ce">Axis</a>
+ }</td></tr>
+<tr class="memdesc:gab07a8b82e0a8e3b556d36ca22d1b8b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible orientations when rendering billboard particles.  <a href="group___particles.html#gab07a8b82e0a8e3b556d36ca22d1b8b88">More...</a><br /></td></tr>
+<tr class="separator:gab07a8b82e0a8e3b556d36ca22d1b8b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad52a18c28ec6b26b1ae4b52eb690782"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___particles.html#gaad52a18c28ec6b26b1ae4b52eb690782">ParticleSimulationSpace</a> { <a class="el" href="group___particles.html#ggaad52a18c28ec6b26b1ae4b52eb690782a509820290d57f333403f490dde7316f4">Local</a>, 
+<a class="el" href="group___particles.html#ggaad52a18c28ec6b26b1ae4b52eb690782af5a7924e621e84c9280a9a27e1bcb7f6">World</a>
+ }</td></tr>
+<tr class="memdesc:gaad52a18c28ec6b26b1ae4b52eb690782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Space in which to spawn/transform particles.  <a href="group___particles.html#gaad52a18c28ec6b26b1ae4b52eb690782">More...</a><br /></td></tr>
+<tr class="separator:gaad52a18c28ec6b26b1ae4b52eb690782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabbdb67d7abe8bd8bb64f610527011d75"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___physics.html#gabbdb67d7abe8bd8bb64f610527011d75">CharacterClimbingMode</a> { <a class="el" href="group___physics.html#ggabbdb67d7abe8bd8bb64f610527011d75a960b44c579bc2f6818d2daaf9e4c16f0">Normal</a>, 
 <a class="el" href="group___physics.html#ggabbdb67d7abe8bd8bb64f610527011d75ae85c071596f0dfdf2e6b4b5c8633445c">Constrained</a>
  }</td></tr>
@@ -5243,8 +5400,8 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gaabe10a7c90e8ac554b89e8ac1642d8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of drop down box types.  <a href="group___g_u_i-_internal.html#gaabe10a7c90e8ac554b89e8ac1642d8e6">More...</a><br /></td></tr>
 <tr class="separator:gaabe10a7c90e8ac554b89e8ac1642d8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8997078b55539e00e121be44faf68f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___implementation.html#gaf8997078b55539e00e121be44faf68f2">GUIElementOption</a> { <a class="el" href="group___implementation.html#ggaf8997078b55539e00e121be44faf68f2aa111aa5696074e8f3657d78f5629b952">ClickThrough</a>, 
-<a class="el" href="group___implementation.html#ggaf8997078b55539e00e121be44faf68f2a527eaa89602a60a76c1490556f7010b3">AcceptsKeyFocus</a>
+<tr class="memitem:gaf8997078b55539e00e121be44faf68f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___implementation.html#gaf8997078b55539e00e121be44faf68f2">GUIElementOption</a> { <a class="el" href="group___implementation.html#ggaf8997078b55539e00e121be44faf68f2aa111aa5696074e8f3657d78f5629b952">ClickThrough</a> = 0x01, 
+<a class="el" href="group___implementation.html#ggaf8997078b55539e00e121be44faf68f2a527eaa89602a60a76c1490556f7010b3">AcceptsKeyFocus</a> = 0x02
  }</td></tr>
 <tr class="separator:gaf8997078b55539e00e121be44faf68f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga392ddd6f866111446b105fb47bc9e51f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_u_i.html#ga392ddd6f866111446b105fb47bc9e51f">GUIImagePosition</a> { <b>Left</b>, 
@@ -5821,6 +5978,12 @@ BS_UTILITY_EXPORT <a class="el" href="group___string.html#gad5ba86fc2c60a7dec2e2
 BS_UTILITY_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___string.html#ga8049e54a4200dfb94ebbc1e2398a055b">isNumber</a> (const <a class="el" href="group___string.html#ga08f6060c714d7fa04b579914c22f3125">WString</a> &amp;val)</td></tr>
 <tr class="memdesc:ga8049e54a4200dfb94ebbc1e2398a055b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the WString is a valid number value. <br /></td></tr>
 <tr class="separator:ga8049e54a4200dfb94ebbc1e2398a055b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae59982b6af67b5fa0a89979d37ced94b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threading.html#gae59982b6af67b5fa0a89979d37ced94b">operator==</a> (const <a class="el" href="classbs_1_1_async_op.html">AsyncOp</a> &amp;lhs, std::nullptr_t rhs)</td></tr>
+<tr class="memdesc:gae59982b6af67b5fa0a89979d37ced94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an <a class="el" href="classbs_1_1_async_op.html" title="Object you may use to check on the results of an asynchronous operation. ">AsyncOp</a> is null.  <a href="group___threading.html#gae59982b6af67b5fa0a89979d37ced94b">More...</a><br /></td></tr>
+<tr class="separator:gae59982b6af67b5fa0a89979d37ced94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f5b15df3865496a71df94547ea0b55a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threading.html#ga9f5b15df3865496a71df94547ea0b55a">operator!=</a> (const <a class="el" href="classbs_1_1_async_op.html">AsyncOp</a> &amp;lhs, std::nullptr_t rhs)</td></tr>
+<tr class="memdesc:ga9f5b15df3865496a71df94547ea0b55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an <a class="el" href="classbs_1_1_async_op.html" title="Object you may use to check on the results of an asynchronous operation. ">AsyncOp</a> is not null.  <a href="group___threading.html#ga9f5b15df3865496a71df94547ea0b55a">More...</a><br /></td></tr>
+<tr class="separator:ga9f5b15df3865496a71df94547ea0b55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b90224f0306cc3cec68fa78a55b85d3"><td class="memTemplParams" colspan="2">template&lt;typename ValueType &gt; </td></tr>
 <tr class="memitem:ga1b90224f0306cc3cec68fa78a55b85d3"><td class="memTemplItemLeft" align="right" valign="top">ValueType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#ga1b90224f0306cc3cec68fa78a55b85d3">any_cast</a> (<a class="el" href="classbs_1_1_any.html">Any</a> *operand)</td></tr>
 <tr class="memdesc:ga1b90224f0306cc3cec68fa78a55b85d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the internal data of the specified type.  <a href="group___general.html#ga1b90224f0306cc3cec68fa78a55b85d3">More...</a><br /></td></tr>
@@ -5884,6 +6047,14 @@ BS_UTILITY_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memitem:gaa2f427e6d8e2759b02cd83e224fa5c3a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#gaa2f427e6d8e2759b02cd83e224fa5c3a">bs_zero_out</a> (T *arr, size_t count)</td></tr>
 <tr class="memdesc:gaa2f427e6d8e2759b02cd83e224fa5c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets contents of a block of memory to zero.  <a href="group___general.html#gaa2f427e6d8e2759b02cd83e224fa5c3a">More...</a><br /></td></tr>
 <tr class="separator:gaa2f427e6d8e2759b02cd83e224fa5c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca964ed97a4fef40a1f506f4b6f0a7f9"><td class="memTemplParams" colspan="2">template&lt;class T , size_t N&gt; </td></tr>
+<tr class="memitem:gaca964ed97a4fef40a1f506f4b6f0a7f9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#gaca964ed97a4fef40a1f506f4b6f0a7f9">bs_copy</a> (T(&amp;dst)[N], T(&amp;src)[N], size_t count)</td></tr>
+<tr class="memdesc:gaca964ed97a4fef40a1f506f4b6f0a7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the contents of one array to another.  <a href="group___general.html#gaca964ed97a4fef40a1f506f4b6f0a7f9">More...</a><br /></td></tr>
+<tr class="separator:gaca964ed97a4fef40a1f506f4b6f0a7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebff9e6d87931c4deb10cd4a8b92030a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:gaebff9e6d87931c4deb10cd4a8b92030a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#gaebff9e6d87931c4deb10cd4a8b92030a">bs_copy</a> (T *dst, T *src, size_t count)</td></tr>
+<tr class="memdesc:gaebff9e6d87931c4deb10cd4a8b92030a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the contents of one array to another.  <a href="group___general.html#gaebff9e6d87931c4deb10cd4a8b92030a">More...</a><br /></td></tr>
+<tr class="separator:gaebff9e6d87931c4deb10cd4a8b92030a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga91dc514cff2002959cdaf4240bce7b82"><td class="memTemplParams" colspan="2">template&lt;class T , std::size_t N&gt; </td></tr>
 <tr class="memitem:ga91dc514cff2002959cdaf4240bce7b82"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___general.html#ga91dc514cff2002959cdaf4240bce7b82">bs_size</a> (const T(&amp;array)[N])</td></tr>
 <tr class="memdesc:ga91dc514cff2002959cdaf4240bce7b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the provided static array.  <a href="group___general.html#ga91dc514cff2002959cdaf4240bce7b82">More...</a><br /></td></tr>

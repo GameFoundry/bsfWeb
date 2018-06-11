@@ -34,6 +34,7 @@ var searchData=
   ['bs_5falloc_5faligned',['bs_alloc_aligned',['../group___memory.html#gaa83bb81b3f3f7a71c6dc819271772a1e',1,'bs']]],
   ['bs_5falloc_5faligned16',['bs_alloc_aligned16',['../group___memory.html#ga00241e4fbcdb571f8e6db60f6b37de4b',1,'bs']]],
   ['bs_5fallocn',['bs_allocN',['../group___memory.html#ga1050d5941d6fabacec7f2b64c4c95f77',1,'bs']]],
+  ['bs_5fcopy',['bs_copy',['../group___general.html#gaca964ed97a4fef40a1f506f4b6f0a7f9',1,'bs::bs_copy(T(&amp;dst)[N], T(&amp;src)[N], size_t count)'],['../group___general.html#gaebff9e6d87931c4deb10cd4a8b92030a',1,'bs::bs_copy(T *dst, T *src, size_t count)']]],
   ['bs_5fcore_5fptr',['bs_core_ptr',['../group___core_thread.html#gab4abd37566350fe5fd880019f2252707',1,'bs']]],
   ['bs_5fcore_5fptr_5fnew',['bs_core_ptr_new',['../group___core_thread.html#ga281031fc4c59283133426745bbde59f6',1,'bs::bs_core_ptr_new(Args &amp;&amp;...args)'],['../group___core_thread.html#ga284a8181be0295bf3a15182243c72ed2',1,'bs::bs_core_ptr_new(Args &amp;&amp;...args)'],['../group___core_thread.html#ga0c00364d469ef833ab310f7836d0f677',1,'bs::bs_core_ptr_new(Args &amp;&amp;...args)']]],
   ['bs_5fdelete',['bs_delete',['../group___memory.html#ga803d542d4a7812addf807ef555000767',1,'bs']]],

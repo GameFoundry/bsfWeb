@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -122,9 +130,12 @@ Methods</h2></td></tr>
 <tr class="memitem:adbb88522cfce8f79b31e1617ea3fd60a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classbs_1_1ct_1_1_render_compositor.html">RenderCompositor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_view.html#adbb88522cfce8f79b31e1617ea3fd60a">getCompositor</a> () const</td></tr>
 <tr class="memdesc:adbb88522cfce8f79b31e1617ea3fd60a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the compositor in charge of rendering for this view.  <a href="#adbb88522cfce8f79b31e1617ea3fd60a">More...</a><br /></td></tr>
 <tr class="separator:adbb88522cfce8f79b31e1617ea3fd60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affbf8ec7d0b3c247c710ab24d30e6661"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_view.html#affbf8ec7d0b3c247c710ab24d30e6661">determineVisible</a> (const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="structbs_1_1ct_1_1_renderer_object.html">RendererObject</a> *&gt; &amp;renderables, const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="structbs_1_1ct_1_1_cull_info.html">CullInfo</a> &gt; &amp;cullInfos, <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; bool &gt; *visibility=nullptr)</td></tr>
-<tr class="memdesc:affbf8ec7d0b3c247c710ab24d30e6661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates view render queues by determining visible renderable objects.  <a href="#affbf8ec7d0b3c247c710ab24d30e6661">More...</a><br /></td></tr>
-<tr class="separator:affbf8ec7d0b3c247c710ab24d30e6661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad9e58f5de0c69eaa002e741361384d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a3ad9e58f5de0c69eaa002e741361384d">determineVisible</a> (const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="structbs_1_1ct_1_1_renderer_renderable.html">RendererRenderable</a> *&gt; &amp;renderables, const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="structbs_1_1ct_1_1_cull_info.html">CullInfo</a> &gt; &amp;cullInfos, <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; bool &gt; *visibility=nullptr)</td></tr>
+<tr class="memdesc:a3ad9e58f5de0c69eaa002e741361384d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates view render queues by determining visible renderable objects.  <a href="#a3ad9e58f5de0c69eaa002e741361384d">More...</a><br /></td></tr>
+<tr class="separator:a3ad9e58f5de0c69eaa002e741361384d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc60cc3fdb1c64131458b8628ecfa12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_view.html#affc60cc3fdb1c64131458b8628ecfa12">determineVisible</a> (const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="structbs_1_1ct_1_1_renderer_particles.html">RendererParticles</a> &gt; &amp;particleSystems, const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="classbs_1_1_a_a_box.html">AABox</a> &gt; &amp;bounds, <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; bool &gt; *visibility=nullptr)</td></tr>
+<tr class="memdesc:affc60cc3fdb1c64131458b8628ecfa12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates view render queues by determining visible particle systems.  <a href="#affc60cc3fdb1c64131458b8628ecfa12">More...</a><br /></td></tr>
+<tr class="separator:affc60cc3fdb1c64131458b8628ecfa12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf1ccd3c97f07c37253370bca43fcfab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_view.html#aaf1ccd3c97f07c37253370bca43fcfab">determineVisible</a> (const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="classbs_1_1ct_1_1_renderer_light.html">RendererLight</a> &gt; &amp;lights, const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="classbs_1_1_sphere.html">Sphere</a> &gt; &amp;bounds, <a class="el" href="group___renderer-_internal.html#gadc3ec8293e6a97ebe43f0196b9a7f638">LightType</a> type, <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; bool &gt; *visibility=nullptr)</td></tr>
 <tr class="memdesc:aaf1ccd3c97f07c37253370bca43fcfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the visibility masks for all the lights of the provided type.  <a href="#aaf1ccd3c97f07c37253370bca43fcfab">More...</a><br /></td></tr>
 <tr class="separator:aaf1ccd3c97f07c37253370bca43fcfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,8 +148,11 @@ Methods</h2></td></tr>
 <tr class="memitem:a6687f436995e912f97091d6f8cb83730"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a6687f436995e912f97091d6f8cb83730">calculateVisibility</a> (const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="classbs_1_1_a_a_box.html">AABox</a> &gt; &amp;bounds, <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; bool &gt; &amp;visibility) const</td></tr>
 <tr class="memdesc:a6687f436995e912f97091d6f8cb83730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Culls the provided set of bounds against the current frustum and outputs a set of visibility flags determining which entry is or isn't visible by this view.  <a href="#a6687f436995e912f97091d6f8cb83730">More...</a><br /></td></tr>
 <tr class="separator:a6687f436995e912f97091d6f8cb83730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8af6e4d022abf15d2be38d757563c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a0a8af6e4d022abf15d2be38d757563c1">queueRenderElements</a> (const <a class="el" href="structbs_1_1ct_1_1_scene_info.html">SceneInfo</a> &amp;sceneInfo)</td></tr>
+<tr class="memdesc:a0a8af6e4d022abf15d2be38d757563c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts all visible renderable elements into render queues.  <a href="#a0a8af6e4d022abf15d2be38d757563c1">More...</a><br /></td></tr>
+<tr class="separator:a0a8af6e4d022abf15d2be38d757563c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2085125aaf2170bd01b3b877fc7ed3d7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structbs_1_1ct_1_1_visibility_info.html">VisibilityInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a2085125aaf2170bd01b3b877fc7ed3d7">getVisibilityMasks</a> () const</td></tr>
-<tr class="memdesc:a2085125aaf2170bd01b3b877fc7ed3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the visibility mask calculated with the last call to <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#affbf8ec7d0b3c247c710ab24d30e6661" title="Populates view render queues by determining visible renderable objects. ">determineVisible()</a>.  <a href="#a2085125aaf2170bd01b3b877fc7ed3d7">More...</a><br /></td></tr>
+<tr class="memdesc:a2085125aaf2170bd01b3b877fc7ed3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the visibility mask calculated with the last call to <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a3ad9e58f5de0c69eaa002e741361384d" title="Populates view render queues by determining visible renderable objects. ">determineVisible()</a>.  <a href="#a2085125aaf2170bd01b3b877fc7ed3d7">More...</a><br /></td></tr>
 <tr class="separator:a2085125aaf2170bd01b3b877fc7ed3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a378a16c40b2be7f72c538415f8b4bfbc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structbs_1_1_render_settings.html">RenderSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a378a16c40b2be7f72c538415f8b4bfbc">getRenderSettings</a> () const</td></tr>
 <tr class="memdesc:a378a16c40b2be7f72c538415f8b4bfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns per-view settings that control rendering.  <a href="#a378a16c40b2be7f72c538415f8b4bfbc">More...</a><br /></td></tr>
@@ -316,8 +330,8 @@ static <a class="el" href="classbs_1_1_vector2.html">Vector2</a>&#160;</td><td c
 
 </div>
 </div>
-<a id="affbf8ec7d0b3c247c710ab24d30e6661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affbf8ec7d0b3c247c710ab24d30e6661">&#9670;&nbsp;</a></span>determineVisible() <span class="overload">[1/2]</span></h2>
+<a id="a3ad9e58f5de0c69eaa002e741361384d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad9e58f5de0c69eaa002e741361384d">&#9670;&nbsp;</a></span>determineVisible() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +339,7 @@ static <a class="el" href="classbs_1_1_vector2.html">Vector2</a>&#160;</td><td c
         <tr>
           <td class="memname">void determineVisible </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="structbs_1_1ct_1_1_renderer_object.html">RendererObject</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="structbs_1_1ct_1_1_renderer_renderable.html">RendererRenderable</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>renderables</em>, </td>
         </tr>
         <tr>
@@ -361,8 +375,53 @@ static <a class="el" href="classbs_1_1_vector2.html">Vector2</a>&#160;</td><td c
 
 </div>
 </div>
+<a id="affc60cc3fdb1c64131458b8628ecfa12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc60cc3fdb1c64131458b8628ecfa12">&#9670;&nbsp;</a></span>determineVisible() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void determineVisible </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="structbs_1_1ct_1_1_renderer_particles.html">RendererParticles</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>particleSystems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; <a class="el" href="classbs_1_1_a_a_box.html">AABox</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bounds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___containers.html#ga7eff25c8c62ee478cb8e5909eb8c2c46">Vector</a>&lt; bool &gt; *&#160;</td>
+          <td class="paramname"><em>visibility</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Populates view render queues by determining visible particle systems. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">particleSystems</td><td>A set of particle systems to iterate over and determine visibility for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bounds</td><td>A set of world bounds for the particle systems. Must be the same size as the <code>particleSystems</code> array. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">visibility</td><td>Output parameter that will have the true bit set for any visible particle system object. If the bit for an object is already set to true, the method will never change it to false which allows the same bitfield to be provided to multiple renderer views. Must be the same size as the <code>particleSystems</code> array.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>As a side-effect, per-view visibility data is also calculated and can be retrieved by calling getVisibilityMask(). </p>
+
+</div>
+</div>
 <a id="aaf1ccd3c97f07c37253370bca43fcfab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf1ccd3c97f07c37253370bca43fcfab">&#9670;&nbsp;</a></span>determineVisible() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1ccd3c97f07c37253370bca43fcfab">&#9670;&nbsp;</a></span>determineVisible() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -578,7 +637,7 @@ static <a class="el" href="classbs_1_1_vector2.html">Vector2</a>&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Returns a render queue containing all opaque objects for the specified pipeline. </p>
-<p>Make sure to call <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#affbf8ec7d0b3c247c710ab24d30e6661" title="Populates view render queues by determining visible renderable objects. ">determineVisible()</a> beforehand if view or object transforms changed since the last time it was called. If <code>forward</code> is true then opaque objects using the forward pipeline are returned, otherwise deferred pipeline objects are returned. </p>
+<p>Make sure to call <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a3ad9e58f5de0c69eaa002e741361384d" title="Populates view render queues by determining visible renderable objects. ">determineVisible()</a> beforehand if view or object transforms changed since the last time it was called. If <code>forward</code> is true then opaque objects using the forward pipeline are returned, otherwise deferred pipeline objects are returned. </p>
 
 </div>
 </div>
@@ -695,7 +754,7 @@ static <a class="el" href="classbs_1_1_vector2.html">Vector2</a>&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Returns a render queue containing all transparent objects. </p>
-<p>Make sure to call <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#affbf8ec7d0b3c247c710ab24d30e6661" title="Populates view render queues by determining visible renderable objects. ">determineVisible()</a> beforehand if view or object transforms changed since the last time it was called. </p>
+<p>Make sure to call <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a3ad9e58f5de0c69eaa002e741361384d" title="Populates view render queues by determining visible renderable objects. ">determineVisible()</a> beforehand if view or object transforms changed since the last time it was called. </p>
 
 </div>
 </div>
@@ -733,7 +792,28 @@ static <a class="el" href="classbs_1_1_vector2.html">Vector2</a>&#160;</td><td c
       </table>
 </div><div class="memdoc">
 
-<p>Returns the visibility mask calculated with the last call to <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#affbf8ec7d0b3c247c710ab24d30e6661" title="Populates view render queues by determining visible renderable objects. ">determineVisible()</a>. </p>
+<p>Returns the visibility mask calculated with the last call to <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a3ad9e58f5de0c69eaa002e741361384d" title="Populates view render queues by determining visible renderable objects. ">determineVisible()</a>. </p>
+
+</div>
+</div>
+<a id="a0a8af6e4d022abf15d2be38d757563c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8af6e4d022abf15d2be38d757563c1">&#9670;&nbsp;</a></span>queueRenderElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void queueRenderElements </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbs_1_1ct_1_1_scene_info.html">SceneInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>sceneInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts all visible renderable elements into render queues. </p>
+<p>Assumes visibility has been calculated beforehand by calling <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a3ad9e58f5de0c69eaa002e741361384d" title="Populates view render queues by determining visible renderable objects. ">determineVisible()</a>. After the call render elements can be retrieved from the queues using getOpqueQueue or <a class="el" href="classbs_1_1ct_1_1_renderer_view.html#a729bc4fbec77d0071ec90f094072b62c" title="Returns a render queue containing all transparent objects. ">getTransparentQueue()</a> calls. </p>
 
 </div>
 </div>

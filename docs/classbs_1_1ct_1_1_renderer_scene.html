@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -146,6 +154,15 @@ Methods</h2></td></tr>
 <tr class="memitem:a1af8771d921d69ff50bc2c698ca19238"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_scene.html#a1af8771d921d69ff50bc2c698ca19238">unregisterSkybox</a> (<a class="el" href="classbs_1_1ct_1_1_skybox.html">Skybox</a> *skybox)</td></tr>
 <tr class="memdesc:a1af8771d921d69ff50bc2c698ca19238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a skybox from the scene.  <a href="#a1af8771d921d69ff50bc2c698ca19238">More...</a><br /></td></tr>
 <tr class="separator:a1af8771d921d69ff50bc2c698ca19238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac780202cd4b172d8d6e29747ec38bed5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_scene.html#ac780202cd4b172d8d6e29747ec38bed5">registerParticleSystem</a> (<a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *particleSystem)</td></tr>
+<tr class="memdesc:ac780202cd4b172d8d6e29747ec38bed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new particle system in the scene.  <a href="#ac780202cd4b172d8d6e29747ec38bed5">More...</a><br /></td></tr>
+<tr class="separator:ac780202cd4b172d8d6e29747ec38bed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b431b6976455b9be349b9f9f8ab217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_scene.html#a50b431b6976455b9be349b9f9f8ab217">updateParticleSystem</a> (<a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *particleSystem)</td></tr>
+<tr class="memdesc:a50b431b6976455b9be349b9f9f8ab217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates information about a previously registered particle system.  <a href="#a50b431b6976455b9be349b9f9f8ab217">More...</a><br /></td></tr>
+<tr class="separator:a50b431b6976455b9be349b9f9f8ab217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6ee681e24df9bcf35706af2f5fe4cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_scene.html#afc6ee681e24df9bcf35706af2f5fe4cb">unregisterParticleSystem</a> (<a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *particleSystem)</td></tr>
+<tr class="memdesc:afc6ee681e24df9bcf35706af2f5fe4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a particle system from the scene.  <a href="#afc6ee681e24df9bcf35706af2f5fe4cb">More...</a><br /></td></tr>
+<tr class="separator:afc6ee681e24df9bcf35706af2f5fe4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf05de5901764a8c7db401f7b3e2593"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structbs_1_1ct_1_1_scene_info.html">SceneInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_scene.html#aebf05de5901764a8c7db401f7b3e2593">getSceneInfo</a> () const</td></tr>
 <tr class="memdesc:aebf05de5901764a8c7db401f7b3e2593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a container with all relevant scene objects.  <a href="#aebf05de5901764a8c7db401f7b3e2593">More...</a><br /></td></tr>
 <tr class="separator:aebf05de5901764a8c7db401f7b3e2593"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +178,9 @@ Methods</h2></td></tr>
 <tr class="memitem:ab9fd7560520bb3ba20ca8ef275de0934"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_scene.html#ab9fd7560520bb3ba20ca8ef275de0934">prepareRenderable</a> (UINT32 idx, const <a class="el" href="structbs_1_1ct_1_1_frame_info.html">FrameInfo</a> &amp;frameInfo)</td></tr>
 <tr class="memdesc:ab9fd7560520bb3ba20ca8ef275de0934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs necessary steps to make a renderable ready for rendering.  <a href="#ab9fd7560520bb3ba20ca8ef275de0934">More...</a><br /></td></tr>
 <tr class="separator:ab9fd7560520bb3ba20ca8ef275de0934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261e46379b3c694d86b0f64dfe30d060"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_scene.html#a261e46379b3c694d86b0f64dfe30d060">updateParticleSystemBounds</a> (const <a class="el" href="structbs_1_1_particle_render_data_group.html">ParticleRenderDataGroup</a> *particleRenderData)</td></tr>
+<tr class="memdesc:a261e46379b3c694d86b0f64dfe30d060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the bounds for all the particle systems from the provided object.  <a href="#a261e46379b3c694d86b0f64dfe30d060">More...</a><br /></td></tr>
+<tr class="separator:a261e46379b3c694d86b0f64dfe30d060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee436a5d3acaf77f5c9b927b52b96ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbs_1_1ct_1_1_scene_info.html">SceneInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_renderer_scene.html#aaee436a5d3acaf77f5c9b927b52b96ca">_getSceneInfo</a> ()</td></tr>
 <tr class="memdesc:aaee436a5d3acaf77f5c9b927b52b96ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a modifiable version of <a class="el" href="structbs_1_1ct_1_1_scene_info.html" title="Contains most scene objects relevant to the renderer. ">SceneInfo</a>.  <a href="#aaee436a5d3acaf77f5c9b927b52b96ca">More...</a><br /></td></tr>
 <tr class="separator:aaee436a5d3acaf77f5c9b927b52b96ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,6 +346,26 @@ Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Registers a new light probe volume in the scene. </p>
+
+</div>
+</div>
+<a id="ac780202cd4b172d8d6e29747ec38bed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac780202cd4b172d8d6e29747ec38bed5">&#9670;&nbsp;</a></span>registerParticleSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registerParticleSystem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *&#160;</td>
+          <td class="paramname"><em>particleSystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers a new particle system in the scene. </p>
 
 </div>
 </div>
@@ -526,6 +566,26 @@ Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="afc6ee681e24df9bcf35706af2f5fe4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6ee681e24df9bcf35706af2f5fe4cb">&#9670;&nbsp;</a></span>unregisterParticleSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unregisterParticleSystem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *&#160;</td>
+          <td class="paramname"><em>particleSystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a particle system from the scene. </p>
+
+</div>
+</div>
 <a id="ab64a4dc2c524beb633bd69034b11c92a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab64a4dc2c524beb633bd69034b11c92a">&#9670;&nbsp;</a></span>unregisterReflectionProbe()</h2>
 
@@ -673,6 +733,46 @@ Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Updates information about a previously registered light probe volume. </p>
+
+</div>
+</div>
+<a id="a50b431b6976455b9be349b9f9f8ab217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b431b6976455b9be349b9f9f8ab217">&#9670;&nbsp;</a></span>updateParticleSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateParticleSystem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbs_1_1ct_1_1_particle_system.html">ParticleSystem</a> *&#160;</td>
+          <td class="paramname"><em>particleSystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates information about a previously registered particle system. </p>
+
+</div>
+</div>
+<a id="a261e46379b3c694d86b0f64dfe30d060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261e46379b3c694d86b0f64dfe30d060">&#9670;&nbsp;</a></span>updateParticleSystemBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateParticleSystemBounds </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbs_1_1_particle_render_data_group.html">ParticleRenderDataGroup</a> *&#160;</td>
+          <td class="paramname"><em>particleRenderData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the bounds for all the particle systems from the provided object. </p>
 
 </div>
 </div>

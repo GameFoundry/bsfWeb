@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -87,7 +95,7 @@ $(function() {
 <p>Buffer types:</p><ul>
 <li>Raw buffers containing a block of bytes that are up to the GPU program to interpret.</li>
 <li>Structured buffer containing an array of structures compliant to a certain layout. Similar to raw buffer but easier to interpret the data.</li>
-<li>Random read/write buffers that allow you to write to random parts of the buffer from within the GPU program, and then read it later. These can only be bound to pixel and compute stages.</li>
+<li><a class="el" href="classbs_1_1_random.html" title="Generates pseudo random numbers using the Xorshift128 algorithm. ">Random</a> read/write buffers that allow you to write to random parts of the buffer from within the GPU program, and then read it later. These can only be bound to pixel and compute stages.</li>
 <li>Append/Consume buffers also allow you to write to them, but in a stack-like fashion, usually where one set of programs produces data while other set consumes it from the same buffer. Append/Consume buffers are structured by default.</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Sim thread only. </dd></dl>

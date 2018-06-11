@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -73,7 +81,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Threading<div class="ingroups"><a class="el" href="group___layers.html">Layers</a> &raquo; <a class="el" href="group___utility.html">Utility</a></div></div>  </div>
 </div><!--header-->
@@ -154,6 +163,15 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gaee057e5f06a7b2533e6f58bde34d15fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task priority.  <a href="group___threading.html#gaee057e5f06a7b2533e6f58bde34d15fa">More...</a><br /></td></tr>
 <tr class="separator:gaee057e5f06a7b2533e6f58bde34d15fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gae59982b6af67b5fa0a89979d37ced94b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threading.html#gae59982b6af67b5fa0a89979d37ced94b">operator==</a> (const <a class="el" href="classbs_1_1_async_op.html">AsyncOp</a> &amp;lhs, std::nullptr_t rhs)</td></tr>
+<tr class="memdesc:gae59982b6af67b5fa0a89979d37ced94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an <a class="el" href="classbs_1_1_async_op.html" title="Object you may use to check on the results of an asynchronous operation. ">AsyncOp</a> is null.  <a href="group___threading.html#gae59982b6af67b5fa0a89979d37ced94b">More...</a><br /></td></tr>
+<tr class="separator:gae59982b6af67b5fa0a89979d37ced94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f5b15df3865496a71df94547ea0b55a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threading.html#ga9f5b15df3865496a71df94547ea0b55a">operator!=</a> (const <a class="el" href="classbs_1_1_async_op.html">AsyncOp</a> &amp;lhs, std::nullptr_t rhs)</td></tr>
+<tr class="memdesc:ga9f5b15df3865496a71df94547ea0b55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an <a class="el" href="classbs_1_1_async_op.html" title="Object you may use to check on the results of an asynchronous operation. ">AsyncOp</a> is not null.  <a href="group___threading.html#ga9f5b15df3865496a71df94547ea0b55a">More...</a><br /></td></tr>
+<tr class="separator:ga9f5b15df3865496a71df94547ea0b55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga6a60e5f0ae1d93dd8b503f089798e38a"></a>
@@ -344,6 +362,67 @@ Enumerations</h2></td></tr>
 
 <p><a class="el" href="classbs_1_1_task.html" title="Represents a single task that may be queued in the TaskScheduler. ">Task</a> priority. </p>
 <p>Tasks with higher priority will get executed sooner. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga9f5b15df3865496a71df94547ea0b55a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f5b15df3865496a71df94547ea0b55a">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bs::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbs_1_1_async_op.html">AsyncOp</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::nullptr_t&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if an <a class="el" href="classbs_1_1_async_op.html" title="Object you may use to check on the results of an asynchronous operation. ">AsyncOp</a> is not null. </p>
+
+</div>
+</div>
+<a id="gae59982b6af67b5fa0a89979d37ced94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae59982b6af67b5fa0a89979d37ced94b">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bs::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbs_1_1_async_op.html">AsyncOp</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::nullptr_t&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if an <a class="el" href="classbs_1_1_async_op.html" title="Object you may use to check on the results of an asynchronous operation. ">AsyncOp</a> is null. </p>
 
 </div>
 </div>

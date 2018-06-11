@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-120676613-1');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -89,9 +97,9 @@ Methods</h2></td></tr>
 <tr class="memitem:ae707743a4dc2660f91f3c4e0364a42f0"><td class="memItemLeft" align="right" valign="top"><a id="ae707743a4dc2660f91f3c4e0364a42f0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RenderQueue</b> (<a class="el" href="group___renderer-_engine-_internal.html#ga63b53f91fc4a5dbba8e3266c305e9ca5">StateReduction</a> grouping=<a class="el" href="group___renderer-_engine-_internal.html#gga63b53f91fc4a5dbba8e3266c305e9ca5a0aa6f4210bf373c95eda00232e93cd98">StateReduction::Distance</a>)</td></tr>
 <tr class="separator:ae707743a4dc2660f91f3c4e0364a42f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ee7e181209962f742ec64f2d2768377"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#a1ee7e181209962f742ec64f2d2768377">add</a> (<a class="el" href="classbs_1_1ct_1_1_renderable_element.html">RenderableElement</a> *element, float distFromCamera)</td></tr>
-<tr class="memdesc:a1ee7e181209962f742ec64f2d2768377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new entry to the render queue.  <a href="#a1ee7e181209962f742ec64f2d2768377">More...</a><br /></td></tr>
-<tr class="separator:a1ee7e181209962f742ec64f2d2768377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c8fc452005b6c511a7145f29b59782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#a52c8fc452005b6c511a7145f29b59782">add</a> (const <a class="el" href="classbs_1_1ct_1_1_render_element.html">RenderElement</a> *element, float distFromCamera)</td></tr>
+<tr class="memdesc:a52c8fc452005b6c511a7145f29b59782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new entry to the render queue.  <a href="#a52c8fc452005b6c511a7145f29b59782">More...</a><br /></td></tr>
+<tr class="separator:a52c8fc452005b6c511a7145f29b59782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbs_1_1ct_1_1_render_queue.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
 <tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all render operations from the queue.  <a href="#ac8bb3912a3ce86b15842e79d0b421204">More...</a><br /></td></tr>
 <tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,8 +115,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a0fff0459f3b9a2f1e3cad0549bc9c1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method documentation</h2>
-<a id="a1ee7e181209962f742ec64f2d2768377"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ee7e181209962f742ec64f2d2768377">&#9670;&nbsp;</a></span>add()</h2>
+<a id="a52c8fc452005b6c511a7145f29b59782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52c8fc452005b6c511a7145f29b59782">&#9670;&nbsp;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,7 +124,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbs_1_1ct_1_1_renderable_element.html">RenderableElement</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classbs_1_1ct_1_1_render_element.html">RenderElement</a> *&#160;</td>
           <td class="paramname"><em>element</em>, </td>
         </tr>
         <tr>
