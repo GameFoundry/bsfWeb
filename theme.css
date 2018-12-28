@@ -7,7 +7,7 @@ hidden.menu {
 }
 
 .masthead {
-    height: 400px;
+    min-height: 400px;
 }
 
 #headerMaster {
@@ -102,20 +102,18 @@ ul {
     margin-bottom:20px;
 }
 
-.myFooter {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
 b {
     color: #efa168;
 }
 
+.pusher {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .contents {
-    padding-bottom: 150px;
-    height: 100%;
+    flex: 1;
 }
 
 body.pushable > .pusher {
@@ -261,21 +259,17 @@ body ::-webkit-scrollbar-thumb:window-inactive {
 
 @media (max-width: 750px)
 {
-    .contents {
-        padding-bottom: 450px;
+    #title {
+        font-size: 5em;
     }
 }
 
-@media (min-width: 751px) and (max-width: 950px)
+@media (max-width: 600px)
 {
-    .contents {
-        padding-bottom: 260px;
+    #title {
+        font-size: 4em;
     }
-}
-
-@media (min-width: 951px) and (max-width: 1200px)
-{
-    .contents {
-        padding-bottom: 250px;
+    #titleSubText {
+        font-size: 1.25rem;
     }
 }
