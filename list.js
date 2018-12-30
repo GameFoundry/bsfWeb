@@ -335,5 +335,5 @@ function parseXSDDateString(s) {
   var d = new Date(bits[0], bits[1]-1, bits[2]);
   d.setHours(bits[3], bits[4], bits[5]);
 
-  return d.getFullYear() + '-' + d.getMonth() + "-" + d.getDate();
+  return d.getFullYear() + '-' + (d.getMonth() + 1) + "-" + d.getDate();
 }
