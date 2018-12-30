@@ -4,7 +4,7 @@
     var url_re = /docs\.bsframework\.io\/(nightly|latest|(v\d\.\d+))\//;
     var all_versions = {
       'nightly': 'git-master',
-      'latest': 'Latest release',
+      'latest': 'Latest',
       'v1.0': 'v1.0',
     };
     var current_version = 'v1.0';
@@ -16,7 +16,12 @@
         buf.push('<option value="' + version + '"');
         if (version == current_version) {
           buf.push(' selected="selected">');
+		  
+		  if(version == 'latest') {
+			buf.push(title + ' (' + current_release + ')')
+		  } else {
             buf.push(title);
+		  }
         } else {
           buf.push('>' + title);
         }
