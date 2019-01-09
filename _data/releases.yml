@@ -1,0 +1,45 @@
+latest: v1.1.0b
+older: 
+ - v1.0.0b
+
+lookup:
+  v1.1.0b:
+    name: v1.1.0 BETA
+    notes: release_v1.1.html
+    date: "11.1.2019"
+    binaries:
+      windows:
+        path: http://nightly.bsframework.io/releases/bsf_v1.1.0b_win64.zip
+        name: bsf_v1.1.0b_win64.zip
+      linux:
+        path: http://nightly.bsframework.io/releases/bsf_v1.1.0b_linux.tar.gz
+        name: bsf_v1.1.0b_linux.tar.gz
+      macOS:
+        path: http://nightly.bsframework.io/releases/bsf_v1.1.0b_osx.tar.gz
+        name: bsf_v1.1.0b_osx.tar.gz
+    source:
+      path: http://nightly.bsframework.io/releases/bsf_v1.1.0b_source.zip
+      name: bsf_v1.1.0b_source.zip
+    issues: <p>This is a BETA release, meaning parts of the framework are possibly still unstable. Non-commonly used functionality might cause crashes, and untested hardware combinations might as well.</p>
+          <p>The following are known issues with the current release:</p>
+          <li>Using Vulkan on Intel integrated GPUs can sometimes cause a system hang due to an issue with the drivers. It is suggested to run other render backeds until this is resolved.</li>
+  v1.0.0b:
+    name: v1.0.0 BETA
+    notes: "#"
+    date: "21.5.2018"
+    binaries:
+      windows:
+        path: http://nightly.bsframework.io/releases/bsf_v1.0.0b_win64.zip
+        name: bsf_v1.0.0b_win64.zip
+      linux:
+        path: http://nightly.bsframework.io/releases/bsf_v1.0.0b_linux.tar.gz
+        name: bsf_v1.0.0b_linux.tar.gz
+      macOS:
+        path: http://nightly.bsframework.io/releases/bsf_v1.0.0b_osx.tar.gz
+        name: bsf_v1.0.0b_osx.tar.gz
+    source:
+      path: http://nightly.bsframework.io/releases/bsf_v1.0.0b_source.zip
+      name: bsf_v1.0.0b_source.zip
+    issues: <p>This is a BETA release, meaning parts of the framework are possibly still unstable. Non-commonly used functionality might cause crashes, and untested hardware combinations might as well.</p>
+            <p>The following are known issues with the current release:</p>
+            <li>Mesa drivers on Linux do not work at the moment. Please use proprietary nVidia or AMD drivers, if possible. This is partly due to bugs in Mesa, and partly due to an issue in the framework.</li>

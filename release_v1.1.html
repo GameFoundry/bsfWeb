@@ -1,0 +1,362 @@
+---
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html title="Version 1.1 Release" %}
+    </head>
+    <body>
+        <!-- Page Contents -->
+        <div class="pusher">
+            {% include menu.html %}
+
+            <div class="contents">
+                <div class="ui basic inverted segment" style="padding-top:30px;margin-top:0px; margin-bottom: 0px;">
+                    <div class="ui text container">
+                        <h2 class="ui inverted header subTitle" style="border-bottom: 1px solid #555555">
+
+                            {% assign releaseInfo = site.data.releases.lookup["v1.1.0b"] %}
+                            <div class="content">
+                                Version 1.1 Release
+                                <div class="sub header">Release date: {{ releaseInfo.date }}</div>
+                            </div>
+                        </h2>
+
+                        <div class="ui three column grid">
+                            <div class="column">
+                                <img class="ui centered bordered rounded image" src="images/release_v1.1/bloomSmall.png">
+                            </div>
+                            <div class="column">
+                                <img class="ui centered bordered rounded image" src="images/release_v1.1/emissiveParticlesSmall.gif">
+                            </div>
+                            <div class="column">
+                                <img class="ui centered bordered rounded image" src="images/release_v1.1/decalSmall.png">
+                            </div>
+                        </div>
+
+                        <h4 class="ui inverted header" style="border-bottom: 1px solid #555555">What is bs::framework?</h4>
+                        <p><em>bs::framework</em> is a C++ game development library focused on providing a modern foundation for the development of engines, games and other graphical applications. Learn more on <a href="https://www.bsframework.io">www.bsframework.io</a>.</p>
+
+                        <h4 class="ui inverted header" style="border-bottom: 1px solid #555555">What's new?</h4>
+                        <p>Some of the changes include:</p>
+
+                        <ul>
+                            <li>Brand new particle system with CPU and GPU simulation backends</li>
+                            <li>Decal rendering</li>
+                            <li>Material animation</li>
+                            <li>Support for emissive materials</li>
+                            <li>Bloom post-processing effect</li>
+                            <li>Over 50 other features and additions</li>
+                            <li>Nearly a hundred bugfixes and tweaks</li>
+                        </ul>
+
+                        <h4 class="ui inverted header" style="border-bottom: 1px solid #555555">What's next?</h4>
+                        <p><em>bs::framework</em> is under constant active development. There are many features planned for the next few releases, some of which include:</p>
+
+                        <ul>
+                            <li>Both low- and high-level networking with headless mode</li>
+                            <li>Pathfinding system integration</li>
+                            <li>Terrain system</li>
+                            <li>More physically based surface models and other high-fidelity renderer enhancements</li>
+                            <li>C# scripting</li>
+                            <li>Support for mobile platforms</li>
+                            <li>Offline lightmapping</li>
+                            <li>VR support</li>
+                        </ul>
+
+                        <p>If you'd like to see these features sooner consider becoming a <a href="https://www.patreon.com/bsf">patron</a> or donate via <a href="https://www.paypal.me/MarkoPintera/10">PayPal</a>. Donations help us spend more time working on the framework and might eventually allow us to employ part-time developers.</p>
+
+                        <p>Grab the new version from the <a href="https://www.bsframework.io/download.html">downloads page</a> or the <a href="https://github.com/GameFoundry/bsf">GitHub page</a>.</p>
+
+                        <h2 class="ui inverted header" style="border-bottom: 1px solid #555555">
+                            Detailed release notes
+                        </h2>
+
+                        <h3 class="ui dividing inverted header" id="majorfeatures">Major features</h3>
+                        <h4 class="ui dividing inverted header" id="particlesystem">Particle system</h4>
+
+                        <img src="images/release_v1.1/vectorField.gif" alt="vectorField2|600x337" />
+                        <p><em>Vector field simulation</em></p>
+
+                        <p>An extensive particle system implementation has been added to the framework. It supports a wide variety of effects with support for both CPU and GPU simulation. The system is extremely performant with support for multiple particle systems with dozens or even hundreds of thousands of particles. For those that need it, the system is also extremely customizable making it easy to add custom particle behaviors.</p>
+
+                        <p>Highlights:</p>
+
+                        <ul>
+                            <li>Dual system supporting both CPU and GPU simulated particles
+                            <ul>
+                                <li>CPU simulation provides complex behaviors with an easy way to add your own custom behaviors. The simulation is fully multi-threaded meaning you can have many complex systems running at once with minimal performance impact.</li>
+                                <li>GPU simulation provides a more fixed set of behaviors but allows for extremely fast simulation of particle systems with extremely high particle counts</li>
+                            </ul>
+                            </li>
+                            <li>Distribution based properties allow you to achieve high levels of customization with a simple unified API across most particle system components. Properties such as particle color, size, velocity, etc. can be defined as a constant, randomly selected range, time varying curve or even a time varying random range. This applies to nearly all particle system properties, making the systems very customizable with the ability to create various effects.</li>
+                            <li>Wide variety of emitter shapes and options
+                            <ul>
+                                <li>Primitive shapes such as box, sphere, cone, circle with a variety of customizable options that allow emission to happen in specific order, or only on specific parts of the surface</li>
+                                <li>Emit from custom meshes, including even emission from animated (skinned) meshes</li>
+                                <li>Support for both continuous emission as well as emission bursts</li>
+                            </ul>
+                            </li>
+                            <li>Wide range of existing evolvers for CPU simulation including evolving of color, size, rotation as well as gravity, arbitrary forces, velocities and more, along with a simple way of creating custom evolver behaviours</li>
+                            <li>Sprite sheet texture animation</li>
+                            <li>Particle world collisions with multiple modes
+                            <ul>
+                                <li>Custom planes (faster, less accurate) </li>
+                                <li>World physical objects (slower, more accurate)</li>
+                                <li>Depth buffer collisions (GPU simulation only)</li>
+                            </ul>
+                            </li>
+                            <li>Support for both traditional 2D billboard particles or 3D mesh particles</li>
+                            <li>Soft particle rendering</li>
+                            <li>Lit and unlit particles</li>
+                            <li>Ability to use custom particle shaders</li>
+                            <li>Fluid simulation via vector fields</li>
+                        </ul>
+
+                        <p>Learn how to use this system through the brand new <a href="http://docs.bsframework.io/latest/particle_system.html">particle system manual</a> or the <a href="https://github.com/GameFoundry/bsfExamples/tree/master/Source/Particles">particle system example project</a>.</p>
+
+                        <img src="images/release_v1.1/particles3d.gif" alt="particles3D|690x388" />
+                        <p><em>3D particles with collisions</em></p>
+
+                        <h4 class="ui dividing inverted header" id="materialanimation">Material animation</h4>
+
+                        <img src="images/release_v1.1/materialAnimation.gif" alt="AnimatedTexture|350x300" />
+                        <p><em>Material with sprite sheet animation</em></p>
+
+                        <p>Materials now support animated values such as animation curves, color gradients or sprite textures. These values can be assigned pretty much the same as their constant versions:</p>
+
+                        <ul>
+                            <li><em>float</em> shader properties can be assigned an <code>TAnimationCurve&lt;float&gt;</code></li>
+                            <li><em>Color</em> shader properties can be assigned a <code>ColorGradient</code></li>
+                            <li><em>Texture</em> shader properties can be assigned a <code>SpriteTexture</code>, which now has built-in support for sprite-sheet animation</li>
+                        </ul>
+
+                        <pre><code class="language-cpp">// Create a sprite texture with sprite sheet animation
+SpriteSheetGridAnimation anim;
+anim.numColumns = 3;
+anim.numRows = 3;
+anim.count = 8;
+anim.fps = 8;
+
+HSpriteTexture spriteTexture = ...;
+spriteTexture-&gt;setAnimation(anim);
+spriteTexture-&gt;setAnimationPlayback(SpriteAnimationPlayback::Loop);
+
+// And assign it to the material property
+HMaterial material = ...;
+material-&gt;setSpriteTexture("gAlbedoTex", spriteTexture);
+                        </code></pre>
+
+                        <p>This provides a unified approach to handling material animation across all engine systems, including normal rendering, particle system, decals and GUI, while being simple to set up and use.</p>
+
+                        <p>Read more about it in the updated <a href="http://docs.bsframework.io/latest/simple_material.html">materials manual</a>.</p>
+
+                        <h4 class="ui dividing inverted header" id="bloomeffect">Bloom effect</h4>
+
+                        <img src="images/release_v1.1/bloom.png" alt="bloom|690x388" />
+                        <p><em>Bloom effect with a blue tint</em></p>
+
+                        <p>Bloom highlights bright areas of the scene simulating a real world camera effect where the light overwhelms the camera lens. It works best with bright lights or emissive materials.</p>
+
+                        <p>The effect is controlled through the  <code>CCamera</code>  component, more specifically through  <code>RenderSettings::bloom</code> .</p>
+
+                        <pre><code class="language-cpp">HCamera camera = ...;
+
+auto rs = camera-&gt;getRenderSettings();
+rs-&gt;bloom.enabled = true; // Enables/disables the effect
+rs-&gt;bloom.threshold = 1.0f; // Determines how bright something needs to be to be effected
+rs-&gt;bloom.intensity = 1.0f; // As the name implies
+rs-&gt;bloom.quality = 2; // In range [0, 3]. Higher number means nicer bloom but higher performance cost
+rs-&gt;bloom.tint = Color(0.9f, 0.8f, 0.1f); // Color tint to apply to the effected areas
+
+camera-&gt;setRenderSettings(rs);
+                        </code></pre>
+
+                        <h4 class="ui dividing inverted header" id="emissivematerials">Emissive materials</h4>
+
+                        <img src="images/release_v1.1/emissiveParticles.gif" alt="Emissive|600x338" />
+                        <p><em>Emissive material applied to a particle system</em></p>
+
+                        <p>All standard materials that support lighting can now have parts of their surfaces defined as emissive through an emissive mask texture and an emissive color and intensity. Emission is useful for surfaces representing light emitters (screens, monitors, neon lights, etc.), it interacts nicely with effects such as bloom, and can be even be used for indirect lighting through the use of light probes.</p>
+
+                        <p>To set up an emissive material assign the  <code>gEmissiveMaskTex</code>  texture parameter to the material. Red channel of this texture will control which parts of the surface are considered emissive, where 1 means emissive and 0 non-emissive. Actual color and intensity of the emitted light can be controlled through  <code>gEmissiveColor</code> property.</p>
+
+                        <pre><code class="language-cpp">HShader shader = gBuiltinResources().getBuiltinShader(BuiltinShader::Standard);
+HMaterial material = Material::create(shader);
+...
+// Mark entire surface as emissive
+material-&gt;setTexture("gEmissiveMaskTex", gBuiltinResources().getTexture(BuiltinTexture::White));
+
+// Make the color a bright red
+material-&gt;setColor("gEmissiveColor", Color::Red* 10.0f);
+                        </code></pre>
+
+                        <h4 class="ui dividing inverted header" id="decals">Decals</h4>
+
+                        <img src="images/release_v1.1/decal.png" alt="decal|690x387" />
+                        <p><em>Decal projected onto a surface</em></p>
+                        <p>Decals are used for projecting textures onto other surfaces, either for dynamic gameplay purposes (i.e. bullet holes, explosion marks) or for level design for adding more details to surfaces without having to create new textures.</p>
+                        <p>Decals support multiple modes:</p>
+                        <ul>
+                            <li>Transparent - This is the default mode where a full complement of PBR textures is provided and blended with the underlying surface.</li>
+                            <li>Stain - Similar to Transparent except the albedo color is multiplied (modulated) with the underlying albedo. This makes it for suitable for stain-like decals that modify the existing color, rather than replace it.</li>
+                            <li>Normal - Only the normal map is projected. This allows the decal to be used for effects such a footsteps in the snow.</li>
+                            <li>Emissive - Only the emissive texture is projected. Useful for making surfaces appear as emitting light.</li>
+                        </ul>
+                        <p>Decals can also be selectively applied to only certain surfaces by setting rendering layers.</p>
+                        <p>Read more about decals in the <a href="http://docs.bsframework.io/latest/decals.html">decal manual</a>.</p>
+
+                        <h4 class="ui dividing inverted header" id="minorfeatures">Minor features</h4>
+                        <ul>
+                            <li>GUISkin now has a JSON format and no longer needs to be hardcoded</li>
+                            <li>GUI now supports keyboard navigation, customizable through <code>GUINavGroup</code></li>
+                            <li>Added bitwise operations for linearly interpolating between integers directly</li>
+                            <li>Added optimized floor/ceil/round operations when converting from float to integer</li>
+                            <li>Added a <code>Random</code> class with a variety of utility methods for generating random numbers</li>
+                            <li>Added a per-camera option to disable skybox rendering</li>
+                            <li>Updated Vulkan render backend to 1.1.85</li>
+                            <li>Added Cotire support for unity builds and precompiled headers</li>
+                            <li>Build system now uses more traditional CMake build configurations, to make it easier to use as a submodule</li>
+                            <li>Added new cylinder primitive mesh</li>
+                            <li>Non-async import methods are now thread safe, usable for import from user-managed threads</li>
+                            <li><code>Resources::save</code> is now thread safe, usable for async resource saving</li>
+                            <li>Pool allocator can now be thread safe (optional via a policy)</li>
+                            <li>Added support for global per-type pool allocators</li>
+                            <li>Added <code>AnimationCurve</code> specialization for integer values</li>
+                            <li><code>CoreObject</code> dependencies have a lot more control on how are they marked as dirty, resulting in less full rebuilds and more efficient updates</li>
+                            <li><code>TaskGroup</code> support for <code>TaskScheduler</code> as an easier way to process a set of data across multiple threads</li>
+                            <li>Added move operations to resource and game object handles</li>
+                            <li>Added profiling coverage to the entire renderer</li>
+                            <li>GPU profiler now supports hierarchical sampling</li>
+                            <li>Profiler overlay now built-in and usable through <code>Application</code></li>
+                            <li>Added methods that allow evaluation of integrated and doubly integrated animation curves</li>
+                            <li>Added methods for calculating range of integrated animation curves</li>
+                            <li>Major RTTI system overhaul for better performance and significantly better design</li>
+                            <li><code>BS_PARAMS</code> can be used on method parameters to export a <code>Vector</code> as a variable parameter entry in the script code</li>
+                            <li>Added a <code>Bitfield</code> container</li>
+                            <li>Vertex/Index buffers can now be bound as generic load-store buffers so they can be populated from the GPU</li>
+                            <li>Added a <code>NO_RREF</code> attribute to allow resource references to be exported as direct resource references rather than <code>RRef</code> handles in script code</li>
+                            <li>Core sync system overhaul that allows sync methods to be built with significantly less boilerplate</li>
+                            <li>GUI elements can now report screen space bounds</li>
+                            <li>Added a general purpose GPU parallel radix sort algorithm</li>
+                            <li>Added an utility to calculate a range of a set of animation curves</li>
+                            <li>Added an overridable <code>fixedUpdate</code> to <code>Application</code> for user customized fixed updates outside of components</li>
+                            <li>Significantly cleaner design and better performance for <code>BinarySerializer</code></li>
+                            <li>Game object serialization can now be safely done from multiple threads, allowing async scene loading/saving</li>
+                            <li>Materials variations can now be toggled by the user through <code>Material::setVariation</code></li>
+                            <li>Many improvements to the script binding generator that make it more expressive and able to handle more complex C++ code for export</li>
+                            <li>BSL importer now allows selection of render backends to generate shader code for</li>
+                            <li>Added a separate built-in asset import tool and removed asset import from application start-up</li>
+                            <li>Added build scripts for automatic versioning of data packages hosted outside of Git</li>
+                            <li>Added a <code>SmallVector</code> container, serving as a dynamic array that can avoid most dynamic allocations</li>
+                            <li>Added a <code>DynArray</code> container, a potential replacement for <code>std::vector</code></li>
+                            <li>Added a dynamic cast <code>rtti_cast</code> method</li>
+                            <li>Use modern CMake per-target compile/link properties instead of the old-school global ones</li>
+                            <li>Added complex number support in math library</li>
+                            <li>Added sRGB &lt;-> linear color space conversion methods</li>
+                            <li><code>MinHeap</code> class for use as a priority queue in geometric algorithms</li>
+                            <li><code>AnimationUtility</code> now supports split &amp; combine functionality on arbitrary animation curve types</li>
+                            <li>Major refactor of Vulkan image layout transitions, memory and execution barriers to make them more correct, easier to follow and more performant</li>
+                            <li>Added Romberg integration and Gaussian quadrature methods to the math library</li>
+                            <li>CI deployment moved to S3</li>
+                            <li>Documentation is now auto-generated from latest version</li>
+                            <li>Added multiple documentation versions and a version selector</li>
+                            <li>Various improvements to the logging system and HTML generation</li>
+                        </ul>
+
+                        <h4 class="ui dividing inverted header" id="bugfixes">Bugfixes</h4>
+                        <ul>
+                            <li>Don't attempt to install .pdb files if running in a GNU environment on Windows</li>
+                            <li>GUI elements without <code>ClickThrough</code> flags will no longer incorrectly pass pointer events to elements below them</li>
+                            <li>Dependency binaries will no longer get installed to the parent project folder instead of bsf folder</li>
+                            <li>Fixed a memory leak within <code>StringID</code></li>
+                            <li>Fixed a memory leak in macOS display enumeration</li>
+                            <li>Fixed macOS crash when enumerating displays and video modes on certain hardware configurations</li>
+                            <li>Fixed signal trapping on macOS and Linux</li>
+                            <li>Scanning for references using RTTI no longer ignores base class members</li>
+                            <li>Tweaked radial light shadow bias to reduce shadow acne in some scenes</li>
+                            <li>Fix for shadowed radial lights applying their lighting twice if viewing them from outside their bounds</li>
+                            <li>Properly construct <code>Collider</code> transform for colliders with local offset</li>
+                            <li>Debug draw now renders text in screen space</li>
+                            <li><code>DrawHelper</code> now properly applies local offset when drawing text</li>
+                            <li>Fix for draw helper incorrectly rendering text if there were multiple text entries in the same batch</li>
+                            <li>Disallow use of the FBX importer on multiple threads at once  - The FBX SDK library has been proven not to be thread safe</li>
+                            <li>When enabling animation preview mode, don't rebuild the animation if already enabled, as its causing issue with animation scrubbing in the editor</li>
+                            <li>Animating a single scene object transform component no longer resets the other components to identity </li>
+                            <li>When loading resources properly notify listeners in all cases</li>
+                            <li>Unlocking FPS now works as intended</li>
+                            <li>Update fixed update time with each iteration instead of once per frame, to resolve issues with custom physics callbacks</li>
+                            <li>Added <code>glMemoryBarrier()</code> after draw/compute calls on OpenGL to ensure all written data is visible by future calls</li>
+                            <li>When sampling a single frame of animation don't apply scene-object updates every frame to allow the user to move the object during scrubbing in editor</li>
+                            <li>Deserializing <code>MaterialParams</code> stored in an older format now works properly</li>
+                            <li>Properly exit 'sampling' animation mode when starting an animation through <code>Animation::setState</code></li>
+                            <li>Indirect diffuse is no longer incorrectly applied to metallic materials</li>
+                            <li>Game object and resource handles can no longer be arbitrarily cast to one another</li>
+                            <li>Components creating other components or otherwise modifying component state during component callbacks will no longer invalidate <code>SceneManager</code> lists</li>
+                            <li>Fix memory leak in the GPU profiler</li>
+                            <li>Spot light bounds are now calculated properly</li>
+                            <li>DirectX was leaking <code>GpuBuffer</code> objects</li>
+                            <li>Greatly improved performance when rendering with MSAA</li>
+                            <li>Fixing OpenGL crash due to nested occlusion queries</li>
+                            <li>Fix for Vulkan not binding the entire texture array unless number of array slices was explicitly specified</li>
+                            <li>Fixed a crash when doing a raycast query on an individual <code>Collider</code></li>
+                            <li>Frame allocator can now handle being passed a null pointer for deletion</li>
+                            <li>Fixing memory corruption when writing to Vulkan host-mapped images</li>
+                            <li>Vulkan query results are now properly retrieved</li>
+                            <li>Fixed <code>SceneManager</code> crash when attempting to change state on a game object that was destroyed with the 'immediate' flag</li>
+                            <li>Fixed incorrect image scaling with sprites</li>
+                            <li>Normal unpacking methods fixed</li>
+                            <li>Modal windows will now properly receive a focus event</li>
+                            <li><code>Input::onPointerMoved</code> pointer delta is now properly assigned</li>
+                            <li>Issue a memory barrier if vertex/index buffer has been written to by a shader on Vulkan</li>
+                            <li>GPU buffers with a 16-bit unsigned integer format now report proper element size</li>
+                            <li><code>MeshData</code> iterators now properly report when they reach the end</li>
+                            <li>Fixing a crash due to Vulkan framebuffer getting a delayed update on Linux</li>
+                            <li>When creating a Vulkan swap chain make sure to account for that fact that swap chain might not be the one originally requested</li>
+                            <li>Destoying Vulkan buffer views will now properly wait until the buffer is done being used on the GPU</li>
+                            <li>Fix divide by zero issue in certain audio system components</li>
+                            <li>Fix a memory leak in FMOD audio plugin</li>
+                            <li>GUI elements can now trigger content updates on other GUI elements during a content update</li>
+                            <li>Gaussian blur filter now properly samples along the provided filter radius</li>
+                            <li>Eliminated redundant dynamic allocation from <code>IReflectable::_getRTTIfromTypeId</code></li>
+                            <li>Force resource loading to be synchronous if async is not supported by resource type</li>
+                            <li>Shader binaries moved to their own binary package instead of being hosted on Git</li>
+                            <li>Fix import for 64-bit per-channel non-floating-point textures</li>
+                            <li>Fix crash when bone is being removed from an animation</li>
+                            <li>Always round buffer size returned from glslang to 16 bytes to avoid a crash on some platforms</li>
+                            <li>Properly deduce sampler border color in Vulkan</li>
+                            <li>Fix an issue where image subresource layouts would fail to be set properly in some cases on Vulkan</li>
+                            <li>Always bind a texture array using the texture array view on Vulkan</li>
+                            <li>Don't skip lowest mipmap level when generate filtered reflections</li>
+                            <li>Link with the static version of libuuid on macOS</li>
+                            <li>Install bundled dependencies in a subdirectory in linux to not pollute the system libs</li>
+                            <li>Vulkan <code>OUT_OF_DATE</code> error will now trigger a rebuild of the swap chain, instead of relying only on the window manager for notifying us</li>
+                            <li>Fix integrated GPU enumeration on Vulkan</li>
+                            <li>Fix unnecessary use of <code>TU_LOADSTORE</code> flag on multisample textures, as they are unsupported on Intel IGPUs</li>
+                            <li>Fix layout transitions not being properly remember after queue submit on Vulkan</li>
+                            <li>Fix indirect diffuse calculations not preserving the depth buffer on Vulkan</li>
+                            <li>Fixed application icon on Linux</li>
+                            <li>Respect load flags when clearing the render target on Vulkan</li>
+                            <li><code>SSRTrace</code> shader now properly preserves depth-stencil and loads it as read-only</li>
+                            <li>Resolving driver hang with Vulkan + Intel IGPUs</li>
+                            <li>Fixed Vulkan device enumeration when choosing a non-0 device</li>
+                            <li>Vector deserialization now replaces vector contents instead of appending to it</li>
+                            <li>Modifying an index/vertex buffer on Vulkan after it has been bound will now properly use the modified buffer on subsequent draw calls</li>
+                            <li>Import async operations can now be waited on</li>
+                            <li>Fixed render target load flags not being properly applied to depth/stencil buffer on Vulkan</li>
+                            <li>Workaround for Mesa driver bug when accessing row-major matrices in an UBO/SSBO</li>
+                            <li>Fixed OpenGL rendering on macOS Mojave</li>
+                            <li>Fixed UV seam on the default sphere mesh</li>
+                            <li>Avoid blocking the main thread when submitting the core thread commands</li>
+                            <li>Fixed an issue where the task scheduler would use up all available threads in the pool</li>
+                            <li>Fixed invalid task scheduler comparator function</li>
+                            <li>Resizing the window will now automatically resize the renderer targets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!--Primary menu-->
+<div class="ui inverted vertical center aligned segment" id="menuSegment">
+    <div class="ui container">
+        <div class="ui inverted mainmenu menu">
+            <a class="toc item"><i class="sidebar icon"></i></a>
+            <a href="https://www.bsframework.io"><div class="borderless item" id="logoItem"><img class="ui image" id="logo" src="images/logoHeader.png"></div></a>
+            <div class="right menu">
+                <a class="{% if page.url == "/" %}active borderless{% endif %} item" href="index.html">Home</a>
+                <a class="{% if page.url == "/download.html" %}active borderless{% endif %} item" href="download.html">Download</a>
+                <a class="item" href="https://discourse.bsframework.io">Community</a>
+                <a class="item" href="http://docs.bsframework.io/latest/index.html">Documentation</a>
+                <a class="item" href="https://github.com/gamefoundry/bsf"><i class="github icon"></i>GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Sidebar menu-->
+<div class="ui vertical inverted sidebar menu">
+    <div class="ui container">
+        <a href="https://www.bsframework.io"><div class="item" id="logoItem"><img class="ui image" src="images/logo.png"></div></a>
+        <a class="{% if page.url == "/" %}active{% endif %} item" href="index.html">Home</a>
+        <a class="{% if page.url == "/download.html" %}active{% endif %} item" href="download.html">Download</a>
+        <a class="item" href="https://discourse.bsframework.io">Community</a>
+        <a class="item" href="http://docs.bsframework.io/latest/index.html">Documentation</a>
+        <a class="item" href="https://github.com/gamefoundry/bsf">GitHub</a>
+    </div>
+</div>
