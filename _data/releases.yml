@@ -6,7 +6,7 @@ lookup:
   v1.1.0b:
     name: v1.1.0 BETA
     notes: release_v1.1.html
-    date: "11.1.2019"
+    date: "14.1.2019"
     binaries:
       windows:
         path: http://nightly.bsframework.io/releases/bsf_v1.1.0b_win64.zip
