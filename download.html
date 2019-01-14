@@ -2,62 +2,74 @@
 <html>
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120676613-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-          gtag('config', 'UA-120676613-1');
-        </script>
+  gtag('config', 'UA-120676613-1');
+</script>
 
-        <!-- Standard Meta -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <meta name="description" content="Compact, modern and powerful game development framework.">
+<!-- Standard Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="C++ game development framework with focus on modern technologies such as physically based rendering and Vulkan, to serve as a foundation for the development of high-performance real-time graphical applications, including games, tools and engines.">
 
-        <!-- Site Properties -->
-        <title>bs::framework</title>
-        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
-        <link rel="stylesheet" type="text/css" href="theme.css">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Raleway">
-        <link rel="stylesheet" href="prism.css"/>
+<!-- Facebook Meta -->
+<meta property="og:url"             content="https://www.bsframework.io"/>
+<meta property="og:site_name"       content="bs::framework"/>
+<meta property="og:image"           content="https://www.bsframework.io/images/bsfLogoHeaderLargeBgSquare.png"/>
+<meta property="og:title"           content="bs::framework - Next-generation C++ game development framework"/>
+<meta property="og:description"     content="C++ game development framework with focus on modern technologies such as physically based rendering and Vulkan, to serve as a foundation for the development of high-performance real-time graphical applications, including games, tools and engines."/>
+<meta property="og:type"            content="website"/>
 
-        <!-- Scripts -->
-        <script src="jquery/jquery.js"></script>
-        <script src="semantic/dist/semantic.js"></script>
-        <script src="prism.js"></script>
+<!-- Twitter Meta -->
+<meta name="twitter:site"           content="@thebsframework"/>
+<meta name="twitter:card"           content="summary"/>
+<meta name="twitter:title"          content="bs::framework - Next-generation C++ game development framework"/>
+<meta name="twitter:description"    content="C++ game development framework with focus on modern technologies such as physically based rendering and Vulkan, to serve as a foundation for the development of high-performance real-time graphical applications, including games, tools and engines."/>
+<meta name="twitter:image"          content="https://www.bsframework.io/images/bsfLogoHeaderLargeBgSquare.png"/>
+
+<!-- Site Properties -->
+<title>bs::framework - Next-generation C++ game development framework | Download</title>
+<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
+<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Raleway">
+<link rel="stylesheet" href="prism.css"/>
+
+<!-- Scripts -->
+<script src="jquery/jquery.js"></script>
+<script src="semantic/dist/semantic.js"></script>
+<script src="prism.js"></script>
+
+<script>
+    $(document).ready(function()
+    {
+        $('.ui.sidebar')
+            .sidebar('attach events', '.toc.item');
+
+        $('.ui.sticky').sticky();
+
+        $('.menu .item').tab();
+
+        var menu = $('#iterable_menu');
+        $("div[id] , :header[id]").each(function (index)
+                                        {
+            if($(this).attr('id') == 'iterable_menu')
+                return true;
+
+            menu.append('<a class="item" href="#'+$(this).attr('id')+'">'+$(this).attr('id')+'</a>');
+        });
+    });
+</script>
+
 
         <script>
             $(document).ready(function()
-                              {
-                $('#openReleases').click(function()
-                                         {
-                    $('#releasesModal').modal('show');
-                });
-
-                $('.ui.sidebar')
-                    .sidebar('attach events', '.toc.item');
-
-                $('.ui.sticky').sticky();
-
-                $('.menu .item').tab();
-
-                var menu = $('#iterable_menu');
-                $("div[id] , :header[id]").each(function (index)
-                                                {
-                    if($(this).attr('id') == 'iterable_menu')
-                        return true;
-
-                    menu.append('<a class="item" href="#'+$(this).attr('id')+'">'+$(this).attr('id')+'</a>');
-                });
-
-                $('.showRlsModal1').on('click', function() {
-                    $('#rlsModal1').modal('show');
-                });
-
+            {
                 $('.ui.accordion')
                     .accordion();
             });
@@ -74,33 +86,34 @@
         <!-- Page Contents -->
         <div class="pusher">
             <!--Primary menu-->
-            <div class="ui inverted vertical center aligned segment" id="menuSegment">
-                <div class="ui container">
-                    <div class="ui inverted mainmenu menu">
-                        <a class="toc item"><i class="sidebar icon"></i></a>
-                        <a href="https://www.bsframework.io"><div class="borderless item" id="logoItem"><img class="ui image" id="logo" src="images/logoHeader.png"></div></a>
-                        <div class="right menu">
-                            <a class="borderless item" href="index.html">Home</a>
-                            <a class="active item" href="download.html">Download</a>
-                            <a class="item" href="https://discourse.bsframework.io">Community</a>
-                            <a class="item" href="http://docs.bsframework.io/latest/index.html">Documentation</a>
-                            <a class="item" href="https://github.com/gamefoundry/bsf"><i class="github icon"></i>GitHub</a>
-                        </div>
-                    </div>
-                </div>
+<div class="ui inverted vertical center aligned segment" id="menuSegment">
+    <div class="ui container">
+        <div class="ui inverted mainmenu menu">
+            <a class="toc item"><i class="sidebar icon"></i></a>
+            <a href="https://www.bsframework.io"><div class="borderless item" id="logoItem"><img class="ui image" id="logo" src="images/logoHeader.png"></div></a>
+            <div class="right menu">
+                <a class=" item" href="index.html">Home</a>
+                <a class="active borderless item" href="download.html">Download</a>
+                <a class="item" href="https://discourse.bsframework.io">Community</a>
+                <a class="item" href="http://docs.bsframework.io/latest/index.html">Documentation</a>
+                <a class="item" href="https://github.com/gamefoundry/bsf"><i class="github icon"></i>GitHub</a>
             </div>
+        </div>
+    </div>
+</div>
 
-            <!--Sidebar menu-->
-            <div class="ui vertical inverted sidebar menu">
-                <div class="ui container">
-                    <a href="https://www.bsframework.io"><div class="item" id="logoItem"><img class="ui image" src="images/logo.png"></div></a>
-                    <a class="item" href="index.html">Home</a>
-                    <a class="active item" href="download.html">Download</a>
-                    <a class="item" href="https://discourse.bsframework.io">Community</a>
-                    <a class="item" href="http://docs.bsframework.io/latest/index.html">Documentation</a>
-                    <a class="item" href="https://github.com/gamefoundry/bsf">GitHub</a>
-                </div>
-            </div>
+<!--Sidebar menu-->
+<div class="ui vertical inverted sidebar menu">
+    <div class="ui container">
+        <a href="https://www.bsframework.io"><div class="item" id="logoItem"><img class="ui image" src="images/logo.png"></div></a>
+        <a class=" item" href="index.html">Home</a>
+        <a class="active item" href="download.html">Download</a>
+        <a class="item" href="https://discourse.bsframework.io">Community</a>
+        <a class="item" href="http://docs.bsframework.io/latest/index.html">Documentation</a>
+        <a class="item" href="https://github.com/gamefoundry/bsf">GitHub</a>
+    </div>
+</div>
+
 
             <div class="contents">
                 <div class="ui basic inverted segment" style="padding-top:30px;margin-top:0px; margin-bottom: 0px;">
@@ -109,12 +122,78 @@
                             Download
                         </h2>
 
-                        <h2 class="ui inverted header">
+                        
+                        
+                        <h2 class="ui dividing inverted header">
                             <div class="content">
-                                Latest release (v1.0.0 BETA)
-                                <div class="sub header">Release date: 21.5.2018</div>
+                                Latest release (v1.1.0 BETA)
+                                <div class="sub header">Release date: 14.1.2019 | <a href="release_v1.1.html">Release notes</a></div>
                             </div>
                         </h2>
+
+                        <h4 class="ui inverted header">Binaries</h4>
+                        <table class="ui inverted celled striped table">
+                            <thead>
+                                <tr><th class="ten wide">Platform</th>
+                                    <th class="six wide">Files</th>
+                                </tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td>Windows 64-bit</td>
+                                    <td class="collapsing"><a href="http://nightly.bsframework.io/releases/bsf_v1.1.0b_win64.zip">bsf_v1.1.0b_win64.zip</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Linux (Ubuntu)</td>
+                                    <td class="collapsing"><a href="http://nightly.bsframework.io/releases/bsf_v1.1.0b_linux.tar.gz">bsf_v1.1.0b_linux.tar.gz</a></td>
+                                </tr>
+                                <tr>
+                                    <td>macOS</td>
+                                    <td class="collapsing"><a href="http://nightly.bsframework.io/releases/bsf_v1.1.0b_osx.tar.gz">bsf_v1.1.0b_osx.tar.gz</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4 class="ui inverted header">Source</h4>
+                        <table class="ui inverted celled striped table">
+                            <thead>
+                                <tr><th class="ten wide">Platform</th>
+                                    <th class="six wide">Files</th>
+                                </tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td>All platforms</td>
+                                    <td class="collapsing"><a href="http://nightly.bsframework.io/releases/bsf_v1.1.0b_source.zip">bsf_v1.1.0b_source.zip</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4 class="ui inverted header">Notes</h4>
+                        <div class="ui inverted accordion">
+                            <div class="title"><i class="dropdown icon"></i>Known issues</div>
+                            <div class="content">
+                                <div class="ui basic inverted segment releaseNotes">
+                                <p>This is a BETA release, meaning parts of the framework are possibly still unstable. Non-commonly used functionality might cause crashes, and untested hardware combinations might as well.</p> <p>The following are known issues with the current release:</p> <li>Using Vulkan on Intel integrated GPUs can sometimes cause a system hang due to an issue with the drivers. It is suggested to run other render backeds until this is resolved.</li>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="ui dividing inverted header">
+                            <div class="title">Nightly builds</div>
+                            <div class="sub header">Builds of the most recent (potentially unstable) version, updated nightly</div>
+                        </h2>
+                        <div id="scrollerExamplesMain" style="height:310px;overflow-y:scroll;overflow-x:hidden;position:relative;">
+                            <div id="listing"></div>
+                        </div>
+
+                        <h2 class="ui inverted header">Older releases</h2>
+
+                        
+                        
+                        <h3 class="ui dividing inverted header">
+                            <div class="content">
+                                v1.0.0 BETA
+                                <div class="sub header">Release date: 21.5.2018 | <a href="#">Release notes</a></div>
+                            </div>
+                        </h3>
 
                         <h4 class="ui inverted header">Binaries</h4>
                         <table class="ui inverted celled striped table">
@@ -154,237 +233,57 @@
 
                         <h4 class="ui inverted header">Notes</h4>
                         <div class="ui inverted accordion">
-                            <div class="title"><i class="dropdown icon"></i>Release notes</div>
-                            <div class="content">
-                                <div class="ui basic inverted segment releaseNotes">
-                                <p>Initial release of the framework.</p>
-
-                                <h4>Features</h4>
-                                <ul>
-                                    <li><strong>Platforms</strong>
-                                        <ul>
-                                            <li>Windows</li>
-                                            <li>Linux</li>
-                                            <li>macOS</li></ul>
-                                    </li>
-
-                                    <li><strong>Renderer</strong>
-                                        <ul>
-                                            <li>Vulkan, DX11 and OpenGL 4.5 render backends</li>
-                                            <li>Multi-threaded rendering</li>
-                                            <li>Node based compositor</li>
-                                            <li>Modern high fidelity graphics
-                                                <ul>
-                                                    <li>Fast hybrid tiled deferred / clustered forward renderer</li>
-                                                    <li>Physically based shading</li>
-                                                    <li>Area light sources</li>
-                                                    <li>Reflection probes with geometry proxies</li>
-                                                    <li>Indirect illumination via irradiance maps</li>
-                                                    <li>Screen space reflections</li>
-                                                    <li>HDR rendering
-                                                        <ul>
-                                                            <li>Automatic eye adaptation</li>
-                                                            <li>Tonemapping with adjustable curve</li>
-                                                            <li>White balance</li>
-                                                            <li>Color grading</li></ul>
-                                                    </li>
-                                                    <li>Gamma correct rendering</li>
-                                                    <li>MSAA (both forward and deferred)</li>
-                                                    <li>Shadows
-                                                        <ul>
-                                                            <li>Percentage closer shadows</li>
-                                                            <li>Cascaded shadow maps</li></ul>
-                                                    </li></ul>
-                                            </li>
-                                            <li>Post processing effects
-                                                <ul>
-                                                    <li>Screen space ambient occlusion (SSAO)</li>
-                                                    <li>Depth of field</li>
-                                                    <li>Fast approximate anti-aliasing (FXAA)</li></ul>
-                                            </li>
-                                            <li>Extensive material &amp; shader system
-                                                <ul>
-                                                    <li>Custom high level shading language (BSL)</li>
-                                                    <li>Low level shader parsing and reflection for HLSL and GLSL</li>
-                                                    <li>Shader bytecode caching</li></ul>
-                                            </li>
-                                            <li>Low-level rendering API
-                                                <ul>
-                                                    <li>Fully featured, backend agnostic wrapper for Vulkan/DX/OpenGL</li>
-                                                    <li>Geometry, tesselation and compute shaders</li>
-                                                    <li>Instanced rendering</li>
-                                                    <li>Texture arrays and GPU buffers</li>
-                                                    <li>Unordered access textures and buffers</li>
-                                                    <li>Pipeline state objects</li>
-                                                    <li>Command lists</li>
-                                                    <li>GPU queues (async compute and upload)</li>
-                                                    <li>Explicit multi-GPU support</li></ul>
-                                            </li></ul>
-                                    </li>
-
-                                    <li><strong>Asset pipeline</strong>
-                                        <ul>
-                                            <li>Built-in support for third party formats:
-                                                <ul>
-                                                    <li>FBX, OBJ, DAE meshes</li>
-                                                    <li>PNG, PSD, BMP, JPG, etc. images</li>
-                                                    <li>OTF, TTF fonts</li>
-                                                    <li>OGG, FLAC, WAV, MP3 sounds</li>
-                                                    <li>HLSL, GLSL shaders</li></ul>
-                                            </li>
-                                            <li>Asynchronous resource loading</li>
-                                            <li>Asynchronous resource import</li>
-                                            <li>Resource compression</li>
-                                            <li>Extensible importer system</li></ul>
-                                    </li>
-                                    <li><strong>GUI system</strong>
-                                        <ul>
-                                            <li>All common GUI controls
-                                                <ul>
-                                                    <li>Text</li>
-                                                    <li>Image</li>
-                                                    <li>Button</li>
-                                                    <li>Input box</li>
-                                                    <li>Drop down</li>
-                                                    <li>Slider</li>
-                                                    <li>Checkbox</li>
-                                                    <li>Scroll area</li>
-                                                    <li>And support for custom controls</li></ul>
-                                            </li>
-                                            <li>Unicode text rendering and input</li>
-                                            <li>Easy to use layout based system</li>
-                                            <li>Fully skinnable</li>
-                                            <li>Automatic batching for fast rendering</li>
-                                            <li>Supports texture atlases</li>
-                                            <li>Supports arbitrary 3D transformations</li>
-                                            <li>Localization support (string tables)</li></ul>
-                                    </li>
-                                    <li><strong>Animation</strong>
-                                        <ul>
-                                            <li>Skeletal animation with skinning
-                                                <ul>
-                                                    <li>1D and 2D animation blending</li>
-                                                    <li>Additive animation support</li>
-                                                    <li>Animation events</li>
-                                                    <li>Root bone animation</li>
-                                                    <li>Animation sockets for animating in-game objects</li>
-                                                    <li>Post-processing hooks for IK support</li></ul>
-                                            </li>
-                                            <li>Blend shape animation</li>
-                                            <li>Multi-threaded and GPU accelerated</li></ul>
-                                    </li>
-                                    <li><strong>Input</strong>
-                                        <ul>
-                                            <li>Mouse/keyboard/gamepad support</li>
-                                            <li>Provides both raw and OS input</li>
-                                            <li>Virtual input with built-in key mapping</li>
-                                            <li>Virtual axes for analog input devices</li></ul>
-                                    </li>
-                                    <li><strong>Physics</strong>
-                                        <ul>
-                                            <li>Implemented using NVIDIA PhysX</li>
-                                            <li>Multi-threaded for best performance</li>
-                                            <li>Abstract plugin interface extensible for other physics implementations (e.g. Havok, Bullet)</li>
-                                            <li>Supported features
-                                                <ul>
-                                                    <li>Colliders (Box, Sphere, Capsule, Mesh)</li>
-                                                    <li>Triggers</li>
-                                                    <li>Rigidbody</li>
-                                                    <li>Character controller</li>
-                                                    <li>Joints (Fixed, Distance, Hinge, Spherical, Slider, D6)</li>
-                                                    <li>Scene queries</li>
-                                                    <li>Collision filtering</li>
-                                                    <li>Discrete or continuous collision detection</li></ul>
-                                            </li></ul>
-                                    </li>
-                                    <li><strong>Audio</strong>
-                                        <ul>
-                                            <li>3D sounds (panning, attenuation, doppler effect) and 2D sounds (music, narration)</li>
-                                            <li>On-the-fly streaming and decompression</li>
-                                            <li>Multi-channel support up to 7.1 sound</li>
-                                            <li>Multiple listener support for split-screen</li>
-                                            <li>Multiple backends
-                                                <ul>
-                                                    <li>OpenAL</li>
-                                                    <li>FMOD</li></ul>
-                                            </li></ul>
-                                    </li>
-                                    <li><strong>Other</strong>
-                                        <ul>
-                                            <li>CPU &amp; GPU profiler</li>
-                                            <li>Advanced run-time type information for C++ code</li>
-                                            <li>Vector (SIMD) instruction API
-                                                <ul>
-                                                    <li>SSE4.1, AVX, AVX2, AVX512 NEON, NEONv2 and others</li></ul>
-                                            </li>
-                                            <li>Utility library
-                                                <ul>
-                                                    <li>Math</li>
-                                                    <li>File system</li>
-                                                    <li>Events</li>
-                                                    <li>Thread pool</li>
-                                                    <li>Task scheduler</li>
-                                                    <li>Logging</li>
-                                                    <li>Debug drawing</li>
-                                                    <li>Crash reporting</li>
-                                                    <li>Unit testing</li>
-                                                    <li>Custom memory allocators</li></ul>
-                                            </li></ul>
-                                    </li>
-                                </ul>
-                                </div>
-                            </div>
                             <div class="title"><i class="dropdown icon"></i>Known issues</div>
                             <div class="content">
                                 <div class="ui basic inverted segment releaseNotes">
-                                <p>This is a BETA release, meaning parts of the framework are possibly still unstable. Non-commonly used functionality might cause crashes, and untested hardware combinations might as well.</p>
-
-                                <p>The following are known issues with the current release:</p>
-                                <li>Mesa drivers on Linux do not work at the moment. Please use proprietary nVidia or AMD drivers, if possible. This is partly due to bugs in Mesa, and partly due to an issue in the framework.</li>
+                                <p>This is a BETA release, meaning parts of the framework are possibly still unstable. Non-commonly used functionality might cause crashes, and untested hardware combinations might as well.</p> <p>The following are known issues with the current release:</p> <li>Mesa drivers on Linux do not work at the moment. Please use proprietary nVidia or AMD drivers, if possible. This is partly due to bugs in Mesa, and partly due to an issue in the framework.</li>
                                 </div>
                             </div>
                         </div>
-                        <h2 class="ui inverted header">
-                            <div class="title">Nightly builds</div>
-                            <div class="sub header">Builds of the most recent (potentially unstable) version, updated nightly</div>
-                        </h2>
-                        <div id="scrollerExamplesMain" style="height:310px;overflow-y:scroll;overflow-x:hidden;position:relative;">
-                            <div id="listing"></div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
 
             <div class="myFooter">
-                <div class="ui inverted vertical footer segment" style="border-top: 2px solid #f9500d;">
-                    <div class="ui three column inverted divided equal height doubling stackable grid container">
-                        <div class="three wide column">
-                            <h4 class="ui inverted header">Contact</h4>
-                            <div class="ui inverted link list">
-                                <a href="mailto:contact@bsframework.io" class="item">Contact us</a>
-                                <a href="https://github.com/GameFoundry/bsf/issues" target="_blank" class="item">Report an issue</a>
-                            </div>
-                        </div>
-                        <div class="three wide column">
-                            <h4 class="ui inverted header">Info</h4>
-                            <div class="ui inverted link list">
-                                <a href="https://github.com/GameFoundry/bsf" target="_blank" class="item">Contribute</a>
-                                <a href="https://github.com/GameFoundry/bsf/blob/master/Documentation/GitHub/roadmap.md" target="_blank" class="item">Roadmap</a>
-                                <a href="https://github.com/GameFoundry/bsf/blob/master/LICENSE.md" target="_blank" class="item">License</a>
-                            </div>
-                        </div>
-                        <div class="seven wide column">
-                            <h4 class="ui inverted header">Donate</h4>
-                            <div class="ui two column grid">
-                                <div class="column"><a href="https://www.patreon.com/bsf"><img class="ui image" src="images/become_a_patron_button.png"></a></div>
-                                <div class="column"><a href="https://www.paypal.me/MarkoPintera/10" target="_blank"><img class="ui image" src="images/paypalDonate.png"></a></div>
-                            </div>
-                            <p style="padding-top:7px"><i>bs::f</i> is developed by Marko Pintera and contributors.</p>
-                        </div>
-                    </div>
+    <div class="ui inverted vertical footer segment" style="border-top: 2px solid #f9500d;">
+        <div class="ui three column inverted divided equal height doubling stackable grid container">
+            <div class="two wide column">
+                <h4 class="ui inverted header">Contact</h4>
+                <div class="ui inverted link list">
+                    <a href="mailto:contact@bsframework.io" class="item">E-mail</a>
+                    <a href="https://github.com/GameFoundry/bsf/issues" target="_blank" class="item">Report an issue</a>
                 </div>
             </div>
-        </div>
+            <div class="two wide column">
+                <h4 class="ui inverted header">Info</h4>
+                <div class="ui inverted link list">
+                    <a href="https://github.com/GameFoundry/bsf" target="_blank" class="item">Contribute</a>
+                    <a href="https://github.com/GameFoundry/bsf/blob/master/Documentation/GitHub/roadmap.md" target="_blank" class="item">Roadmap</a>
+                    <a href="https://github.com/GameFoundry/bsf/blob/master/LICENSE.md" target="_blank" class="item">License</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">Social media</h4>
+                <div class="ui horizontal list">
+                    <div class="item"><a href="https://github.com/GameFoundry/bsf" target="_blank"><i class="big github icon"></i></a></div>
+                    <div class="item"><a href="https://www.facebook.com/bsframework" target="_blank"><i class="big facebook icon"></i></a></div>
+                    <div class="item"><a href="https://twitter.com/thebsframework" target="_blank"><i class="big twitter icon"></i></a></div>
+                </div>
+            </div>
 
+            <div class="six wide column">
+                <h4 class="ui inverted header">Donate</h4>
+                <div class="ui two column grid">
+                    <div class="column"><a href="https://www.patreon.com/bsf"><img class="ui image" src="images/become_a_patron_button.png"></a></div>
+                    <div class="column"><a href="https://www.paypal.me/MarkoPintera/10" target="_blank"><img class="ui image" src="images/paypalDonate.png"></a></div>
+                </div>
+                <p style="padding-top:7px"><i>bs::f</i> is developed by Marko Pintera and contributors.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
     </body>
 </html>
