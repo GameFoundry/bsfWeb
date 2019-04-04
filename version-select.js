@@ -6,8 +6,9 @@
       'nightly': 'git-master',
       'latest': 'Latest',
       'v1.0': 'v1.0',
+      'v1.1': 'v1.1',
     };
-    var current_version = 'v1.0';
+    var current_version = 'v1.1';
   
     function build_select(current_version, current_release) {
       var buf = ['<select class="version-select">'];
